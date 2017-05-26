@@ -52,7 +52,7 @@ rm(Pheno)
 RNA <- read.csv(file = "largeDE.csv", row.names = 1)
 
 # Limit RNA to first 10 genes. 
-#RNA <- RNA[1:10, ]
+RNA <- RNA[1:50, ]
 
 ## Transpose data. 
 RNA <- t(RNA)
