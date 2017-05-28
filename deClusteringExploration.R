@@ -272,4 +272,45 @@ for (i in 4:6){
   t <- d[as.character(1:48),]
   
   
+## Make sure that there are a large number of duplicates when averaged.   
+  RNA <- read.csv(file = "largeDE.csv", row.names = 1)
+  
+  RNA <- as.data.frame(t(RNA))
+  
+  discRNA <- discretize(RNA, method = "quantile", breaks = 3)
+  
+  for (i in 1:dim(discRNA)[2]){
+    levels(discRNA[, i]) <- c(-1, 0, 1)
+    discRNA[, i] <- as.numeric(as.character(discRNA[, i]))
+  }
+  
+  discRNA <- t(discRNA)
+  f <- t(discRNA)
+
+  Replicates <- rep(c(1:24), each = 2)
+  
+  f <- cbind(f, Replicates)
+  f <- as.data.table(f)
+  
+  g <- f[, lapply(.SD, mean), by = "Replicates"]
+  g <- g[, -1]
+  g <- t(g)
+  
+  c <- unique(g)
+ 
+  hc <- hclust(dist(g))
+  plot(hc)
+  
+  library(cluster)
+  set.seed(125)
+  gap <- clusGap(g, FUN = kmeans, iter.max = 30, K.max = 20, B = 50, verbose=interactive())
+  plot(gap, main = "Gap Statistic")
+  with(gap, maxSE(Tab[,"gap"], Tab[,"SE.sim"], method="firstSEmax"))
+  
+  tr <- as.data.frame(cutree(hc, k = 150))
+  g[which(cutree(hc, k = 150) == 7),]
+  # So far, the most promising.
+  
+  
+  
   
