@@ -9,7 +9,6 @@ library(bnlearn)
 library(stringr)
 #-----------------------------------------------------------------------
 
-
 degenes <- read.csv(file.choose(), row.names = 1)        
 # Cluster by sample. 
 hr <- hclust(dist(t(degenes)))
@@ -22,7 +21,6 @@ plot(hr, xlab = "scaledDE")
 rect.hclust(hr, k = 6, border = "red")
 
 # Discretize scaled genes and then cluster.
-
  
 RNA <- degenes
 
@@ -76,26 +74,6 @@ d["Bra001379", ]
 
 sum(d["Bra001534", ]  != d["Bra001379", ])
 sum(d["Bra001534", ]  != d["Bra000159", ])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Split rownames into Treatment/Timepoint and Replicate. 
@@ -303,13 +281,101 @@ for (i in 4:6){
   
   library(cluster)
   set.seed(125)
-  gap <- clusGap(g, FUN = kmeans, iter.max = 30, K.max = 20, B = 50, verbose=interactive())
+  gap <- clusGap(g, FUN = kmeans, iter.max = 30, K.max = 150, B = 50, verbose=interactive())
   plot(gap, main = "Gap Statistic")
   with(gap, maxSE(Tab[,"gap"], Tab[,"SE.sim"], method="firstSEmax"))
   
-  tr <- as.data.frame(cutree(hc, k = 150))
+  plot(hc)
+  rect.hclust(hc, k = 15, border = "red")
+  
+  tr <- as.data.frame(cutree(hc, k = 15))
   g[which(cutree(hc, k = 150) == 7),]
   # So far, the most promising.
+ 
+  
+# Use hclust on RNA + genes.
+  # Read in phenotype file. 
+  Pheno <- read.csv(file = "PhenoBrassicaImp.csv", row.names = 1)
+  
+  # Rename SM... to get rid of periods. 
+  colnames(Pheno)[8] <- "SM"
+  
+  # Add a column for Time of Day, named TOD.
+  Pheno$TOD <- rep(c(7, 11, 15, 19, 23, 3), each = 24, 2)
+  
+  #### Discretize data. 
+  
+  # Discretize the phenotype data, excluding Fv.Fm. 
+  phenoDisc <- discretize(Pheno[, 3:8], 
+                          method = "interval", 
+                          breaks = c(5, 5, 3, 5, 5, 5))
+  
+  # Add INT column to discretized data. 
+  phenoDisc$INT <- as.factor(Pheno$Treatment)
+  
+  # Add Timepoint column to discretized data. 
+  phenoDisc$TP <- as.factor(Pheno$Timepoint)
+  
+  # Add Time of Day to discretized data. 
+  phenoDisc$TOD <- as.factor(Pheno$TOD)
+  
+  # Order Pheno dataframe by Timepoint and int. 
+  phenoDisc <- phenoDisc[with(phenoDisc, order(INT, TP)), ]
+  
+  # Remove unnecesary dataframes.
+  rm(Pheno)
+  
+  for (i in 1:2){
+    levels(phenoDisc[, i]) <- c(-2, -1, 0, 1, 2)
+    phenoDisc[, i] <- as.numeric(as.character(phenoDisc[, i]))
+  }
+  
+  for (i in 4:6){
+    levels(phenoDisc[, i]) <- c(-2, -1, 0, 1, 2)
+    phenoDisc[, i] <- as.numeric(as.character(phenoDisc[, i]))
+  }
+  
+  levels(phenoDisc[, 3]) <- c(-1, 0, 1)
+  phenoDisc[, 3] <- as.numeric(as.character(phenoDisc[, 3]))
+  
+  Replicates <- rep(c(1:24), each = 12)
+  phenoDisc$Replicates <- Replicates
+  
+  phenoDisc$INT <- NULL
+  phenoDisc$TOD <- NULL
+  phenoDisc$TP <- NULL
+  
+  p <- as.data.table(phenoDisc)
+  
+  p <- p[, lapply(.SD, mean), by = "Replicates"]
+  p <- p[, -1]
+  p <- t(p)
+
+  pg <- rbind(p, g)
+  
+  hc <- hclust(dist(pg))
+  plot(hc)
+  
+  #library(cluster)
+  set.seed(125)
+  gap <- clusGap(pg, FUN = kmeans, iter.max = 30, K.max = 150, B = 50, verbose=interactive())
+  plot(gap, main = "Gap Statistic")
+  with(gap, maxSE(Tab[,"gap"], Tab[,"SE.sim"], method="firstSEmax"))
+  
+  plot(hc)
+  rect.hclust(hc, k = 11, border = "red")
+  
+  tr <- as.data.frame(cutree(hc, k = 11))
+  pg[which(cutree(hc, k = 11) == 7),]
+  # So far, the most promising.
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
