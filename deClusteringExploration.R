@@ -239,7 +239,7 @@ for (i in 4:6){
     levels(discRNA[, i]) <- c(-1, 0, 1)
     discRNA[, i] <- as.numeric(as.character(discRNA[, i]))
   }
-  #-1 is D
+  # -1 is D
   
   hr <- hclust(dist(t(discRNA[, 1:41]))) 
   plot(hr)
@@ -276,20 +276,20 @@ for (i in 4:6){
   
   c <- unique(g)
  
-  hc <- hclust(dist(g))
-  plot(hc)
+  hcg <- hclust(dist(g))
+  plot(hcg)
   
   library(cluster)
   set.seed(125)
   gap <- clusGap(g, FUN = kmeans, iter.max = 30, K.max = 150, B = 50, verbose=interactive())
   plot(gap, main = "Gap Statistic")
   with(gap, maxSE(Tab[,"gap"], Tab[,"SE.sim"], method="firstSEmax"))
+  #10
+  plot(hcg)
+  rect.hclust(hcg, k = 10, border = "red")
   
-  plot(hc)
-  rect.hclust(hc, k = 15, border = "red")
-  
-  tr <- as.data.frame(cutree(hc, k = 15))
-  g[which(cutree(hc, k = 150) == 7),]
+  trg <- as.data.frame(cutree(hcg, k = 10))
+  g[which(cutree(hcg, k = 10) == 7),]
   # So far, the most promising.
  
   
@@ -369,11 +369,14 @@ for (i in 4:6){
   pg[which(cutree(hc, k = 11) == 7),]
   # So far, the most promising.
   
+  # Looking at overlap between two clustering methods.
+  rownames(g[which(cutree(hcg, k = 10) == 1),]) %in% rownames(pg[which(cutree(hc, k = 11) == 5),])
+  # Fair amount of overlap.
+  rownames(g[which(cutree(hcg, k = 10) == 2),]) %in% rownames(pg[which(cutree(hc, k = 11) == 6),])
   
-  
-  
-  
-  
+  # Use clustering of pheno/RNA for network. 
+  write.csv(tr, "pg.csv")
+  write.csv(trg, "g.csv")
   
   
   
