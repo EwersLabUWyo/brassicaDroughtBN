@@ -2,13 +2,14 @@
 # R version 3.3.1 (2016-06-21)
 # May 28, 2017. Mallory B. Lai.
 # Reviewed by: TODO (Mallory B. Lai) : Find reviewer to proofread
-# Creating combined pheno & RNA seq BN for Brassica data   
+# Creating combined pheno & RNA seq BN for clustered Brassica gene data   
 # using bnlearn package. Data taken from Brassica control
 # and droughted conditions. 
 
 #-----------------------------------------------------------------------
 library(bnlearn)
 library(stringr)
+library(dplyr)
 #-----------------------------------------------------------------------
 
 #### Preprocessing: 
@@ -17,75 +18,12 @@ library(stringr)
 # setwd("E:/Mallory Lai/PhenoRNAnetworkBrassica")
 #setwd("/Users/mblai/Documents/GitHub/PhenoRNAnetworkBrassica")
 
-# Read in phenotype file. 
-Pheno <- read.csv(file = "PhenoBrassicaImp.csv", row.names = 1)
-
-# Rename SM... to get rid of periods. 
-colnames(Pheno)[8] <- "SM"
-
-# Add a column for Time of Day, named TOD.
-Pheno$TOD <- rep(c(7, 11, 15, 19, 23, 3), each = 24, 2)
-
-#### Discretize data. 
-
-# Discretize the phenotype data, excluding Fv.Fm. 
-phenoDisc <- discretize(Pheno[, 3:8], 
-                        method = "interval", 
-                        breaks = c(5, 5, 3, 5, 5, 5))
-
-# Add INT column to discretized data. 
-phenoDisc$INT <- as.factor(Pheno$Treatment)
-
-# Add Timepoint column to discretized data. 
-phenoDisc$TP <- as.factor(Pheno$Timepoint)
-
-# Add Time of Day to discretized data. 
-phenoDisc$TOD <- as.factor(Pheno$TOD)
-
-# Order Pheno dataframe by Timepoint and int. 
-phenoDisc <- phenoDisc[with(phenoDisc, order(TP, INT)), ]
-
-# Remove unnecesary dataframes.
-rm(Pheno)
 
 
-
-
-
-
+######## RNA
 
 # Read in RNAseq data. 
 RNA <- read.csv(file = "largeDE.csv", row.names = 1)
-
-# Read in cluster classification. 
-tr <- read.csv(file = "pg.csv")
-
-# Rename column names to "variable" and "cluster."
-colnames(tr) <- c("variable", "cluster")
-
-# Remove phenotype variables. 
-ph <- c("Photo", "gs", "Fv.Fm.", "Starch", "NSC", "SM")
-tr <- tr[-which(tr$variable %in% ph), ]
-
-# Create empty matrix for storing clusters.
-cl <- matrix(data = NA, nrow = dim(tr)[1], ncol = (length(unique(tr$cluster))))
-colnames(cl) <- paste("c", 1:(length(unique(tr$cluster))), sep = "")
-
-# Separate by clusters.
-for (i in 1:(length(unique(tr$cluster))))
-{
-  cl[, i] <- c(as.character(tr[tr$cluster == i, "variable"]), 
-               rep(NA, length(cl[,i]) - dim(tr[tr$cluster == i, ])[1]))
-}
-
-# Look at dim of each cluster
-for (i in 1:(length(unique(tr$cluster))))
-{
-  print(length(cl[,i]) - sum(is.na(cl[,i])))
-}
-
-# Note: 488 is the maximum cluster size. (x2 for replicates is 976)
-
 
 ## Transpose data. 
 RNA <- t(RNA)
@@ -111,7 +49,7 @@ discRNA <- discRNA[with(discRNA, order(Timepoint, int)), ]
 # Convert data intervals to -1, 0, and 1 representing low, medium, and high. 
 for (i in 1:(dim(discRNA)[2] - 2)){
   levels(discRNA[, i]) <- c(-1, 0, 1)
-  discRNA[, i] <- as.numeric(as.character(discRNA[, i]))
+  discRNA[, i] <- as.factor(discRNA[, i])
 }
 
 # Transform RNA data frame. 
@@ -121,40 +59,168 @@ discRNA <- t(discRNA)
 colnames(discRNA) <- paste(discRNA[dim(discRNA)[1] - 1,], 
                            discRNA[dim(discRNA)[1],], sep = "")
 
-# Separate clusters. 
+# Read in cluster classification. 
+tr <- read.csv(file = "pg.csv")
+
+# Rename column names to "variable" and "cluster."
+colnames(tr) <- c("variable", "cluster")
+
+# Remove phenotype variables. 
+ph <- c("Photo", "gs", "Fv.Fm.", "Starch", "NSC", "SM")
+tr <- tr[-which(tr$variable %in% ph), ]
+
+# Create empty matrix for storing clusters.
+cl <- matrix(data = NA, nrow = dim(tr)[1], ncol = (max(unique(tr$cluster))))
+colnames(cl) <- paste("c", 1:(max(unique(tr$cluster))), sep = "")
+
+# Separate by clusters.
+for (i in 1:(max(unique(tr$cluster))))
+{
+  cl[, i] <- c(as.character(tr[tr$cluster == i, "variable"]), 
+               rep(NA, length(cl[,i]) - dim(tr[tr$cluster == i, ])[1]))
+}
+
+cmax <- 0
+
+# Look at dim of each cluster
+for (i in 1:(max(unique(tr$cluster))))
+{
+  if (length(cl[,i]) - sum(is.na(cl[,i])) > cmax){
+    cmax <- length(cl[,i]) - sum(is.na(cl[,i]))
+  }
+}
+
+# Note: 488 is the maximum cluster size. (x2 for replicates is 976)
+cmax <- cmax * 2 
+
+# Separate clusters to form gene modules. 
 c1 <- discRNA[c(cl[1:(length(cl[,1]) - sum(is.na(cl[,1]))), 1]), ]
 
+# Add timepoint and treatment row. 
+c1 <- rbind(c1, TP = discRNA[dim(discRNA)[1] - 1,], Trmt = discRNA[dim(discRNA)[1],])
 
+# Transpose. 
+c1 <- as.data.frame(t(c1))
 
+# Gather all genes into one gene module, M1. 
+m1 <- gather(c1, Gene, M1, -TP, -Trmt)
 
+# Order m1 dataframe by Timepoint and int. 
+m1 <- m1[with(m1, order(TP, Trmt)), ]
 
+# Group by time point and treatment. 
+m1 <- m1 %>% group_by(TP, Trmt)
 
+# Randomly sample maximum module size * 2 (two replicates; cmax) 
+# for each time point and treatment.
+m1 <- sample_n(m1, cmax, replace = T)
 
+# Convert to data.frame. 
+m1 <- as.data.frame(m1)
 
+# Loop through remaining clusters. 
+for (i in 3:(dim(cl)[2]))
+{
+  # Separate clusters to form gene modules. 
+  c1 <- discRNA[c(cl[1:(length(cl[,i]) - sum(is.na(cl[,i]))), i]), ]
+  
+  # Add timepoint and treatment row. 
+  c1 <- rbind(c1, TP = discRNA[dim(discRNA)[1] - 1,], Trmt = discRNA[dim(discRNA)[1],])
+  
+  # Transpose. 
+  c1 <- as.data.frame(t(c1))
+  
+  # Gather all genes into one gene module 
+  module <- gather(c1, Gene, M, -TP, -Trmt)
+  
+  # Order module dataframe by Timepoint and int. 
+  module <- module[with(module, order(TP, Trmt)), ]
+  
+  # Group by time point and treatment. 
+  module <- module %>% group_by(TP, Trmt)
+  
+  # Randomly sample maximum module size * 2 (two replicates; cmax) 
+  # for each time point and treatment.
+  module <- sample_n(module, cmax, replace = T)
+  
+  # Rename M to match module number. 
+  colnames(module)[which(colnames(module) == "M")] <- paste("M", i, sep = "")
+  
+  # Convert to data.frame. 
+  module <- as.data.frame(module)
+  
+  # Combine into full dataframe. 
+  m1 <- cbind(m1, module[c("Gene", paste("M", i, sep = ""))])
+}
 
 # Remove unneccesary dataframes. 
 rm(RNA)
 rm(rnaNames)
 
+
+#### Pheno.
+
+# Read in phenotype file. 
+Pheno <- read.csv(file = "PhenoBrassicaImp.csv", row.names = 1)
+
+# Rename SM... to get rid of periods. 
+colnames(Pheno)[8] <- "SM"
+
+# Add a column for Time of Day, named TOD.
+Pheno$TOD <- rep(c(7, 11, 15, 19, 23, 3), each = 24, 2)
+
+#### Discretize data. 
+
+# Discretize the phenotype data, excluding Fv.Fm. 
+phenoDisc <- discretize(Pheno[, 3:8], 
+                        method = "interval", 
+                        breaks = c(5, 5, 3, 5, 5, 5))
+
+# Add INT column to discretized data. 
+phenoDisc$INT <- as.factor(Pheno$Treatment)
+
+# Add Timepoint column to discretized data. 
+phenoDisc$TP <- as.factor(Pheno$Timepoint)
+
+# Order Pheno dataframe by Timepoint and int. 
+phenoDisc <- phenoDisc[with(phenoDisc, order(TP, INT)), ]
+
+# Remove unnecesary dataframes.
+rm(Pheno)
+
+# To get phenotype data to be of the same length as the RNA data, 
+# group by time point and treatment and randomly sample from each section. 
+
+
+# Group by time point and treatment. 
+Pheno <- phenoDisc %>% group_by(TP, INT)
+
+# Randomly sample maximum module size * 2 (two replicates; cmax) 
+# for each time point and treatment.
+Pheno <- sample_n(Pheno, cmax, replace = T)
+
+# Convert to data.frame. 
+Pheno <- as.data.frame(Pheno)
+
 # Combine pheno and RNA data frames.
-rnaPheno <- cbind(phenoDisc, discRNA)
+rnaPheno <- cbind(Pheno, m1)
 
 # Remove unneccesary dataframes. 
 rm(discRNA)
 rm(phenoDisc)
+rm(Pheno)
 
 # Remove extra columns.
-rnaPheno$Timepoint <- NULL
-rnaPheno$int <- NULL
+rnaPheno$Trmt <- NULL
 rnaPheno$INT <- NULL
 rnaPheno$TP <- NULL
-rnaPheno$TOD <- NULL
+rnaPheno$TP <- NULL
 
 # Subset training data and set aside test data. 
 # To subset 10% of the data, we need to randomly select 30 samples
 # to use as test data. 
 set.seed(3)
-testData <- sample(1:288, 30, replace = F)
+testData <- sample(1:dim(rnaPheno)[1], round(dim(rnaPheno)[1]*.1), replace = F)
 
 # Subset test data. 
 test <- rnaPheno[testData, ]
@@ -162,13 +228,32 @@ test <- rnaPheno[testData, ]
 # Isolate test data from training data. 
 training <- rnaPheno[-testData, ]
 
-# Create blacklist for arcs to soil moisture. 
-bl <- data.frame(From = colnames(rnaPheno)[- which(colnames(rnaPheno) == "SM")], 
-                 To = rep("SM", (dim(rnaPheno)[2] - 1)))
+# Remove Gene column from rnaPheno. 
+training$Gene <- NULL
+training$Gene <- NULL
+training$Gene <- NULL
+training$Gene <- NULL
+training$Gene <- NULL
+training$Gene <- NULL
+training$Gene <- NULL
+training$Gene <- NULL
+training$Gene <- NULL
+training$Gene <- NULL
+
+
+# Convert modules to factors. 
+training[, 7:dim(training)[2]] <- lapply(training[, 7:dim(training)[2]], factor)
 
 # Learn network structure. 
-bn <- suppressWarnings(tabu(training, score = "bde", blacklist = bl,
+bn <- suppressWarnings(tabu(training, score = "bde", 
                             iss = 10, tabu = 50))
 
 # Write csv of network arcs. 
-write.csv(bn$arcs, file = "blLargeBNarcs.csv")    
+#write.csv(bn$arcs, file = "clustBNarcs.csv")   
+
+
+
+
+
+
+
