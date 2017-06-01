@@ -80,6 +80,10 @@ for (i in 1:(max(unique(tr$cluster))))
                rep(NA, length(cl[,i]) - dim(tr[tr$cluster == i, ])[1]))
 }
 
+# Write csv of cluster dataframe. 
+cl <- cl[, -2]
+write.csv(cl, "clusters.csv")
+
 cmax <- 0
 
 # Look at dim of each cluster
@@ -156,7 +160,6 @@ for (i in 3:(dim(cl)[2]))
 # Remove unneccesary dataframes. 
 rm(RNA)
 rm(rnaNames)
-
 
 #### Pheno.
 
@@ -252,8 +255,14 @@ bn <- suppressWarnings(tabu(training, score = "bde",
 #write.csv(bn$arcs, file = "clustBNarcs.csv")   
 
 
+bn.mle <- bn.fit(bn, training, method = "bayes")
 
+bn.fit.barchart(bn.mle$Photo, xlab = "P()")
 
+bn.mle$Photo
 
+bn.fit.barchart(bn.mle$M8, xlab = "P()")
+
+bn.mle$M8
 
 
