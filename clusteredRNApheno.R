@@ -10,6 +10,7 @@
 library(bnlearn)
 library(stringr)
 library(dplyr)
+library(tidyr)
 #-----------------------------------------------------------------------
 
 #### Preprocessing: 
@@ -17,8 +18,6 @@ library(dplyr)
 # Set working directory.
 # setwd("E:/Mallory Lai/PhenoRNAnetworkBrassica")
 #setwd("/Users/mblai/Documents/GitHub/PhenoRNAnetworkBrassica")
-
-
 
 ######## RNA
 
@@ -43,6 +42,10 @@ discRNA$Timepoint <- as.numeric(str_split_fixed(rnaNames[, 1], '', 2)[, 2])
 # Create a treatment column named int. 
 discRNA$int <- as.factor(str_split_fixed(rnaNames[, 1], '', 2)[, 1])
 
+# Remove rnaNames vector and RNA dataframe. 
+rm(rnaNames)
+rm(RNA)
+
 # Order RNA dataframe by Timepoint and int. 
 discRNA <- discRNA[with(discRNA, order(Timepoint, int)), ]
 
@@ -51,6 +54,7 @@ for (i in 1:(dim(discRNA)[2] - 2)){
   levels(discRNA[, i]) <- c(-1, 0, 1)
   discRNA[, i] <- as.factor(discRNA[, i])
 }
+
 
 # Transform RNA data frame. 
 discRNA <- t(discRNA)
@@ -81,8 +85,9 @@ for (i in 1:(max(unique(tr$cluster))))
 }
 
 # Write csv of cluster dataframe. 
-cl <- cl[, -2]
-write.csv(cl, "clusters.csv")
+#cl <- cl[, -2]
+
+#write.csv(cl, "clusters.csv")
 
 cmax <- 0
 
@@ -158,8 +163,7 @@ for (i in 3:(dim(cl)[2]))
 }
 
 # Remove unneccesary dataframes. 
-rm(RNA)
-rm(rnaNames)
+rm(tr)
 
 #### Pheno.
 
@@ -251,9 +255,30 @@ training[, 7:dim(training)[2]] <- lapply(training[, 7:dim(training)[2]], factor)
 bn <- suppressWarnings(tabu(training, score = "bde", 
                             iss = 10, tabu = 50))
 
+
+
+
+nodes <- names(training)
+start <- random.graph(nodes = nodes, method = "ic-dag", num = 100, 
+                      every = 3)
+netlist <- suppressWarnings(lapply(start, function(net){
+  tabu(training, score = "bde", tabu = 50, iss = 10)
+}))
+
+
+rnd <- custom.strength(netlist, nodes = nodes)
+modelAvg <- rnd[(rnd$strength > .85) & (rnd$direction >= .5), ]
+avg.start <- averaged.network(rnd, threshold = .85)
+
+plot(avg.start)
+
+plot(bn)
+
+
+
 # Write csv of network arcs. 
 #write.csv(bn$arcs, file = "clustBNarcs.csv")   
-
+plot(bn)
 
 bn.mle <- bn.fit(bn, training, method = "bayes")
 
@@ -264,5 +289,23 @@ bn.mle$Photo
 bn.fit.barchart(bn.mle$M8, xlab = "P()")
 
 bn.mle$M8
+
+bn.fit.barchart(bn.mle$M3, xlab = "P()")
+bn.mle$M3
+
+bn.fit.barchart(bn.mle$Starch, xlab = "P()")
+bn.mle$Starch
+
+bn.fit.barchart(bn.mle$Starch, xlab = "P()")
+bn.mle$M4
+testOrder <- test[with(test, order(M9, M4)), ]
+testOrder <- testOrder[, c(12, 22)]
+s <- testOrder[testOrder$M4 == "-1" & testOrder$M9 == "-1", ]
+l <- testOrder[testOrder$M4 == "-1" & testOrder$M9 == "0", ]
+c <- testOrder[testOrder$M4 == "-1" & testOrder$M9 == "1", ]
+
+
+
+
 
 
