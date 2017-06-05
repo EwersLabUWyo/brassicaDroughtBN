@@ -52,7 +52,7 @@ sepCommas <- sepCommas[!sepCommas %in% dup]
 sepCommas <- sepCommas[!sepCommas %in% clust$value]
 
 # Remove genes with commas from clust list.
-clust <- clust[setdiff(clust$values, commas$Gene), ]
+clust <- clust[clust$values %in% setdiff(clust$values, commas$Gene), ]
 
 # Create a dataframe for the genes with commas and their cluster id. 
 # Initialize dataframe for storing variables. 
@@ -69,4 +69,5 @@ clust <- rbind(clust, commaDF)
 # Match to annotation file. 
 clustAnnot <- geneAnnot[clust$values, ]
 
-clustAnnot$Cluster <- cbind(clust$ind)
+# Add cluster index to annotation. 
+clustAnnot$Cluster <- cbind(as.character(clust$ind))

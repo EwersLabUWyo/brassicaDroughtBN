@@ -1,6 +1,6 @@
-# clusteredRNApheno.R
+# DroughtVwatered.R
 # R version 3.3.1 (2016-06-21)
-# May 28, 2017. Mallory B. Lai.
+# June 3, 2017. Mallory B. Lai.
 # Reviewed by: TODO (Mallory B. Lai) : Find reviewer to proofread
 # Creating combined pheno & RNA seq BN for clustered Brassica gene data   
 # using bnlearn package. Data taken from Brassica control
@@ -219,9 +219,13 @@ rm(Pheno)
 
 # Remove extra columns.
 rnaPheno$Trmt <- NULL
-rnaPheno$INT <- NULL
+#rnaPheno$INT <- NULL
 rnaPheno$TP <- NULL
 rnaPheno$TP <- NULL
+
+
+#### TODO: SUBSET W VS D
+
 
 # Subset training data and set aside test data. 
 # To subset 10% of the data, we need to randomly select 30 samples
@@ -261,16 +265,16 @@ training[, 7:dim(training)[2]] <- lapply(training[, 7:dim(training)[2]], factor)
 
 # Learn network structure. 
 bn <- suppressWarnings(tabu(training, score = "bde", 
-                            iss = 50, tabu = 150))
+                            iss = 10, tabu = 150))
 
 plot(bn)
 
 
 nodes <- names(training)
-start <- random.graph(nodes = nodes, method = "melancon", num = 100, 
+start <- random.graph(nodes = nodes, method = "ic-dag", num = 100, 
                       every = 3)
 netlist <- suppressWarnings(lapply(start, function(net){
-  tabu(training, score = "bde", tabu = 100, iss = 50)
+  tabu(training, score = "bde", tabu = 50, iss = 10)
 }))
 
 
@@ -302,9 +306,9 @@ cpquery(bn.bayes,
         evidence = (M5 == "1") &
           (M6 == "1"))
 cp <- cpdist(bn.bayes,
-        nodes = "gs",
-        evidence = (M5 == "1") &
-          (M6 == "1") & (Photo == "(10,14.7]"))
+             nodes = "gs",
+             evidence = (M5 == "1") &
+               (M6 == "1") & (Photo == "(10,14.7]"))
 cptab <- as.data.frame(prop.table(table(cp)))
 
 
@@ -351,9 +355,4 @@ testOrder <- testOrder[, c(12, 22)]
 s <- testOrder[testOrder$M4 == "-1" & testOrder$M9 == "-1", ]
 l <- testOrder[testOrder$M4 == "-1" & testOrder$M9 == "0", ]
 c <- testOrder[testOrder$M4 == "-1" & testOrder$M9 == "1", ]
-
-
-
-
-
 

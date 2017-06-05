@@ -1,6 +1,6 @@
-# clusteredRNApheno.R
+# Drought2xclusterRNApheno.R
 # R version 3.3.1 (2016-06-21)
-# May 28, 2017. Mallory B. Lai.
+# June 3, 2017. Mallory B. Lai.
 # Reviewed by: TODO (Mallory B. Lai) : Find reviewer to proofread
 # Creating combined pheno & RNA seq BN for clustered Brassica gene data   
 # using bnlearn package. Data taken from Brassica control
@@ -176,6 +176,9 @@ colnames(Pheno)[8] <- "SM"
 # Add a column for Time of Day, named TOD.
 Pheno$TOD <- rep(c(7, 11, 15, 19, 23, 3), each = 24, 2)
 
+# Multiply soil moisture for drought by .75.
+Pheno[Pheno$Treatment == "Dry", "SM"] <- Pheno[Pheno$Treatment == "Dry", "SM"] * 0.75
+
 #### Discretize data. 
 
 # Discretize the phenotype data, excluding Fv.Fm. 
@@ -261,16 +264,16 @@ training[, 7:dim(training)[2]] <- lapply(training[, 7:dim(training)[2]], factor)
 
 # Learn network structure. 
 bn <- suppressWarnings(tabu(training, score = "bde", 
-                            iss = 50, tabu = 150))
+                            iss = 10, tabu = 150))
 
 plot(bn)
 
 
 nodes <- names(training)
-start <- random.graph(nodes = nodes, method = "melancon", num = 100, 
+start <- random.graph(nodes = nodes, method = "ic-dag", num = 100, 
                       every = 3)
 netlist <- suppressWarnings(lapply(start, function(net){
-  tabu(training, score = "bde", tabu = 100, iss = 50)
+  tabu(training, score = "bde", tabu = 50, iss = 10)
 }))
 
 
@@ -281,14 +284,10 @@ avg.start <- averaged.network(rnd, threshold = .85)
 plot(avg.start)
 
 an <- avg.start
-an$arcs <- an$arcs[-11, ]
-an$arcs <- an$arcs[-24, ]
-an$arcs <- an$arcs[-37, ]
-an$arcs <- an$arcs[-25, ]
-an$arcs <- an$arcs[-31, ]
+an$arcs <- an$arcs[-c(1, 5, 35, 26, 37, 42, 46), ]
+an$arcs <- an$arcs[-c(8, 21, 9), ]
 an$arcs <- an$arcs[-26, ]
-an$arcs <- an$arcs[-10, ]
-an$arcs <- an$arcs[-22, ]
+
 plot(an)
 
 # an arcs not matching up...
@@ -302,12 +301,12 @@ cpquery(bn.bayes,
         evidence = (M5 == "1") &
           (M6 == "1"))
 cp <- cpdist(bn.bayes,
-        nodes = "gs",
-        evidence = (M5 == "1") &
-          (M6 == "1") & (Photo == "(10,14.7]"))
+             nodes = "gs",
+             evidence = (M5 == "1") &
+               (M6 == "1"))
 cptab <- as.data.frame(prop.table(table(cp)))
 
-
+names(cptab) <- c("gs", "Prob")
 
 
 
@@ -351,9 +350,3 @@ testOrder <- testOrder[, c(12, 22)]
 s <- testOrder[testOrder$M4 == "-1" & testOrder$M9 == "-1", ]
 l <- testOrder[testOrder$M4 == "-1" & testOrder$M9 == "0", ]
 c <- testOrder[testOrder$M4 == "-1" & testOrder$M9 == "1", ]
-
-
-
-
-
-
