@@ -250,7 +250,7 @@ for (i in 4:6){
   t <- d[as.character(1:48),]
   
   
-## Make sure that there are a large number of duplicates when averaged.   
+## Make sure that there aren't a large number of duplicates when averaged.   
   RNA <- read.csv(file = "largeDE.csv", row.names = 1)
   
   RNA <- as.data.frame(t(RNA))
@@ -381,5 +381,37 @@ for (i in 4:6){
   
   
   
+## More clustering techniques for time series data.  
+  RNA <- read.csv(file = "largeDE.csv", row.names = 1)
+  
+  RNA <- as.data.frame(t(RNA))
+  
+  discRNA <- discretize(RNA, method = "quantile", breaks = 3)
+  
+  for (i in 1:dim(discRNA)[2]){
+    levels(discRNA[, i]) <- c(-1, 0, 1)
+    discRNA[, i] <- as.numeric(as.character(discRNA[, i]))
+  }
+  
+  discRNA <- t(discRNA)
+  f <- t(discRNA)
+  
+  Replicates <- rep(c(1:24), each = 2)
+  
+  f <- cbind(f, Replicates)
+  f <- as.data.table(f)
+  
+  g <- f[, lapply(.SD, mean), by = "Replicates"]
+  g <- g[, -1]
+  g <- t(g)
+  
+  library(TSclust)
+  
+  d <- diss(g, METHOD = "FRECHET")
+  
+  
+  
+  hcg <- hclust(dist(g, method = "DTW"))
+  plot(hcg)  
   
   

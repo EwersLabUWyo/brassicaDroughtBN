@@ -124,5 +124,55 @@ library(bnlearn)
   # List probabilities associated with barchart. 
   fit$x
   
+### Continuous network x, y, and z:
   
-
+  # Create parent node x.
+  x <- rnorm(150, mean = 5, sd = 3)
+  
+  # Create child node y. 
+  y <- rnorm(150, mean = x + 5, sd = 2)
+  
+  # Create child node y. 
+  z <- rnorm(150, mean = x - 3, sd = 1)
+  
+  # Combine into data frame. 
+  net <- data.frame(x, y, z)
+  
+  # Use a tabu search to learn the network. 
+  bn <- tabu(net, tabu = 50)
+  
+  # Plot the network. 
+  plot(bn)
+  
+  # Fit the parameters conditional on its structure. 
+  fit <- bn.fit(bn, net, method = "mle")
+  
+  # List probabilities. 
+  fit$y
+  
+### Continuous network x, y, and z:
+  
+  # Create parent node x.
+  x <- rnorm(150, mean = 5, sd = 3)
+  
+  # Create child node y. 
+  y <- rnorm(150, mean = x + 5, sd = 2)
+  
+  # Create child node y. 
+  z <- rnorm(150, mean = y + 1, sd = 1)
+  
+  # Combine into data frame. 
+  net <- data.frame(x, y, z)
+  
+  # Use a tabu search to learn the network. 
+  bn <- tabu(net, tabu = 50)
+  
+  # Plot the network. 
+  plot(bn)
+  
+  # Fit the parameters conditional on its structure. 
+  fit <- bn.fit(bn, net, method = "mle")
+  
+  # List probabilities. 
+  fit$y
+  
