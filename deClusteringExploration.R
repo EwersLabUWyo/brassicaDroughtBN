@@ -405,13 +405,24 @@ for (i in 4:6){
   g <- g[, -1]
   g <- t(g)
   
+  # Subset first.
+  g <- g[1:50, ]
+  
   library(TSclust)
   
   d <- diss(g, METHOD = "FRECHET")
   
   
   
-  hcg <- hclust(dist(g, method = "DTW"))
+  hcg <- hclust(d)
   plot(hcg)  
+  
+  g[cutree(hcg, k = 11) == 1,]
+  
+  
+  
+  
+  
+  
   
   

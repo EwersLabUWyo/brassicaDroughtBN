@@ -155,11 +155,11 @@ library(bnlearn)
   # Create parent node x.
   x <- rnorm(150, mean = 5, sd = 3)
   
-  # Create child node y. 
-  y <- rnorm(150, mean = x + 5, sd = 2)
+  # Create non-linear child node y. 
+  y <- rnorm(150, mean = cos(x), sd = 2)
   
   # Create child node y. 
-  z <- rnorm(150, mean = y + 1, sd = 1)
+  z <- rnorm(150, mean = y, sd = 1)
   
   # Combine into data frame. 
   net <- data.frame(x, y, z)
@@ -168,11 +168,14 @@ library(bnlearn)
   bn <- tabu(net, tabu = 50)
   
   # Plot the network. 
-  plot(bn)
+  plot(bn) # Does not detect x -> y.
   
-  # Fit the parameters conditional on its structure. 
-  fit <- bn.fit(bn, net, method = "mle")
+  # Discretize variables.
+  net <- discretize(net)
   
-  # List probabilities. 
-  fit$y
+  # Use a tabu search to learn the network. 
+  bn <- tabu(net, tabu = 100, score = "bde", iss = 5)
+  
+  # Plot the network. 
+  plot(bn) # Still does not detect x -> y. 
   
