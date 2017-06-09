@@ -1,6 +1,6 @@
-# DroughtVwatered.R
+# NightVday.R
 # R version 3.3.1 (2016-06-21)
-# June 3, 2017. Mallory B. Lai.
+# June 8, 2017. Mallory B. Lai.
 # Reviewed by: TODO (Mallory B. Lai) : Find reviewer to proofread
 # Creating combined pheno & RNA seq BN for clustered Brassica gene data   
 # using bnlearn package. Data taken from Brassica control
@@ -259,31 +259,37 @@ rm(testData)
 # Convert modules to factors. 
 training[, 9:dim(training)[2]] <- lapply(training[, 9:dim(training)[2]], factor)
 
-# Subset drought.
-drought <- training[!training$INT == "WW", ]
+# Subset day.
+day <- training[!training$TP == " 5", ]
+day <- day[!day$TP == " 6", ]
+day <- day[!day$TP == "11", ]
+day <- day[!day$TP == "12", ]
 
-# Subset well-watered. 
-ww <- setdiff(training, drought)
+# Subset night. 
+night <- setdiff(training, day)
 
 # Remove TP and INT column. 
-drought$TP <- NULL
-drought$INT <- NULL
-ww$TP <- NULL
-ww$INT <- NULL
+day$TP <- NULL
+day$INT <- NULL
+night$TP <- NULL
+night$INT <- NULL
 
-# Learn network structure for drought. 
-droughtbn <- suppressWarnings(tabu(drought, score = "bde", 
+# Learn network structure for day. 
+daybn <- suppressWarnings(tabu(day, score = "bde", 
                                iss = 10, tabu = 150))
-plot(droughtbn)
+plot(daybn)
 
-# Learn network structure for well-watered. 
-wwbn <- suppressWarnings(tabu(ww, score = "bde", 
-                                   iss = 10, tabu = 150))
-plot(wwbn)
+# Learn network structure for night. 
+nightbn <- suppressWarnings(tabu(night, score = "bde", 
+                               iss = 10, tabu = 150))
+plot(nightbn)
 
 
 
-##############
+
+
+######################
+
 nodes <- names(training)
 start <- random.graph(nodes = nodes, method = "ic-dag", num = 100, 
                       every = 3)
