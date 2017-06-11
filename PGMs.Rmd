@@ -1,0 +1,19 @@
+---
+title: "Structure and Parameter Learning"
+author: M Lai
+output: html_notebook
+---
+
+*Structure learning aids in knowledge discovery: by examining the dependencies in the learned network, we can learn the dependency structure relating variables in our domain.* -- Koller and Friedman, *Probabilistic Graphical Models*
+
+$$P(\underbrace G _{graph} | \underbrace D_{data}) = \frac{\overbrace {P(D|G)} ^{ML} \overbrace {P(G)} ^{prior}}{\underbrace {P(D)} _{normalizing}}$$
+ Since $P(G|D)  \propto P(D|G)P(G)$, we can ignore the normalizing factor and focus on the numerator. The graph prior, $P(G)$, is usually a uniform prior placing an equal probability amongst all possible graph structures. It plays a relatively small role as long as it doesn't rule out any structures. The marginal likelihood of the data, $P(D|G)$, plays a much larger role and involves marginalizing out unknown parameters. 
+
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
