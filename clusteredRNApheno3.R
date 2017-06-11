@@ -11,6 +11,7 @@ library(bnlearn)
 library(stringr)
 library(dplyr)
 library(tidyr)
+library(data.table)
 #-----------------------------------------------------------------------
 
 #### Preprocessing: 
@@ -84,23 +85,6 @@ for (i in 1:(max(unique(tr$cluster))))
                rep(NA, length(cl[,i]) - dim(tr[tr$cluster == i, ])[1]))
 }
 
-# Write csv of cluster dataframe. 
-#
-
-#write.csv(cl, "clusters.csv")
-
-cmax <- 0
-
-# Look at dim of each cluster
-for (i in 1:(max(unique(tr$cluster))))
-{
-  if (length(cl[,i]) - sum(is.na(cl[,i])) > cmax){
-    cmax <- length(cl[,i]) - sum(is.na(cl[,i]))
-  }
-}
-
-# Note: 488 is the maximum cluster size. (x2 for replicates is 976)
-cmax <- cmax * 2 
 
 # Separate clusters to form gene modules. 
 c1 <- discRNA[c(cl[1:(length(cl[,1]) - sum(is.na(cl[,1]))), 1]), ]
@@ -136,39 +120,44 @@ mCounts <- as.data.table(mCounts)
 mCounts <- mCounts[, total := sum(round), by = list(TP, Trmt)]
 
 # Convert to dataframe for easier updates. 
-p <- as.data.frame(mCounts)
+mCounts <- as.data.frame(mCounts)
 
 # If total count is 13, round to nearest 1/2 number and then round that. 
-p[p$total == 13, 'round'] <- round(round(p[p$total == 13, 'twelve']/0.5) *.5)
+mCounts[mCounts$total == 13, 'round'] <- round(round(mCounts[mCounts$total == 13, 'twelve']/0.5) *.5)
 
 # Convert back to data table for easy updating.   
-p <- as.data.table(p)
+mCounts <- as.data.table(mCounts)
 
 # Update the total column with new rounding. 
-ps <- p[, total := sum(round), by = list(TP, Trmt)]
+mCounts <- mCounts[, total := sum(round), by = list(TP, Trmt)]
 
 # Add a column that identifies the max proportion per treatment and time point. 
-ps <- ps[, max := max(Prop), by = list(TP, Trmt)]
+mCounts <- mCounts[, max := max(Prop), by = list(TP, Trmt)]
 
 # Convert back to dataframe for easy subsetting. 
-p <- as.data.frame(ps)
+mCounts <- as.data.frame(mCounts)
 
 # Add 1 to the count with the max proportion. 
-p[p$total == 11 & p$Prop == p$max, 'round'] <- p[p$total == 11 
-                                                 & p$Prop == p$max, 'round'] + 1
+mCounts[mCounts$total == 11 & mCounts$Prop == mCounts$max, 'round'] <- 
+       mCounts[mCounts$total == 11 
+          & mCounts$Prop == mCounts$max, 'round'] + 1
 
 # Convert back to data table for easy updating.   
-p <- as.data.table(p)
+mCounts <- as.data.table(mCounts)
 
 # Update the total column with new rounding. 
-ps <- p[, total := sum(round), by = list(TP, Trmt)]
+mCounts <- mCounts[, total := sum(round), by = list(TP, Trmt)]
 
+# Extract the round column as a dataframe. 
+mod <- data.frame(TP = mCounts$TP, Trmt = mCounts$Trmt, 
+                  Value = mCounts$M1, M1 = mCounts$round)
+
+# Remove unnecessary dataframes. 
+rm(m1)
+rm(c1)
+rm(mCounts)
 
 ############ TO DO: Update loop to perform a similar function as above. 
-
-
-
-
 
 
 # Loop through remaining clusters. 
@@ -189,25 +178,110 @@ for (i in 3:(dim(cl)[2]))
   # Order module dataframe by Timepoint and int. 
   module <- module[with(module, order(TP, Trmt)), ]
   
-  # Group by time point and treatment. 
-  module <- module %>% group_by(TP, Trmt)
+  # Count number of values per treatment and time point. 
+  counts <- as.data.frame(table(module[, c(1, 2, 4)]))
   
-  # Randomly sample maximum module size * 2 (two replicates; cmax) 
-  # for each time point and treatment.
-  module <- sample_n(module, cmax, replace = T)
+  # Order mCounts dataframe by Timepoint, treatment, and module value. 
+  counts <- counts[with(counts, order(TP, Trmt, M)), ]
   
-  # Rename M to match module number. 
-  colnames(module)[which(colnames(module) == "M")] <- paste("M", i, sep = "")
+  # Add column for proportion per timepoint, treatment, and module value. 
+  counts$Prop <- counts$Freq/((length(cl[,i]) - sum(is.na(cl[,i])))*2)
   
-  # Convert to data.frame. 
-  module <- as.data.frame(module)
+  # Create a column with the number of counts proportional to 12.
+  counts$twelve <- counts$Prop * 12
   
-  # Combine into full dataframe. 
-  m1 <- cbind(m1, module[c("Gene", paste("M", i, sep = ""))])
+  # Round the counts proportional to 12. 
+  counts$round <- round(counts$twelve)
+  
+  # Convert to data.table. 
+  counts <- as.data.table(counts)
+  
+  # Add a column that counts the total in round.  
+  counts <- counts[, total := sum(round), by = list(TP, Trmt)]
+  
+  # Convert to dataframe for easier updates. 
+  counts <- as.data.frame(counts)
+  
+  # If total count is 13, round to nearest 1/2 number and then round that. 
+  counts[counts$total == 13, 'round'] <- round(round(counts[counts$total == 13, 'twelve']/0.5) *.5)
+  
+  # Convert back to data table for easy updating.   
+  counts <- as.data.table(counts)
+  
+  # Update the total column with new rounding. 
+  counts <- counts[, total := sum(round), by = list(TP, Trmt)]
+  
+  # Add a column that identifies the max proportion per treatment and time point. 
+  counts <- counts[, max := max(Prop), by = list(TP, Trmt)]
+  
+  # Add a column that identifies the second highest proportion per treatment 
+  # and time point. 
+  counts <- counts[, max2 := as.numeric(Prop)][, max2 := sort(Prop, T)[2], by = list(TP, Trmt)]
+  
+  # Add a column that identifies the min proportion per treatment and time point. 
+  counts <- counts[, min := min(Prop), by = list(TP, Trmt)]
+  
+  # Convert back to dataframe for easy subsetting. 
+  counts <- as.data.frame(counts)
+  
+  # Add 1 to the count with the max proportion. 
+  counts[counts$total <= 11 & counts$Prop == counts$max, 'round'] <- 
+    counts[counts$total <= 11 
+            & counts$Prop == counts$max, 'round'] + 1
+  
+  # Convert back to data table for easy updating.   
+  counts <- as.data.table(counts)
+  
+  # Update the total column with new rounding. 
+  counts <- counts[, total := sum(round), by = list(TP, Trmt)]
+  
+  # Convert back to dataframe for easy subsetting. 
+  counts <- as.data.frame(counts)
+  
+  # Add 1 to the count with the 2nd highest proportion if 
+  # still less than 12. 
+  counts[counts$total <= 11 & counts$Prop == counts$max2, 'round'] <- 
+    counts[counts$total <= 11 
+           & counts$Prop == counts$max2, 'round'] + 1
+  
+  # Convert back to data table for easy updating.   
+  counts <- as.data.table(counts)
+  
+  # Update the total column with new rounding. 
+  counts <- counts[, total := sum(round), by = list(TP, Trmt)]
+  
+  # If there are any column totals of 13, subtract one from the
+  # value with the lowest proportion. 
+  counts[counts$total == 13 & counts$Prop == counts$min, 'round'] <- 
+    counts[counts$total == 13 
+           & counts$Prop == counts$min, 'round'] - 1
+  
+  # Convert back to data table for easy updating.   
+  counts <- as.data.table(counts)
+  
+  # Update the total column with new rounding. 
+  counts <- counts[, total := sum(round), by = list(TP, Trmt)]
+  
+  # Bind round column to mod dataframe. 
+  mod <- cbind(mod, counts$round)
+
 }
 
 # Remove unneccesary dataframes. 
 rm(tr)
+rm(c1)
+rm(i)
+rm(ph)
+rm(cl)
+rm(discRNA)
+rm(module)
+
+# Rename modules in mod dataframe. 
+colnames(mod)[5:dim(mod)[2]] <- paste("M", 2:10, sep = "")
+
+# Expand modules to match the number of -1, 0, and 1's that should be 
+# in the RNA-Seq dataframe. 
+RNAmod <- as.data.frame(sapply(mod[, 4:dim(mod)[2]], function(x) rep(mod$Value, times = x)))
 
 #### Pheno.
 
@@ -222,10 +296,19 @@ Pheno$TOD <- rep(c(7, 11, 15, 19, 23, 3), each = 24, 2)
 
 #### Discretize data. 
 
-# Discretize the phenotype data, excluding Fv.Fm. 
-phenoDisc <- discretize(Pheno[, 3:8], 
+# Discretize the phenotype data, excluding fluorescence. 
+phenoDisc <- discretize(Pheno[, c(3, 4, 6, 7, 8)], 
                         method = "interval", 
-                        breaks = c(5, 5, 3, 5, 5, 5))
+                        breaks = c(5, 5, 5, 5, 5))
+
+# Use arules package to discretize fluorescence and detach due
+# to the overlap in package functions with bnlearn. 
+library(arules)
+fluor <- discretize(Pheno[, 5], method = "cluster")
+detach("package:arules", unload=TRUE)
+
+# Attach fluorescence data to phenoDisc dataframe. 
+phenoDisc$fluor <- fluor
 
 # Add INT column to discretized data. 
 phenoDisc$INT <- as.factor(Pheno$Treatment)
@@ -236,28 +319,10 @@ phenoDisc$TP <- as.factor(Pheno$Timepoint)
 # Order Pheno dataframe by Timepoint and int. 
 phenoDisc <- phenoDisc[with(phenoDisc, order(TP, INT)), ]
 
-# Remove unnecesary dataframes.
-rm(Pheno)
-
-# To get phenotype data to be of the same length as the RNA data, 
-# group by time point and treatment and randomly sample from each section. 
-
-
-# Group by time point and treatment. 
-Pheno <- phenoDisc %>% group_by(TP, INT)
-
-# Randomly sample maximum module size * 2 (two replicates; cmax) 
-# for each time point and treatment.
-Pheno <- sample_n(Pheno, cmax, replace = T)
-
-# Convert to data.frame. 
-Pheno <- as.data.frame(Pheno)
-
 # Combine pheno and RNA data frames.
-rnaPheno <- cbind(Pheno, m1)
+rnaPheno <- cbind(phenoDisc, RNAmod)
 
 # Remove unneccesary dataframes. 
-rm(discRNA)
 rm(phenoDisc)
 rm(Pheno)
 
@@ -279,27 +344,23 @@ test <- rnaPheno[testData, ]
 # Isolate test data from training data. 
 training <- rnaPheno[-testData, ]
 
-# Remove Gene column from rnaPheno. 
-training$Gene <- NULL
-training$Gene <- NULL
-training$Gene <- NULL
-training$Gene <- NULL
-training$Gene <- NULL
-training$Gene <- NULL
-training$Gene <- NULL
-training$Gene <- NULL
-training$Gene <- NULL
-training$Gene <- NULL
 
-
-# Convert modules to factors. 
-training[, 7:dim(training)[2]] <- lapply(training[, 7:dim(training)[2]], factor)
 
 # Learn network structure. 
 bn <- suppressWarnings(tabu(training, score = "bde", 
                             iss = 10, tabu = 50))
 
 plot(bn)
+
+
+
+
+boot <- boot.strength(training, R = 500, algorithm = "tabu", 
+                      algorithm.args = list(score = "bde", iss = 10))
+
+boot[(boot$strength > 0.85) & (boot$direction >= 0.5), ]
+avg.boot <- averaged.network(boot, threshold = 0.85)
+plot(avg.boot)
 
 
 nodes <- names(training)
@@ -317,6 +378,10 @@ avg.start <- averaged.network(rnd, threshold = .85)
 plot(avg.start)
 
 plot(bn)
+
+
+
+
 
 
 

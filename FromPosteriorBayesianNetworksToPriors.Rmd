@@ -8,12 +8,77 @@ The following example and code is taken from *Bayesian Networks With Examples in
 library(bnlearn)
 library(rjags)
 
-
-
+###################################################
+### code chunk number 15: pest.PR1
+###################################################
+set.seed(567)
+nbs <- 50000
+PR <- 1
+g <- function(pr) c(1, 3, 10)[pr] 
+CL <- rbeta(nbs, 3, 1)
+G1 <- rpois(nbs, CL * g(PR))
+G2 <- rpois(nbs, G1 * 10)
+il <- function(x) { 
+  exp((x - 5) / 2.5)/(1 + exp((x - 5) / 2.5))
+}#IL
+TR <- rbinom(nbs, 1, il(G1))
+x.lo <- G2 * (1 - (1-1/3)*TR)
+LO <- rchisq(nbs, 1, ncp = x.lo)
+round(mean(LO), 1)
 
 
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
+
+
+```{r}
+
+# Code for rjags.
+
+
+pest.dag <- model2network("[PR][CL][G1|PR:CL][G2|G1][TR|G1][LO|G2:TR]")
+
+
+###################################################
+### code chunk number 12: chapter3.rnw:416-422
+###################################################
+dat0 <- list(p.PR = c(0.7, 0.2, 0.1),
+             a.CL = 3, b.CL = 1,
+             g.G1 = c(1, 3, 10),
+             k.G2 = 10,
+             m.TR = 5, s.TR = 2.5,
+             r.LO = 1/3, d.LO = 1)
+
+
+###################################################
+### code chunk number 13: chapter3.rnw:474-475
+###################################################
+set.seed(123)
+
+
+###################################################
+### code chunk number 14: pest.PR123
+###################################################
+exp.loss  <- rep(NA, 3)
+names(exp.loss) <- paste("PR=", 1:3, sep = "")
+qua.loss <- exp.loss
+for (PR in 1:3) {
+  dat1 <- dat0
+  dat1$PR <- PR
+  mopest <- jags.model(file = "inclu.pest.jam", data = dat1,
+                       quiet = TRUE)
+  update(mopest, 3000)
+  sipest <- 
+    coda.samples(model = mopest, variable.names = "LO",
+                 n.iter  =  50000)
+  summa <- summary(sipest)
+  exp.loss[PR] <- summa$statistics["Mean"]
+  qua.loss[PR] <- summa$quantiles["75%"]
+}#FOR
+mean3 <- mean(sipest[[1]][, "LO"])
+round(c(exp.loss, MEAN = mean(exp.loss)), 1)
+
+
+```
+
