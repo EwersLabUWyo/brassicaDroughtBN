@@ -268,14 +268,18 @@ rm(testData)
 training[, 7:dim(training)[2]] <- lapply(training[, 7:dim(training)[2]], factor)
 
 # Create a whitelist using expert knowledge of physiological interactions. 
-wh <- 
+wh <- data.frame(from = c("SM", "gs", "Photo"), to = c("gs", "Photo", "fluor"))
+
+# Create a blacklist to soil moisture. 
+bl <- tiers2blacklist(list(colnames(training)[5], colnames(training)[-5]))
 
 # Model averaging hybrid
 nodes <- names(training)
 start <- random.graph(nodes = nodes, method = "ic-dag", num = 500, 
                       every = 50)
 netlist <- suppressWarnings(lapply(start, function(net){
-  rsmax2(training, restrict = "aracne", maximize = "tabu", score = "bde", 
+  rsmax2(training, whitelist = wh, restrict = "aracne", 
+         maximize = "tabu", score = "bde", 
          maximize.args = list(iss = 15))
 }))
 
@@ -285,6 +289,15 @@ modelAvg <- rnd[(rnd$strength > .85) & (rnd$direction >= .5), ]
 avg.start <- averaged.network(rnd, threshold = .85)
 
 plot(avg.start)
+
+
+
+bn <- rsmax2(training, whitelist = wh, blacklist = bl,
+             restrict = "gs", 
+             maximize = "tabu", score = "bde", 
+             maximize.args = list(iss = 15))
+plot(bn)
+
 
 
 netlist <- suppressWarnings(lapply(start, function(net){
@@ -311,6 +324,15 @@ modelAvg <- rnd[(rnd$strength > .85) & (rnd$direction >= .5), ]
 avg.start <- averaged.network(rnd, threshold = .85)
 
 plot(avg.start)
+
+
+
+
+boot <- boot.strength(training, R = 250, algorithm = "mmhc")
+
+boot[(boot$strength > 0.85) & (boot$direction >= 0.5), ]
+avg.boot <- averaged.network(boot, threshold = 0.85)
+plot(avg.boot)
 
 #######################
 
