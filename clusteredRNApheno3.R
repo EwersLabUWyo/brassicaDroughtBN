@@ -344,22 +344,18 @@ test <- rnaPheno[testData, ]
 # Isolate test data from training data. 
 training <- rnaPheno[-testData, ]
 
-# Create a whitelist using expert knowledge of physiological interactions.  
-wh <- data.frame(from = c("SM", "gs", "Photo"), to = c("gs", "Photo", "fluor"))
+
 
 # Learn network structure. 
-bn <- suppressWarnings(tabu(training, score = "bde", whitelist = wh, 
+bn <- suppressWarnings(tabu(training, score = "bde", 
                             iss = 10, tabu = 50))
 
 plot(bn)
 
 
-b <- bn.cv(training, 'tabu', 
-      fit.args = list(iss = 10, score = "bde", whitelist = wh))
 
 
-
-boot <- boot.strength(training, R = 250, algorithm = "tabu", 
+boot <- boot.strength(training, R = 500, algorithm = "tabu", 
                       algorithm.args = list(score = "bde", iss = 10))
 
 boot[(boot$strength > 0.85) & (boot$direction >= 0.5), ]
@@ -371,13 +367,13 @@ nodes <- names(training)
 start <- random.graph(nodes = nodes, method = "ic-dag", num = 100, 
                       every = 3)
 netlist <- suppressWarnings(lapply(start, function(net){
-  tabu(training, score = "bde", whitelist = wh, blacklist = bl, tabu = 50, iss = 10)
+  tabu(training, score = "bde", tabu = 50, iss = 10)
 }))
 
 
 rnd <- custom.strength(netlist, nodes = nodes)
-modelAvg <- rnd[(rnd$strength > .95) & (rnd$direction >= .5), ]
-avg.start <- averaged.network(rnd, threshold = .9)
+modelAvg <- rnd[(rnd$strength > .85) & (rnd$direction >= .5), ]
+avg.start <- averaged.network(rnd, threshold = .85)
 
 plot(avg.start)
 
