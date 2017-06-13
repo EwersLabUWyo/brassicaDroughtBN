@@ -1,84 +1,101 @@
 ---
-title: "From Posterior Bayesian Networks To Priors"
-output: html_notebook
+title: "From Bayesian Networks To Priors"
+output:
+  pdf_document: default
+  html_notebook: default
 ---
-The following example and code is taken from *Bayesian Networks With Examples in R* by Marco Scutari. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The following network represents one of several possible Bayesian networks given Lina's droughted data. Several networks may exhibit similar statistical properties--thus, we want a network that is simple and makes sense. Prior knowledge about the data and future information about the dependencies between the variables will help us continue to improve the network.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since Bayesian networks are computationally expensive, genes were subset into gene modules to reduce the number of variables in the network. Gene modules should show similar behavior across all time points and treatments. Hierarchical clustering was used to find genes with similar expression. We haven't found a good way to quantify our uncertainty here and other clustering methods still need to be tried. 
+
+Note: This following example is not the final network. At this point it is a **candidate**. I think that a simpler network can still be found. 
+\newline
 
 ```{r}
-library(bnlearn)
-library(rjags)
+# Load Bayesian network package bnlearn. 
+suppressMessages(library(bnlearn))
 
-###################################################
-### code chunk number 15: pest.PR1
-###################################################
-set.seed(567)
-nbs <- 50000
-PR <- 1
-g <- function(pr) c(1, 3, 10)[pr] 
-CL <- rbeta(nbs, 3, 1)
-G1 <- rpois(nbs, CL * g(PR))
-G2 <- rpois(nbs, G1 * 10)
-il <- function(x) { 
-  exp((x - 5) / 2.5)/(1 + exp((x - 5) / 2.5))
-}#IL
-TR <- rbinom(nbs, 1, il(G1))
-x.lo <- G2 * (1 - (1-1/3)*TR)
-LO <- rchisq(nbs, 1, ncp = x.lo)
-round(mean(LO), 1)
+# Load network structure learned in clusteredRNApheno3.R.
+dag <- model2network("[SM][M10][M6|M10][gs|SM:M6][Photo|gs:M10]
+                      [NSC|Photo][M7|Photo:M6][Starch|NSC][M9|M7:M10]
+                      [fluor|Photo:M9][M2|M7:M9][M3|M6:M9]
+                      [M1|fluor:M2:M10][M5|fluor:M3:M9][M4|M1:M9]
+                      [M8|M1:M6:M10]")
 
+# The network is too small with plot(dag) so the plot will be saved
+# as a jpeg and attached. 
 
 ```
 
+![](/Users/mblai/Documents/GitHub/brassicaDroughtBN/rnaPhenoBN.jpg)
+\newpage
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The process of finding the dependencies within the network is called *structure learning* and its output is a network structure. The entire network represents a joint distribution and each node in the network represents a conditional distribution given its parents (any node pointing to it). *Parameter learning* involves learning the local, conditional distributions given by the structure. It may make sense to be consistent with the methods used for structure learning and parameter learning, but it is not necessary. Once the structure is learned, parameter learning can be performed using any method desired. **For example, I can use bnlearn to learn the structure and rjags to perform parameter learning.**
 
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Here, I will use the package bnlearn for parameter learning where each variable has been discretized and represented by a multinomial distribution and each prior by a uniform Dirichlet distribution. 
+\newline
 ```{r}
+# Load phenotype and transcriptome data for parameter learning. 
+rnaPheno <- read.csv(file = "RNAphenoBN.csv", row.names = 1)
 
-# Code for rjags.
+# Convert modules to factors. 
+rnaPheno[, 7:dim(rnaPheno)[2]] <- lapply(rnaPheno[, 7:dim(rnaPheno)[2]], factor)
 
-
-pest.dag <- model2network("[PR][CL][G1|PR:CL][G2|G1][TR|G1][LO|G2:TR]")
-
-
-###################################################
-### code chunk number 12: chapter3.rnw:416-422
-###################################################
-dat0 <- list(p.PR = c(0.7, 0.2, 0.1),
-             a.CL = 3, b.CL = 1,
-             g.G1 = c(1, 3, 10),
-             k.G2 = 10,
-             m.TR = 5, s.TR = 2.5,
-             r.LO = 1/3, d.LO = 1)
-
-
-###################################################
-### code chunk number 13: chapter3.rnw:474-475
-###################################################
-set.seed(123)
-
-
-###################################################
-### code chunk number 14: pest.PR123
-###################################################
-exp.loss  <- rep(NA, 3)
-names(exp.loss) <- paste("PR=", 1:3, sep = "")
-qua.loss <- exp.loss
-for (PR in 1:3) {
-  dat1 <- dat0
-  dat1$PR <- PR
-  mopest <- jags.model(file = "inclu.pest.jam", data = dat1,
-                       quiet = TRUE)
-  update(mopest, 3000)
-  sipest <- 
-    coda.samples(model = mopest, variable.names = "LO",
-                 n.iter  =  50000)
-  summa <- summary(sipest)
-  exp.loss[PR] <- summa$statistics["Mean"]
-  qua.loss[PR] <- summa$quantiles["75%"]
-}#FOR
-mean3 <- mean(sipest[[1]][, "LO"])
-round(c(exp.loss, MEAN = mean(exp.loss)), 1)
-
+# Perform parameter learning for data using network structure from first R chunk. 
+bn <- bn.fit(dag, rnaPheno, method = "bayes")
 
 ```
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We can now identify the distributions of each node. For example, module 6 (M6) has one parent, module 10 (M10). Thus, the probability of any value from M6 is dependent on the value of M10: $P(M6|M10)$. This network is discrete, so we can see the probabilities in a barchart. However, if using rjags, you can use continuous distributions. 
+\newline
+```{r}
+
+# Since the default graphics don't show intervals well, the data
+# will be converted for importation into Tableau. 
+
+# Create a dataframe storing the values and frequencies for M6 and M10.
+m6 <- data.frame(bn$M6$prob)
+
+# Write csv. 
+write.csv(m6, file = "m6CPD.csv")
+```
+
+![](/Users/mblai/Documents/GitHub/brassicaDroughtBN/m6CPD.jpg)
+
+\newpage
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mathematically, $P(M6, M10) = P(M6|M10)P(M10)$. Therefore, the distribution of M10 represents the prior distribution and the distribution of M6 the conditional probability distribution. If we want P(M6), we can simply marginalize out M10 by finding the probability of M6 given all possible values of M10. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Now we'll look at stomatal conductance ($g_s$), which has two parents: M6 and soil moisture (SM). Notice that for low SM, $g_s$ is generally low. However, when M6 is 0, the distribution of values is split between the lowest interval and the middle interval. This could indicate that the M6 cluster isn't behaving similarly across all timepoints and should be divided further. 
+\newline
+
+```{r}
+
+# Create a dataframe storing the values and frequencies for 
+# stomatal conductance and its parents. 
+gs <- data.frame(bn$gs$prob)
+
+# Tableau has a difficult time ordering the intervals properly with 
+# closed brackets. The first closed bracket will be changed to an 
+# open bracket. 
+levels(gs$gs)[5] <- "(0.00895,0.142]"
+levels(gs$SM)[5] <- "(3.06,11.9]"
+
+# Write csv. 
+write.csv(gs, file = "gsCPD.csv")
+```
+
+![](/Users/mblai/Documents/GitHub/brassicaDroughtBN/gsCPDgraph.jpg)
+\newpage 
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+
+  If we want to use M6 in TREES as a prior, we have two options: 
+
+1) Use P(M6) directly by marginalizing out M10 (its parent). In this version, M6 would be the only prior.
+2) Use the conditional probability distribution of M6 in conjunction with the distribution of M10. In this version, M6 would be a prior for $g_s$ with M10 as a prior for M6. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Because there are several candidate networks that may share similar statistical properties, it is important to know if a prior helps improve the predictions in TREES. If not, that can help narrow down candidate networks and get us closer to understanding the relationships between transcripts and physiological data. 
+
+
+ 
