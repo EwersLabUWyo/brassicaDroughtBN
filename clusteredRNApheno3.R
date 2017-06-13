@@ -345,10 +345,21 @@ test <- rnaPheno[testData, ]
 training <- rnaPheno[-testData, ]
 
 # Create a whitelist using expert knowledge of physiological interactions.  
-wh <- data.frame(from = c("SM", "gs", "Photo"), to = c("gs", "Photo", "fluor"))
+wh <- data.frame(from = c("SM", "gs", "Photo", "NSC", "M10", "M6", "M1", "M10"), 
+                 to = c("gs", "Photo", "fluor", "Starch", "Photo", "gs", "M4", "M8"))
+
+# Create a blacklist to soil moisture. 
+bl <- tiers2blacklist(list(colnames(rnaPheno)[5], colnames(rnaPheno)[-5]))
 
 # Learn network structure. 
-bn <- suppressWarnings(tabu(training, score = "bde", whitelist = wh, 
+bn <- suppressWarnings(tabu(rnaPheno, score = "bde", whitelist = wh, 
+                            blacklist = bl, iss = 10, tabu = 50))
+
+plot(bn)
+
+
+bn <- suppressWarnings(tabu(training, score = "bde", 
+                            whitelist = wh, blacklist = bl,
                             iss = 10, tabu = 50))
 
 plot(bn)
@@ -367,11 +378,11 @@ avg.boot <- averaged.network(boot, threshold = 0.85)
 plot(avg.boot)
 
 
-nodes <- names(training)
+nodes <- names(rnaPheno)
 start <- random.graph(nodes = nodes, method = "ic-dag", num = 100, 
                       every = 3)
 netlist <- suppressWarnings(lapply(start, function(net){
-  tabu(training, score = "bde", whitelist = wh, blacklist = bl, tabu = 50, iss = 10)
+  tabu(rnaPheno, score = "bde", whitelist = wh, blacklist = bl, tabu = 50, iss = 10)
 }))
 
 
@@ -384,8 +395,24 @@ plot(avg.start)
 plot(bn)
 
 
+nodes <- names(rnaPheno)
+start <- random.graph(nodes = nodes, method = "ic-dag", num = 500, 
+                      every = 50)
+netlist <- suppressWarnings(lapply(start, function(net){
+  rsmax2(training, whitelist = wh, blacklist =bl, 
+         restrict = "aracne", 
+         maximize = "tabu", score = "bde", 
+         maximize.args = list(iss = 5))
+}))
 
 
+rnd <- custom.strength(netlist, nodes = nodes)
+modelAvg <- rnd[(rnd$strength > .85) & (rnd$direction >= .5), ]
+avg.start <- averaged.network(rnd, threshold = .85)
+
+plot(avg.start)
+
+write.csv(rnaPheno, file = "RNAphenoBN.csv")
 
 
 
