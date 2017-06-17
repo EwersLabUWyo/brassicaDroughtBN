@@ -22,7 +22,7 @@ geneAnnot <- as.data.frame(geneAnnot)
 rownames(geneAnnot) <- geneAnnot$V1
 
 # Read in cluster genes. 
-clusters <- read.csv(file = "clusters.csv",
+clusters <- read.csv(file = "modules.csv",
                     stringsAsFactors = F, row.names = 1)
 
 # Keep only gene names and cluster.
@@ -30,6 +30,9 @@ clust <- stack(clusters)
 
 # Remove NA's. 
 clust <- clust[!is.na(clust$values), ]
+
+# Remove the V from cluster ind and convert to numeric. 
+clust$ind <- as.numeric(str_split_fixed(clust$ind, "V", 2)[, 2])
 
 # Subset genes with commas.
 commas <- data.frame(Gene = str_subset(clust$values, ","), 
@@ -51,9 +54,6 @@ sepCommas <- sepCommas[!sepCommas %in% dup]
 # of cluster data.frame. 
 sepCommas <- sepCommas[!sepCommas %in% clust$value]
 
-# Remove genes with commas from clust list.
-clust <- clust[clust$values %in% setdiff(clust$values, commas$Gene), ]
-
 # Create a dataframe for the genes with commas and their cluster id. 
 # Initialize dataframe for storing variables. 
 commaDF <- data.frame(values = rep(NA, length(sepCommas)), ind = rep(NA, length(sepCommas)))
@@ -63,6 +63,9 @@ for (i in 1:length(sepCommas)){
   commaDF[i, 2] <- as.character(clust[str_detect(clust$values, sepCommas[i]) == T, 2])
 }
 
+# Remove genes with commas from clust list.
+clust <- clust[clust$values %in% setdiff(clust$values, commas$Gene), ]
+
 # Add genes split at comma to clust dataframe.
 clust <- rbind(clust, commaDF)
 
@@ -71,3 +74,18 @@ clustAnnot <- geneAnnot[clust$values, ]
 
 # Add cluster index to annotation. 
 clustAnnot$Cluster <- cbind(as.character(clust$ind))
+
+# Add a star to genes that had commas. 
+clustAnnot[commaDF[,1], 1] <- paste(clustAnnot[commaDF[,1], 1], "*", sep = "")
+
+# Fix str type of Cluster column. 
+clustAnnot$Cluster <- as.numeric(clustAnnot$Cluster[, 1])
+
+# Order by Cluster. 
+clustAnnot <- clustAnnot[order(clustAnnot$Cluster), ]
+
+# Remove rows with NA's. 
+clustAnnot <- clustAnnot[-c(which(is.na(clustAnnot$V1) == T)), ]
+
+# Write csv of 58 modules and their gene annotations. 
+write.csv(clustAnnot, file = "moduleGeneAnnot.csv")

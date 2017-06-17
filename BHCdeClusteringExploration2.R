@@ -1,4 +1,4 @@
-# BHCdeClusteringExploration.R
+# BHCdeClusteringExploration2.R
 # R version 3.3.1 (2016-06-21)
 # June 13, 2017. Mallory B. Lai.
 # Reviewed by: TODO (Mallory B. Lai) : Find reviewer to proofread
@@ -58,7 +58,7 @@ clst <- paste(clst, sep = "", collapse = " ")
 # Convert string to dataframe after splitting strings
 # at "---".
 clstFrame = as.data.frame(do.call(rbind, str_split(clst, "---")), 
-                    stringsAsFactors=FALSE)
+                          stringsAsFactors=FALSE)
 
 # Remove CLUSTER columns which are even numbered. 
 clstFrame <- clstFrame[, -c(seq(2, 116, 2))]

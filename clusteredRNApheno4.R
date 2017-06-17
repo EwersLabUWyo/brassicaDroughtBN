@@ -1,4 +1,4 @@
-# clusteredRNApheno3.R
+# clusteredRNApheno4.R
 # R version 3.3.1 (2016-06-21)
 # June 8, 2017. Mallory B. Lai.
 # Reviewed by: TODO (Mallory B. Lai) : Find reviewer to proofread
@@ -56,7 +56,6 @@ for (i in 1:(dim(discRNA)[2] - 2)){
   discRNA[, i] <- as.factor(discRNA[, i])
 }
 
-
 # Transform RNA data frame. 
 discRNA <- t(discRNA)
 
@@ -65,26 +64,7 @@ colnames(discRNA) <- paste(discRNA[dim(discRNA)[1] - 1,],
                            discRNA[dim(discRNA)[1],], sep = "")
 
 # Read in cluster classification. 
-tr <- read.csv(file = "pg.csv")
-
-# Rename column names to "variable" and "cluster."
-colnames(tr) <- c("variable", "cluster")
-
-# Remove phenotype variables. 
-ph <- c("Photo", "gs", "Fv.Fm.", "Starch", "NSC", "SM")
-tr <- tr[-which(tr$variable %in% ph), ]
-
-# Create empty matrix for storing clusters.
-cl <- matrix(data = NA, nrow = dim(tr)[1], ncol = (max(unique(tr$cluster))))
-colnames(cl) <- paste("c", 1:(max(unique(tr$cluster))), sep = "")
-
-# Separate by clusters.
-for (i in 1:(max(unique(tr$cluster))))
-{
-  cl[, i] <- c(as.character(tr[tr$cluster == i, "variable"]), 
-               rep(NA, length(cl[,i]) - dim(tr[tr$cluster == i, ])[1]))
-}
-
+cl <- read.csv(file = "modules.csv", row.names = 1)
 
 # Separate clusters to form gene modules. 
 c1 <- discRNA[c(cl[1:(length(cl[,1]) - sum(is.na(cl[,1]))), 1]), ]
@@ -159,9 +139,8 @@ rm(mCounts)
 
 ############ TO DO: Update loop to perform a similar function as above. 
 
-
 # Loop through remaining clusters. 
-for (i in 3:(dim(cl)[2]))
+for (i in 2:(dim(cl)[2]))
 {
   # Separate clusters to form gene modules. 
   c1 <- discRNA[c(cl[1:(length(cl[,i]) - sum(is.na(cl[,i]))), i]), ]
@@ -262,22 +241,26 @@ for (i in 3:(dim(cl)[2]))
   # Update the total column with new rounding. 
   counts <- counts[, total := sum(round), by = list(TP, Trmt)]
   
+  # Add 1 to the count with the highest proportion if 
+  # still less than 12. 
+  counts[counts$total <= 11 & counts$Prop == counts$max, 'round'] <- 
+    counts[counts$total <= 11 
+           & counts$Prop == counts$max, 'round'] + 1
+  
   # Bind round column to mod dataframe. 
   mod <- cbind(mod, counts$round)
 
 }
 
 # Remove unneccesary dataframes. 
-rm(tr)
 rm(c1)
 rm(i)
-rm(ph)
 rm(cl)
 rm(discRNA)
 rm(module)
 
 # Rename modules in mod dataframe. 
-colnames(mod)[5:dim(mod)[2]] <- paste("M", 2:10, sep = "")
+colnames(mod)[5:dim(mod)[2]] <- paste("M", 2:58, sep = "")
 
 # Expand modules to match the number of -1, 0, and 1's that should be 
 # in the RNA-Seq dataframe. 
@@ -334,27 +317,36 @@ rnaPheno$TP <- NULL
 
 # Create a whitelist using expert knowledge of 
 # physiological interactions.  
-wh <- data.frame(from = c("SM", "gs", "Photo", "M6", "M10"), 
-                 to = c("gs", "Photo", "fluor", "gs", "Photo"))
+wh <- data.frame(from = c("SM", "Photo", "Starch"), 
+                 to = c("gs", "fluor", "NSC"))
 
 # Create a blacklist to soil moisture. 
 bl <- tiers2blacklist(list(colnames(rnaPheno)[5], 
                             colnames(rnaPheno)[-5]))
 
 # Learn network structure. 
-bn <- suppressWarnings(tabu(training, score = "bde", 
-                            iss = 10, tabu = 50))
+bn <- tabu(rnaPheno, score = "bde", 
+                            iss = 10, tabu = 50)
 
 plot(bn)
 
-bn <- rsmax2(rnaPheno, restrict = "aracne", whitelist = wh,
-             blacklist = bl,
+
+bn <- rsmax2(rnaPheno, restrict = "aracne", 
+             blacklist = bl, whitelist = wh, 
              maximize = "tabu", score = "bde", 
        maximize.args = list(iss = 15))
 plot(bn)
 
-boot <- boot.strength(training, R = 500, algorithm = "tabu", 
-                      algorithm.args = list(score = "bde", iss = 10))
+#write.csv(bn$arcs, "M58bn.csv")
+
+bnParam <- bn.fit(bn, rnaPheno, method = "bayes")
+
+boot <- boot.strength(rnaPheno, R = 500, algorithm = "rsmax2", 
+                      algorithm.args = list(restrict = "aracne", 
+                                            blacklist = bl, whitelist = wh,
+                                            maximize = "tabu", 
+                                            score = "bde", 
+                                    maximize.args = list(iss = 15)))
 
 boot[(boot$strength > 0.85) & (boot$direction >= 0.5), ]
 avg.boot <- averaged.network(boot, threshold = 0.85)
