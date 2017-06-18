@@ -64,7 +64,7 @@ colnames(discRNA) <- paste(discRNA[dim(discRNA)[1] - 1,],
                            discRNA[dim(discRNA)[1],], sep = "")
 
 # Read in cluster classification. 
-cl <- read.csv(file = "modules.csv", row.names = 1)
+cl <- read.csv(file = "mod80.csv", row.names = 1)
 
 # Separate clusters to form gene modules. 
 c1 <- discRNA[c(cl[1:(length(cl[,1]) - sum(is.na(cl[,1]))), 1]), ]
@@ -260,7 +260,7 @@ rm(discRNA)
 rm(module)
 
 # Rename modules in mod dataframe. 
-colnames(mod)[5:dim(mod)[2]] <- paste("M", 2:58, sep = "")
+colnames(mod)[5:dim(mod)[2]] <- paste("M", 2:(dim(mod)[2]-3), sep = "")
 
 # Expand modules to match the number of -1, 0, and 1's that should be 
 # in the RNA-Seq dataframe. 

@@ -22,7 +22,7 @@ geneAnnot <- as.data.frame(geneAnnot)
 rownames(geneAnnot) <- geneAnnot$V1
 
 # Read in cluster genes. 
-clusters <- read.csv(file = "modules.csv",
+clusters <- read.csv(file = "mod80.csv",
                     stringsAsFactors = F, row.names = 1)
 
 # Keep only gene names and cluster.
@@ -88,4 +88,13 @@ clustAnnot <- clustAnnot[order(clustAnnot$Cluster), ]
 clustAnnot <- clustAnnot[-c(which(is.na(clustAnnot$V1) == T)), ]
 
 # Write csv of 58 modules and their gene annotations. 
-write.csv(clustAnnot, file = "moduleGeneAnnot.csv")
+write.csv(clustAnnot, file = "mod80GeneAnnot.csv")
+
+# Clear environment. 
+rm(commas)
+rm(commaDF)
+rm(clusters)
+rm(clust)
+rm(geneAnnot)
+rm(dup)
+rm(sepCommas)

@@ -1,0 +1,1564 @@
+"","V1","V2","V3","V4","V5","V6","V7","V8","V9","Cluster"
+"Bra031705","Bra031705","PF00289,PF02786,PF08443,PF02222,PF07478,PF02785","PTHR18866","","6.3.4.14,6.4.1.2","K01961","AT5G35360.1","CAC2","acetyl Co-enzyme a carboxylase biotin carboxylase subunit",1
+"Bra005476","Bra005476","PF00226","PTHR11821","","","","AT2G33735.1","","Chaperone DnaJ-domain superfamily protein",1
+"Bra037080","Bra037080","PF01777","PTHR10497","KOG3418","","K02901","AT4G15000.1","","Ribosomal L27e protein family",1
+"Bra016153","Bra016153","PF01207","PTHR11082","KOG2335","","","AT3G63510.1","","FMN-linked oxidoreductases superfamily protein",1
+"Bra021826","Bra021826","PF00231","PTHR11693","KOG1531","3.6.3.14","K02136","AT2G33040.1","ATP3","gamma subunit of Mt ATP synthase",1
+"Bra029966","Bra029966","PF01063","PTHR11825","KOG0975","2.6.1.42","K00826","AT3G49680.1","ATBCAT-3,BCAT3","branched-chain aminotransferase 3",1
+"Bra014493","Bra014493","PF00254","PTHR10516","KOG0552","","","AT3G60370.1","","FKBP-like peptidyl-prolyl cis-trans isomerase family protein",1
+"Bra010339","Bra010339","PF00575","PTHR10724","","","","AT4G29060.1","emb2726","elongation factor Ts family protein",1
+"Bra000711","Bra000711","PF01849,PF00627","PTHR21713","KOG2239","","","AT4G10480.2","","Nascent polypeptide-associated complex (NAC), alpha subunit family protein",1
+"Bra006515","Bra006515","PF04117","PTHR11266","KOG1944","","K13348","AT5G19750.1","","Peroxisomal membrane 22 kDa (Mpv17/PMP22) family protein",1
+"Bra007343","Bra007343","PF03016","PTHR11062","KOG1021","","","AT3G57630.1","","exostosin family protein",1
+"U2","NA*",NA,NA,NA,NA,NA,NA,NA,NA,1
+"tRNA-Tyr","NA*",NA,NA,NA,NA,NA,NA,NA,NA,1
+"tRNA-Gln","NA*",NA,NA,NA,NA,NA,NA,NA,NA,1
+"tRNA-Glu","NA*",NA,NA,NA,NA,NA,NA,NA,NA,1
+"tRNA-Phe","NA*",NA,NA,NA,NA,NA,NA,NA,NA,1
+"Bra014436","Bra014436","PF00291","PTHR10314","KOG1252","2.5.1.47,4.4.1.9","K13034","AT3G61440.1","ARATH;BSAS3;1,ATCYSC1,CYSC1","cysteine synthase C1",2
+"Bra010126","Bra010126","PF00300","PTHR23029","KOG0235","","","AT5G62840.1","","Phosphoglycerate mutase family protein",2
+"Bra016502","Bra016502","","PTHR22572","","","","AT1G19580.1","GAMMA CA1","gamma carbonic anhydrase 1",2
+"Bra040955","Bra040955","","","","","","AT1G47420.1","SDH5","succinate dehydrogenase 5",2
+"Bra019384","Bra019384","PF03650","PTHR14154","KOG1589","","","AT4G22310.1","","Uncharacterised protein family (UPF0041)",2
+"Bra027278","Bra027278","PF11282","","","","","AT3G15110.1","","",2
+"Bra033706","Bra033706","PF08240,PF00107","PTHR11695","KOG0022","1.1.1.1,1.1.1.284","K00121","AT5G43940.1","ADH2,ATGSNOR1,GSNOR,HOT5,PAR2","GroES-like zinc-binding dehydrogenase family protein",2
+"Bra039708","Bra039708","PF00291","PTHR10314","KOG1252","2.5.1.47","K01738","AT4G14880.1","ATCYS-3A,CYTACS1,OASA1,OLD3","O-acetylserine (thiol) lyase (OAS-TL) isoform A1",2
+"Bra022503","Bra022503","PF02353,PF01209,PF08241,PF08242","PTHR10108","","","","AT1G64970.1","G-TMT,TMT1,VTE4","gamma-tocopherol methyltransferase",2
+"Bra039094","Bra039094","","","","","","AT3G27050.1","","",2
+"Bra023072","Bra023072","PF03952,PF00113,PF07476","PTHR11902","KOG2670","4.2.1.11","K01689","AT2G36530.1","ENO2,LOS2","Enolase",2
+"Bra024312","Bra024312","PF05496,PF00004,PF01434","PTHR23076","KOG0731","","","AT5G64580.1","","AAA-type ATPase family protein",2
+"Bra006538","Bra006538","PF00970,PF00175","PTHR19370","KOG0534","1.6.2.2","K00326","AT5G20080.1","","FAD/NAD(P)-binding oxidoreductase",2
+"Bra017625","Bra017625","","","","","","AT4G34090.1","","",2
+"Bra002422","Bra002422","PF07876","","","","","AT5G22580.1","","Stress responsive A/B Barrel Domain",3
+"Bra030922","Bra030922","PF00004,PF07724","PTHR23073","KOG0729","","K03061","AT1G53750.1","RPT1A","regulatory particle triple-A 1A",3
+"Bra028543","Bra028543","PF00274","PTHR11627","KOG1557","4.1.2.13","K01623","AT3G52930.1","","Aldolase superfamily protein",3
+"Bra033999","Bra033999","PF00237","PTHR11593","KOG3353","","K02880","AT1G67430.1","","Ribosomal protein L22p/L17e family protein",3
+"Bra016226","Bra016226","PF11721","PTHR23258","","","","AT1G56130.1","","Leucine-rich repeat transmembrane protein kinase",4
+"Bra021067","Bra021067","PF00169,PF06101","PTHR16166","","","","AT4G17140.3","","pleckstrin homology (PH) domain-containing protein",4
+"Bra019626","Bra019626","PF00153","PTHR11896","KOG0749","","","AT5G17400.1","ER-ANT1","endoplasmic reticulum-adenine nucleotide transporter 1",4
+"Bra000391","Bra000391","PF00067","PTHR19383","KOG0157","","","AT2G45510.1","CYP704A2","cytochrome P450, family 704, subfamily A, polypeptide 2",4
+"Bra004101","Bra004101","PF03009","PTHR23344","KOG2258","","","AT4G26690.1","GPDL2,MRH5,SHV3","PLC-like phosphodiesterase family protein",4
+"Bra014291","Bra014291","PF01532","PTHR11742","KOG2204","3.2.1.113","K01230","AT1G51590.1","MANIB,MNS1","alpha-mannosidase 1",4
+"Bra036593","Bra036593","PF00069,PF07714","PTHR11295","KOG0658","2.7.1.-","K00924","AT5G26751.1","ATSK11,SK 11","shaggy-related kinase 11",4
+"Bra002023","Bra002023","PF00180","PTHR11835","KOG0784","1.1.1.41","K00030","AT2G17130.1","IDH-II,IDH2","isocitrate dehydrogenase subunit 2",4
+"Bra011500","Bra011500","PF00168","PTHR10024","KOG1030","","","AT4G34150.1","","Calcium-dependent lipid-binding (CaLB domain) family protein",4
+"Bra014903","Bra014903","","","","","","AT1G31130.1","","",4
+"Bra019122","Bra019122","PF07714,PF00069","PTHR22986","KOG0581","2.7.12.2","K04368","AT4G26070.2","ATMEK1,MEK1,MKK1,NMAPKK","MAP kinase/ ERK kinase 1",4
+"Bra034432","Bra034432","PF00481,PF07228","PTHR13832","KOG0698","","","AT1G34750.1","","Protein phosphatase 2C family protein",4
+"Bra036316","Bra036316","PF00182","PTHR22595","KOG4742","","","AT4G01700.1","","Chitinase family protein",4
+"Bra004537","Bra004537","PF00520,PF00027","PTHR10217","KOG0498","","K05391","AT2G46430.1","ATCNGC3,CNGC3,CNGC3.C","cyclic nucleotide gated channel 3",4
+"Bra035574","Bra035574","","","","","","AT5G55450.1","","Bifunctional inhibitor/lipid-transfer protein/seed storage 2S albumin superfamily protein",4
+"Bra003239","Bra003239","PF03106","","","","","AT3G56400.1","ATWRKY70,WRKY70","WRKY DNA-binding protein 70",4
+"Bra014037","Bra014037","PF00085,PF00578","PTHR10438","KOG0907","","","AT1G45145.1","ATH5,ATTRX5,LIV1,TRX5","thioredoxin H-type 5",4
+"Bra012871","Bra012871","PF00320","PTHR22949:SF2","KOG1601","","","AT3G51050.1","","FG-GAP repeat-containing protein",4
+"Bra005982","Bra005982","PF02629,PF00549","PTHR11117","KOG1255","6.2.1.4,6.2.1.5","K01899","AT5G08300.1","","Succinyl-CoA ligase, alpha subunit",4
+"Bra034556","Bra034556","PF05659,PF00931,PF00560","PTHR23155","KOG4658","","","AT4G33300.1","ADR1-L1","ADR1-like 1",4
+"Bra004771","Bra004771","PF00187,PF00182","PTHR22595","KOG4742","","","AT2G43570.1","CHI","chitinase, putative",4
+"Bra017019","Bra017019","PF07714,PF00069","PTHR23258","KOG1187","","","AT2G40270.1","","Protein kinase family protein",4
+"Bra001662","Bra001662","PF00069,PF07714","PTHR23258","KOG1187","","","AT3G17410.1","","Protein kinase superfamily protein",4
+"Bra018543","Bra018543","PF02798,PF00043","PTHR11260","KOG0867","2.5.1.18","K00799","AT2G02930.1","ATGSTF3,GST16,GSTF3","glutathione S-transferase F3",4
+"Bra013540","Bra013540","PF08240,PF00107","PTHR11695","KOG1198","","","AT4G21580.1","","oxidoreductase, zinc-binding dehydrogenase family protein",4
+"Bra014842","Bra014842","PF06521","","","","","AT3G54040.1","","PAR1 protein",4
+"Bra000310","Bra000310","PF00187,PF00182","PTHR22595","KOG4742","","","AT2G43570.1","CHI","chitinase, putative",4
+"Bra017633","Bra017633","PF04199","","","","","AT4G34180.1","","Cyclase family protein",4
+"Bra002914","Bra002914","","","","","","AT5G55410.2","","Bifunctional inhibitor/lipid-transfer protein/seed storage 2S albumin superfamily protein",4
+"Bra012805","Bra012805","PF01764","","","","","AT3G52430.1","ATPAD4,PAD4","alpha/beta-Hydrolases superfamily protein",4
+"Bra003273","Bra003273","PF00332","","","","","AT3G57240.1","BG3","beta-1,3-glucanase 3",4
+"Bra029107","Bra029107","PF00403","PTHR22814","KOG1603","","","AT5G52760.1","","Copper transport protein family",4
+"Bra022610","Bra022610","PF03121,PF02423,PF01488","PTHR13812","KOG3007","","","AT5G52800.3","","DNA primases",4
+"Bra013719","Bra013719","PF00069,PF07714,PF00036","PTHR22982","KOG0032","2.7.11.1","K13412","AT4G23650.1","CDPK6,CPK3","calcium-dependent protein kinase 6",4
+"Bra014622","Bra014622","PF00675,PF05193","PTHR11851","KOG0959","3.4.24.56","K01408","AT2G41790.1","","Insulinase (Peptidase family M16) family protein",4
+"Bra002255","Bra002255","PF02516","PTHR13872","KOG2292","2.4.1.119","K07151","AT5G19690.1","STT3A","staurosporin and temperature sensitive 3-like A",4
+"Bra009368","Bra009368","","","","","","AT5G08770.1","","",4
+"Bra013507","Bra013507","PF05817","PTHR12640","KOG2447","","","AT4G21150.1","HAP6","ribophorin II (RPN2) family protein",4
+"Bra013225","Bra013225","PF00254","PTHR10516","KOG0549","5.2.1.8","K09569","AT3G25220.1","FKBP15-1","FK506-binding protein 15 kD-1",5
+"Bra016974","Bra016974","PF03106","","","","","AT2G40750.1","ATWRKY54,WRKY54","WRKY DNA-binding protein 54",5
+"Bra020430","Bra020430","PF07887","","","","","AT5G57580.1","","Calmodulin-binding protein",5
+"Bra027049","Bra027049","PF03171","PTHR10209","KOG0143","1.14.17.4","K05933","AT1G62380.1","ACO2,ATACO2","ACC oxidase 2",5
+"Bra005168","Bra005168","PF00139,PF00069,PF07714","PTHR23258","KOG1187","","","AT2G37710.1","RLK","receptor lectin kinase",5
+"Bra014550","Bra014550","PF01095","","","","","AT3G59010.1","PME61","pectin methylesterase 61",5
+"Bra034404","Bra034404","PF00560,PF07714,PF00069","PTHR23258","KOG1187","","","AT4G08850.1","","Leucine-rich repeat receptor-like protein kinase family protein",5
+"Bra037731","Bra037731","PF04554,PF01190","","","","","AT2G43150.1","","Proline-rich extensin-like family protein",6
+"Bra041123","Bra041123","PF00421","","","","K02705","ATCG00280.1","","photosystem II reaction center protein C",6
+"Bra019784","Bra019784","PF00097","PTHR14155","","","","AT1G12760.1","","Zinc finger, C3HC4 type (RING finger) family protein",6
+"Bra027035","Bra027035","PF00743,PF01946,PF01266,PF03486,PF07992,PF00890,PF01593","PTHR23023","KOG1399","","","AT1G62540.1","FMO GS-OX2","flavin-monooxygenase glucosinolate S-oxygenase 2",6
+"Bra033422","Bra033422","PF00179","PTHR11621","KOG0896","","K10704","AT3G52560.1","MMZ4,UEV1D,UEV1D-4","ubiquitin E2 variant 1D-4",6
+"Bra003434","Bra003434","PF00168","PTHR10774","","","","AT3G61050.1","NTMC2T4,NTMC2TYPE4","Calcium-dependent lipid-binding (CaLB domain) family protein",6
+"Bra022938","Bra022938","PF00076","PTHR10432","KOG4205","","K14411","AT2G33410.1","","RNA-binding (RRM/RBD/RNP motifs) family protein",6
+"Bra018573","Bra018573","PF03059","","","2.5.1.43","K05953","AT1G09240.1","ATNAS3,NAS3","nicotianamine synthase 3",6
+"Bra000460","Bra000460","PF02798,PF00043","PTHR11260","KOG0867","2.5.1.18","K00799","AT2G47730.1","ATGSTF5,ATGSTF8,GST6,GSTF8","glutathione S-transferase phi 8",6
+"Bra024089","Bra024089","PF00722,PF06955","","","2.4.1.207","K08235","AT4G30270.1","MERI-5,MERI5B,SEN4,XTH24","xyloglucan endotransglucosylase/hydrolase 24",6
+"Bra029642","Bra029642","PF04564,PF05804,PF00514","PTHR22849","","","","AT3G07360.1","ATPUB9,PUB9","plant U-box 9",6
+"Bra002354","Bra002354","PF08263,PF00560","PTHR23258","","","","AT5G21090.1","","Leucine-rich repeat (LRR) family protein",6
+"Bra032191","Bra032191","PF07716,PF00170","PTHR13301:SF7","","","","AT1G43700.1","SUE3,VIP1","VIRE2-interacting protein 1",6
+"Bra033802","Bra033802","PF05368","PTHR10366","KOG1203","","","AT3G46780.1","PTAC16","plastid transcriptionally active 16",6
+"Bra038011","Bra038011","PF01241","","","","","AT1G55670.1","PSAG","photosystem I subunit G",6
+"Bra011703","Bra011703","","","","","","AT4G36750.1","","Quinone reductase family protein",6
+"Bra005929","Bra005929","PF00612","","","","","AT5G07240.1","IQD24","IQ-domain 24",6
+"Bra024848","Bra024848","PF00722,PF06955","","","2.4.1.207","K08235","AT2G01850.1","ATXTH27,EXGT-A3,XTH27","endoxyloglucan transferase A3",6
+"Bra008406","Bra008406","PF04146","PTHR12357","KOG1901","","","AT1G79270.1","ECT8","evolutionarily conserved C-terminal region 8",7
+"Bra030808","Bra030808","PF03381","PTHR10926","KOG2952","","","AT1G54320.1","","LEM3 (ligand-effect modulator 3) family protein / CDC50 family protein",7
+"Bra005974","Bra005974","PF04371","","","3.5.3.12","K10536","AT5G08170.1","ATAIH,EMB1873","porphyromonas-type peptidyl-arginine deiminase family protein",7
+"Bra002975","Bra002975","","","","","","AT5G54585.1","","",7
+"Bra036155","Bra036155","PF00544","","","4.2.2.2","K01728","AT5G48900.1","","Pectin lyase-like superfamily protein",7
+"Bra030843","Bra030843","PF01241","","","","K08905","AT1G55670.1","PSAG","photosystem I subunit G",7
+"Bra018955","Bra018955","PF03244","","","","K02695","AT1G52230.1","PSAH-2,PSAH2,PSI-H","photosystem I subunit H2",7
+"Bra015520","Bra015520","PF01789","","","","K02717","AT1G06680.1","OE23,OEE2,PSBP-1,PSII-P","photosystem II subunit P-1",7
+"Bra003355","Bra003355","PF00285","PTHR11739","KOG2617","","","AT3G58750.1","CSY2","citrate synthase 2",7
+"Bra010808","Bra010808","PF01544,PF01984","PTHR10840","KOG3431","","","AT1G29820.1","","Magnesium transporter CorA-like family protein",7
+"Bra032344","Bra032344","PF00289,PF02786,PF02787,PF02222,PF07478,PF02142","PTHR11405","KOG0370","6.3.5.5","K01955","AT1G29900.1","CARB","carbamoyl phosphate synthetase B",7
+"Bra018407","Bra018407","PF01480","PTHR23148","KOG2146","","K13171","AT2G29210.1","","splicing factor PWI domain-containing protein",7
+"Bra009184","Bra009184","PF03168","PTHR19957:SF11","","","","AT5G06320.1","NHL3","NDR1/HIN1-like 3",7
+"Bra003086","Bra003086","PF00561","PTHR10992","KOG4178","","","AT5G53050.2","","alpha/beta-Hydrolases superfamily protein",7
+"Bra031623","Bra031623","PF00786,PF00620,PF06058","PTHR23177","KOG2868","","","AT1G08370.1","ATDCP1,DCP1","decapping 1",7
+"Bra022736","Bra022736","PF00011","PTHR11527","KOG0710","","","AT5G54660.1","","HSP20-like chaperones superfamily protein",8
+"Bra023365","Bra023365","PF00031","PTHR11413","","","","AT5G12140.1","ATCYS1,CYS1","cystatin-1",8
+"Bra016557","Bra016557","PF10269","PTHR12183","KOG4172","","","AT1G68820.1","","Transmembrane Fragile-X-F-associated protein",8
+"Bra033973","Bra033973","","","","","","AT1G67870.1","","glycine-rich protein",8
+"Bra037411","Bra037411","PF00917","PTHR10420","KOG1987","","","AT4G00780.1","","TRAF-like family protein",8
+"Bra007020","Bra007020","PF01412","PTHR23180","KOG0704","","","AT3G53710.1","AGD6","ARF-GAP domain 6",9
+"Bra000587","Bra000587","PF05278","PTHR21704","","","","AT2G20950.1","","Arabidopsis phospholipase-like protein (PEARLI 4) family",9
+"Bra033255","Bra033255","PF07714,PF00069","PTHR23258","KOG1187","","","AT1G01540.2","","Protein kinase superfamily protein",9
+"Bra036730","Bra036730","PF07851","PTHR21433","KOG4758","","","AT1G33230.1","","TMPIT-like protein",9
+"Bra017672","Bra017672","PF02784,PF00278","PTHR11482","","4.1.1.19","K01583","AT4G34710.1","ADC2,ATADC2,SPE2","arginine decarboxylase 2",9
+"Bra038165","Bra038165","","","","","","AT1G56420.1","","",9
+"Bra012303","Bra012303","PF01399","PTHR15350","KOG3250","","K12180","AT1G02090.1","ATCSN7,COP15,CSN7,FUS5","Proteasome component (PCI) domain protein",9
+"Bra025271","Bra025271","","","","","","AT5G40690.1","","",9
+"Bra006360","Bra006360","","","","","","AT5G16520.1","","",9
+"Bra035848","Bra035848","PF00439,PF00334","PTHR11349","KOG0888","","","AT5G63320.2","NPX1","nuclear protein X1",9
+"Bra003034","Bra003034","","","","","","AT5G53800.1","","",9
+"Bra010454","Bra010454","PF05903","PTHR12378","KOG0324","","","AT5G52530.1","","dentin sialophosphoprotein-related",9
+"Bra014853","Bra014853","PF00234","","","","","AT3G53980.1","","Bifunctional inhibitor/lipid-transfer protein/seed storage 2S albumin superfamily protein",9
+"Bra018723","Bra018723","","","","","","AT1G48330.1","","",9
+"Bra009600","Bra009600","PF04099,PF04628","PTHR23249","KOG3368","","","AT5G02280.1","","SNARE-like superfamily protein",9
+"Bra035864","Bra035864","PF00650","PTHR10174","KOG1470","","","AT5G63060.1","","Sec14p-like phosphatidylinositol transfer family protein",9
+"Bra000600","Bra000600","PF05833,PF05670,PF00098,PF11923","PTHR15239","KOG2030","","","AT5G49930.1","emb1441","zinc knuckle (CCHC-type) family protein",9
+"Bra008785","Bra008785","PF05753","PTHR12861","KOG3317","","K13250","AT5G14030.1","","translocon-associated protein beta (TRAPB) family protein",9
+"Bra009410","Bra009410","PF00122,PF00702,PF08282","PTHR11939","KOG0206","","","AT5G04930.1","ALA1","aminophospholipid ATPase 1",10
+"Bra010283","Bra010283","PF00117,PF04204,PF07722","PTHR11922:SF2","KOG3179","","","AT4G30530.1","","Class I glutamine amidotransferase-like superfamily protein",11
+"Bra025547","Bra025547","PF01490,PF03222","PTHR22950","KOG1303","","","AT5G40780.2","LHT1","lysine histidine transporter 1",11
+"Bra020836","Bra020836","PF00067","PTHR19383","KOG0156","","","AT4G22690.1","CYP706A1","cytochrome P450, family 706, subfamily A, polypeptide 1",11
+"Bra021579","Bra021579","PF00560,PF11721,PF07714,PF00069","PTHR23258","KOG1187","","","AT3G14840.2","","Leucine-rich repeat transmembrane protein kinase",11
+"Bra040801","Bra040801","PF00909","PTHR11730","KOG0682","","","AT4G13510.1","AMT1;1,ATAMT1,ATAMT1;1","ammonium transporter 1;1",11
+"Bra019212","Bra019212*","PF00564,PF00569,PF00627","PTHR20930","KOG4351","","","AT4G24690.1","","ubiquitin-associated (UBA)/TS-N domain-containing protein / octicosapeptide/Phox/Bemp1 (PB1) domain-containing protein",11
+"Bra019213","Bra019213*","","","","","","AT4G24680.1","MOS1","modifier of snc1",11
+"Bra031041","Bra031041*","PF00249","PTHR10641","","","","AT1G18710.1","AtMYB47,MYB47","myb domain protein 47",11
+"Bra031042","Bra031042*","PF04525","","","","","AT5G01750.2","","Protein of unknown function (DUF567)",11
+"Bra031044","Bra031044*","PF06127","","KOG3292","","","AT1G18720.1","","Protein of unknown function (DUF962)",11
+"Bra036325","Bra036325*","PF04427","PTHR22734","KOG2780","","","AT4G01560.1","MEE49","Ribosomal RNA processing Brix domain protein",11
+"Bra036326","Bra036326*","PF02365","","","","","AT4G01550.1","anac069,NAC069","NAC domain containing protein 69",11
+"Bra036327","Bra036327*","PF02365","","","","","AT4G01550.1","anac069,NAC069","NAC domain containing protein 69",11
+"Bra006048","Bra006048","","","","","","AT5G10110.1","","",12
+"Bra034063","Bra034063","","","","","","AT3G09290.1","TAC1","telomerase activator1",12
+"Bra001114","Bra001114","PF00579","PTHR10055","KOG2145","6.1.1.2","K01867","AT3G04600.1","","Nucleotidylyl transferase superfamily protein",12
+"Bra028740","Bra028740","PF12108,PF11931","PTHR12786","KOG2636","","K12827","AT5G06160.1","ATO","splicing factor-related",12
+"Bra033958","Bra033958","PF11721,PF07714,PF00069","PTHR23258","KOG1187","","","AT1G56130.1","","Leucine-rich repeat transmembrane protein kinase",12
+"Bra010983","Bra010983","PF07800","","","","","AT1G68140.1","","Protein of unknown function (DUF1644)",12
+"Bra012244","Bra012244","PF00505","PTHR13711","","","","AT1G20696.2","HMGB3,NFD03,NFD3","high mobility group B3",12
+"Bra018006","Bra018006","PF00141","","","1.11.1.7","K00430","AT3G49120.1","ATPCB,ATPERX34,PERX34,PRX34,PRXCB","peroxidase CB",12
+"Bra004604","Bra004604","PF05678","","","","","AT2G41180.1","","VQ motif-containing protein",12
+"Bra003527","Bra003527","PF01061,PF08370,PF00005","PTHR19241","KOG0065","","","AT1G59870.1","ABCG36,ATABCG36,ATPDR8,PDR8,PEN3","ABC-2 and Plant PDR ABC-type transporter family protein",12
+"Bra000885","Bra000885","PF04398","","","","","AT4G02370.1","","Protein of unknown function, DUF538",12
+"Bra018112","Bra018112","PF01263","PTHR10091","KOG1604","5.1.3.3","K01785","AT3G47800.1","","Galactose mutarotase-like superfamily protein",12
+"Bra015456","Bra015456","PF00010","","","","","AT1G05805.1","","basic helix-loop-helix (bHLH) DNA-binding superfamily protein",12
+"Bra009087","Bra009087","PF00249","","","","","AT5G05090.1","","Homeodomain-like superfamily protein",12
+"Bra031648","Bra031648*","PF07690,PF00083","PTHR11600","KOG0254","","","AT1G08920.1","ESL1","ERD (early response to dehydration) six-like 1",12
+"Bra031649","Bra031649*","PF07690,PF00083","PTHR11600","KOG0254","","","AT1G08930.1","ERD6","Major facilitator superfamily protein",12
+"Bra027093","Bra027093*","PF04144","PTHR10687","KOG3088","","","AT1G61250.1","SC3","secretory carrier 3",12
+"Bra027094","Bra027094*","PF05212","","","","","AT1G61240.1","","Protein of unknown function (DUF707)",12
+"Bra014865","Bra014865","PF00022","PTHR11937","KOG0676","","K10355","AT3G53750.1","ACT3","actin 3",13
+"Bra020082","Bra020082","PF00069,PF07714,PF02230,PF03959,PF03583","PTHR23258","KOG1187","","","AT5G20050.1","","Protein kinase superfamily protein",13
+"Bra038233","Bra038233","PF01565","PTHR10801","KOG1262","1.3.1.72","K09828","AT3G19820.1","CBB1,DIM,DIM1,DWF1,EVE1","cell elongation protein / DWARF1 / DIMINUTO (DIM)",13
+"Bra034873","Bra034873","PF01169","PTHR12608","KOG2881","","","AT4G13590.1","","Uncharacterized protein family (UPF0016)",13
+"Bra014044","Bra014044","PF01764","","KOG4569","","","AT1G45201.1","ATTLL1,TLL1","triacylglycerol lipase-like 1",13
+"Bra030319","Bra030319","PF01190","PTHR23201","","","","AT2G21140.1","ATPRP2,PRP2","proline-rich protein 2",13
+"Bra000777","Bra000777","PF00234","","","","","AT4G12520.1","","Bifunctional inhibitor/lipid-transfer protein/seed storage 2S albumin superfamily protein",13
+"Bra005682","Bra005682*","PF00097","PTHR13363","KOG1039","","","AT5G01520.1","","RING/U-box superfamily protein",13
+"Bra005683","Bra005683*","PF04884","PTHR12770","KOG4249","","","AT5G01510.1","RUS5","Protein of unknown function, DUF647",13
+"Bra025511","Bra025511*","PF02178,PF03479","","","","","AT1G63470.1","","AT hook motif DNA-binding family protein",13
+"Bra025512","Bra025512*","PF02798,PF00043","PTHR11260","KOG0867","","","AT5G41210.1","ATGSTT1,GST10,GSTT1","glutathione S-transferase THETA 1",13
+"Bra025513","Bra025513*","PF08772","PTHR12814","KOG2463","","K11883","AT5G41190.1","","",13
+"Bra024186","Bra024186*","PF00909","PTHR11730","KOG0682","","","AT4G28700.1","AMT1;4","ammonium transporter 1;4",13
+"Bra024187","Bra024187*","PF02309,PF03912","","","","K08903","AT4G28640.3","IAA11","indole-3-acetic acid inducible 11",13
+"Bra038081","Bra038081*","PF01789","","","","","AT4G15510.1","","Photosystem II reaction center PsbP family protein",13
+"Bra038082","Bra038082*","PF01027","PTHR23291","KOG2322","","K06890","AT4G15470.1","","Bax inhibitor-1 family protein",13
+"Bra038083","Bra038083*","PF02714","PTHR13018","KOG1134","","","AT4G15430.2","","ERD (early-responsive to dehydration stress) family protein",13
+"Bra038091","Bra038091*","","","","","","AT4G15140.1","","",13
+"Bra038092","Bra038092*","PF00067","PTHR19383","KOG0157","","","AT4G15110.1","CYP97B3","cytochrome P450, family 97, subfamily B, polypeptide 3",13
+"Bra006233","Bra006233","PF05753","PTHR12861","KOG3317","","K13250","AT5G14030.1","","translocon-associated protein beta (TRAPB) family protein",14
+"Bra006456","Bra006456","PF05093","PTHR13273","","","","AT5G18400.2","","Cytokine-induced anti-apoptosis inhibitor 1, Fe-S biogenesis",14
+"Bra031165","Bra031165","PF04921","PTHR12722","KOG2894","","K13119","AT2G21150.1","XCT","XAP5 family protein",14
+"Bra021037","Bra021037","","","","","","","","",14
+"Bra039578","Bra039578","PF00191","PTHR10502","KOG0819","","","AT1G35720.1","ANNAT1,ATOXY5,OXY5","annexin 1",14
+"Bra033757","Bra033757","","","","","","AT5G44650.1","AtCEST,CEST","",14
+"Bra004782","Bra004782","PF02391","PTHR23404","KOG3307","2.-.-.-","K03635","AT2G43760.1","","molybdopterin biosynthesis MoaE family protein",14
+"Bra007174","Bra007174","PF00097","PTHR22766","","","","AT3G55530.1","SDIR1","RING/U-box superfamily protein",14
+"Bra000384","Bra000384","PF00275","PTHR21090","KOG0692","2.5.1.19","K00800","AT2G45300.1","","RNA 3\'-terminal phosphate cyclase/enolpyruvate transferase, alpha/beta",14
+"Bra022288","Bra022288","PF05700","PTHR13296","KOG3096","","K12861","AT3G18165.1","MOS4","modifier of snc1,4",14
+"Bra005798","Bra005798","PF00076,PF00098","PTHR10432","","","","AT5G04280.1","","RNA-binding (RRM/RBD/RNP motifs) family protein with retrovirus zinc finger-like domain",14
+"Bra033224","Bra033224","PF01535","PTHR10483","","","","AT1G01970.1","","Tetratricopeptide repeat (TPR)-like superfamily protein",14
+"Bra029620","Bra029620","","","","","","AT3G07080.1","","EamA-like transporter family",14
+"Bra028193","Bra028193","PF00300","PTHR23029","KOG4754","","","AT2G17280.1","","Phosphoglycerate mutase family protein",14
+"Bra039748","Bra039748","PF08597","PTHR21681","KOG4813","","K03245","AT1G66070.1","","Translation initiation factor eIF3 subunit",14
+"Bra017723","Bra017723","PF00505","PTHR13711","KOG0381","","","AT2G17560.1","HMGB4,NFD04,NFD4","high mobility group B4",14
+"Bra028789","Bra028789","PF00013","PTHR10288","KOG2191","","","AT5G04430.1","BTR1,BTR1L,BTR1S","binding to TOMV RNA 1L (long form)",14
+"Bra034815","Bra034815","PF06876","","","","","AT3G11720.3","","Polyketide cyclase/dehydrase and lipid transport superfamily protein",14
+"Bra039678","Bra039678","PF02431","","","","","AT1G53520.1","","Chalcone-flavanone isomerase family protein",14
+"Bra018872","Bra018872","PF03635","PTHR13673","KOG3682","","","AT1G50730.1","","",14
+"Bra005980","Bra005980","PF01379,PF03900","PTHR11557","KOG2892","2.5.1.61","K01749","AT5G08280.1","HEMC","hydroxymethylbilane synthase",14
+"Bra027294","Bra027294","PF01208","PTHR12472","KOG2872","","","AT3G14910.1","","",14
+"Bra015798","Bra015798*","","PTHR13516","","","","AT1G76020.1","","Thioredoxin superfamily protein",14
+"Bra015799","Bra015799*","PF01399,PF08375","PTHR10758","KOG2581","","K03033","AT1G20200.1","EMB2719,HAP15","PAM domain (PCI/PINT associated module) protein",14
+"Bra006351","Bra006351*","PF04398","","","","","AT5G16380.1","","Protein of unknown function, DUF538",14
+"Bra006352","Bra006352*","PF00364","PTHR18866","","","K02160","AT5G16390.1","BCCP,BCCP-1,BCCP1,CAC1,CAC1-A,CAC1A","chloroplastic acetylcoenzyme A carboxylase 1",14
+"Bra011076","Bra011076","PF00378,PF02737,PF00725","PTHR23309","KOG1683","1.1.1.211,1.1.1.35,4.2.1.17","K10527","AT4G29010.1","AIM1","Enoyl-CoA hydratase/isomerase family",15
+"Bra026415","Bra026415","PF08766","PTHR13468","KOG2266","","","AT4G26630.1","","DEK domain-containing chromatin associated protein",15
+"Bra008876","Bra008876","PF00939,PF03600","PTHR10283","","","","AT5G12860.1","DiT1","dicarboxylate transporter 1",15
+"Bra025858","Bra025858","PF00365","PTHR13697","KOG2440","2.7.1.90","K00895","AT1G20950.1","","Phosphofructokinase family protein",15
+"Bra019733","Bra019733","PF00365","PTHR13697","KOG2440","2.7.1.90","K00895","AT1G12000.1","","Phosphofructokinase family protein",15
+"Bra013582","Bra013582","PF07732,PF00394,PF07731","PTHR11709","KOG1263","","","AT4G22010.1","sks4","SKU5  similar 4",15
+"Bra040403","Bra040403","PF01535","PTHR10483","","","","AT3G04760.1","","Pentatricopeptide repeat (PPR-like) superfamily protein",15
+"Bra006778","Bra006778","PF10674","","","","","AT5G58250.1","","",15
+"Bra023704","Bra023704","","PTHR13683","KOG1339","","","AT5G19110.1","","Eukaryotic aspartyl protease family protein",15
+"Bra032137","Bra032137","PF01073,PF05368,PF01370","PTHR10366","KOG1502","","","AT2G23910.1","","NAD(P)-binding Rossmann-fold superfamily protein",15
+"Bra000024","Bra000024","PF11891","","","","","AT2G37860.3","LCD1","Protein of unknown function (DUF3411)",15
+"Bra039174","Bra039174*","PF00135,PF07859","PTHR11559","KOG1515","","","AT3G02410.1","ICME-LIKE2","alpha/beta-Hydrolases superfamily protein",15
+"Bra013881","Bra013881*","PF04043","","","","","AT4G25260.1","","Plant invertase/pectin methylesterase inhibitor superfamily protein",15
+"Bra013882","Bra013882*","PF01535","PTHR10483","","","","AT4G25270.1","","Tetratricopeptide repeat (TPR)-like superfamily protein",15
+"Bra013883","Bra013883*","PF00406,PF02223","PTHR23359","KOG3079","2.7.4.-,2.7.4.14","K13800","AT4G25280.1","","P-loop containing nucleoside triphosphate hydrolases superfamily protein",15
+"Bra022908","Bra022908","PF00231","PTHR11693","KOG1531","3.6.3.14","K02136","AT2G33040.1","ATP3","gamma subunit of Mt ATP synthase",16
+"Bra032548","Bra032548","PF00583,PF08445","PTHR23091","KOG3139","","","AT1G03650.1","","Acyl-CoA N-acyltransferases (NAT) superfamily protein",16
+"Bra010681","Bra010681","PF00153","PTHR11896","KOG0768","","","AT4G39460.1","SAMC1,SAMT1","S-adenosylmethionine carrier 1",16
+"Bra002804","Bra002804","PF00235","PTHR11604","KOG1755","","","AT5G56600.1","PFN3,PRF3","profilin 3",16
+"Bra007047","Bra007047","PF02453","PTHR10994","KOG1792","","","AT3G54120.1","","Reticulon family protein",16
+"Bra013053","Bra013053","PF00141","","","","","AT4G35000.1","APX3","ascorbate peroxidase 3",16
+"Bra001177","Bra001177","PF00501","PTHR11968","KOG1256","6.2.1.3","K01897","AT3G05970.1","ATLACS6,LACS6","long-chain acyl-CoA synthetase 6",16
+"Bra014229","Bra014229","PF00574","PTHR10381","KOG0840","","","AT1G49970.1","CLPR1,NCLPP5,SVR2","CLP protease proteolytic subunit 1",16
+"Bra021810","Bra021810*","PF01851","PTHR10943","KOG2062","","K03032","AT2G32730.1","","26S proteasome regulatory complex, non-ATPase subcomplex, Rpn2/Psmd1 subunit",16
+"Bra021811","Bra021811*","PF03016","PTHR15157","KOG1021","","","AT2G32740.1","ATGT13,GT13","galactosyltransferase 13",16
+"Bra021812","Bra021812*","PF11976,PF00240","PTHR10562","KOG1769","","","AT2G32765.1","ATSUMO5,SUM5,SUMO5","small ubiquitinrelated modifier 5",16
+"Bra036146","Bra036146","","","","","","AT5G49280.1","","hydroxyproline-rich glycoprotein family protein",17
+"Bra028357","Bra028357","PF00010","","","","","AT3G24140.1","FMA","basic helix-loop-helix (bHLH) DNA-binding superfamily protein",17
+"Bra040573","Bra040573","PF03169","PTHR22601","KOG2262","","","AT4G16370.1","ATOPT3,OPT3","oligopeptide transporter",17
+"Bra001848","Bra001848","","","","","","AT3G21865.1","PEX22","peroxin 22",17
+"Bra040630","Bra040630","","","","","","AT1G66820.1","","glycine-rich protein",17
+"Bra011047","Bra011047","PF03912","","","","K08903","AT4G28660.1","PSB28","photosystem II reaction center PSB28 protein",17
+"Bra002191","Bra002191","PF01156","PTHR12304","KOG2938","","","AT5G18860.1","","inosine-uridine preferring nucleoside hydrolase family protein",17
+"Bra027938","Bra027938","PF00560,PF00069,PF07714","PTHR23258","KOG1187","","","AT3G47570.1","","Leucine-rich repeat protein kinase family protein",17
+"Bra009968","Bra009968","PF00083","PTHR11600","","","","AT5G27350.1","SFP1","Major facilitator superfamily protein",18
+"Bra013957","Bra013957","PF01554","PTHR11206","KOG1347","","","AT5G17700.1","","MATE efflux family protein",18
+"Bra040417","Bra040417","PF00291","PTHR10314","KOG1252","","","AT3G04940.1","ATCYSD1,CYSD1","cysteine synthase D1",18
+"Bra039936","Bra039936","PF00450","PTHR11802","KOG1282","","","AT2G22990.1","SCPL8,SNG1","sinapoylglucose 1",18
+"Bra013906","Bra013906","PF01554","PTHR11206","KOG1347","","","AT4G25640.1","ATDTX35,DTX35,FFT","detoxifying efflux carrier 35",18
+"Bra002645","Bra002645*","PF00106,PF01370,PF02719,PF05368,PF08659,PF01073,PF07993","PTHR10366","KOG1502","","","AT5G58490.1","","NAD(P)-binding Rossmann-fold superfamily protein",18
+"Bra029045","Bra029045*","PF00201","PTHR11926","KOG1192","","","AT5G54010.1","","UDP-Glycosyltransferase superfamily protein",18
+"Bra029046","Bra029046*","PF00201","PTHR11926","KOG1192","","","AT5G54010.1","","UDP-Glycosyltransferase superfamily protein",18
+"Bra023673","Bra023673","PF00657","PTHR22835:SF27","","","","AT5G18430.1","","GDSL-like Lipase/Acylhydrolase superfamily protein",19
+"Bra009758","Bra009758","PF01182","PTHR11054","KOG3147","3.1.1.31","K01057","AT5G24400.1","EMB2024,PGL3","NagB/RpiA/CoA transferase-like superfamily protein",19
+"Bra024615","Bra024615","PF00484","PTHR11002","KOG1578","","","AT1G23730.1","ATBCA3,BCA3","beta carbonic anhydrase 3",19
+"Bra028992","Bra028992","PF00364,PF00198","PTHR23151","KOG0559","2.3.1.61","K00658","AT5G55070.1","","Dihydrolipoamide succinyltransferase",20
+"Bra033199","Bra033199","PF12215,PF04685","PTHR12654","KOG2119","","","AT4G10060.1","","Beta-glucosidase, GBA2 type family protein",20
+"Bra006633","Bra006633","PF00535","","","","","AT5G22740.1","ATCSLA02,ATCSLA2,CSLA02,CSLA2","cellulose synthase-like A02",20
+"Bra022234","Bra022234","","","","","","AT1G14800.1","","Nucleic acid-binding, OB-fold-like protein",20
+"Bra028474","Bra028474","PF00479,PF02781","PTHR23429","KOG0563","1.1.1.49","K00036","AT5G40760.1","G6PD6","glucose-6-phosphate dehydrogenase 6",20
+"Bra000769","Bra000769","PF00067","PTHR19383","KOG0156","","","AT4G12320.1","CYP706A6","cytochrome P450, family 706, subfamily A, polypeptide 6",20
+"Bra005598","Bra005598","PF02163","PTHR22939","","","","AT2G32480.1","ARASP","ARABIDOPSIS SERIN PROTEASE",20
+"Bra019940","Bra019940","PF02798,PF00043","PTHR11260","KOG0406","","","AT1G10370.1","ATGSTU17,ERD9,GST30,GST30B","Glutathione S-transferase family protein",20
+"Bra012154","Bra012154","PF01566","PTHR11706","KOG1291","","","AT5G67330.1","ATNRAMP4,NRAMP4","natural resistance associated macrophage protein 4",20
+"Bra031290","Bra031290","PF00201","PTHR11926","KOG1192","","","AT3G21560.1","UGT84A2","UDP-Glycosyltransferase superfamily protein",20
+"Bra011606","Bra011606","","","","","","AT4G35320.1","","",20
+"Bra039362","Bra039362","PF02431","","","","","AT3G55120.1","A11,CFI,TT5","Chalcone-flavanone isomerase family protein",20
+"Bra013161","Bra013161","PF00724","PTHR22893","KOG0134","1.3.1.42","K05894","AT2G06050.1","DDE1,OPR3","oxophytodienoate-reductase 3",20
+"Bra006224","Bra006224","PF00195,PF08392,PF08545,PF02797,PF08541","","","2.3.1.74","K00660","AT5G13930.1","ATCHS,CHS,TT4","Chalcone and stilbene synthase family protein",20
+"Bra009101","Bra009101","PF02431","","","","","AT5G05270.1","","Chalcone-flavanone isomerase family protein",20
+"Bra004109","Bra004109","PF00501","PTHR11968","KOG1176","6.2.1.12","K01904","AT1G65060.1","4CL3","4-coumarate:CoA ligase 3",20
+"Bra003209","Bra003209","PF02431","","","","","AT3G55120.1","A11,CFI,TT5","Chalcone-flavanone isomerase family protein",20
+"Bra036827","Bra036827","PF06911","PTHR21068","","","","AT3G51250.1","","Senescence/dehydration-associated protein-related",20
+"Bra008792","Bra008792","PF00195,PF08392,PF08545,PF02797,PF08541","","","2.3.1.74","K00660","AT5G13930.1","ATCHS,CHS,TT4","Chalcone and stilbene synthase family protein",20
+"Bra023441","Bra023441","PF00195,PF08392,PF08545,PF02797,PF08541","","","2.3.1.74","K00660","AT5G13930.1","ATCHS,CHS,TT4","Chalcone and stilbene synthase family protein",20
+"Bra033612","Bra033612*","","","","","","AT4G39320.1","","microtubule-associated protein-related",20
+"Bra033613","Bra033613*","PF08240,PF00107","PTHR11695","KOG0023","","","AT4G39330.1","ATCAD9,CAD9","cinnamyl alcohol dehydrogenase 9",20
+"Bra013120","Bra013120*","PF01583","PTHR11055","KOG0635","","","AT2G14750.1","AKN1,APK,APK1,ATAKN1","APS kinase",20
+"Bra013121","Bra013121*","PF02225,PF07645","PTHR22765","","","","AT2G14740.1","ATVSR3,BP80-2;2,VSR2;2,VSR3","vaculolar sorting receptor 3",20
+"Bra022802","Bra022802*","PF00067","PTHR19383","KOG0156","","","AT2G30490.1","ATC4H,C4H,CYP73A5,REF3","cinnamate-4-hydroxylase",20
+"Bra022803","Bra022803*","PF00067","PTHR19383","KOG0156","1.14.13.11","K00487","AT2G30490.1","ATC4H,C4H,CYP73A5,REF3","cinnamate-4-hydroxylase",20
+"Bra029857","Bra029857","PF00833,PF00293","PTHR10732","KOG0187","","","AT3G10620.1","ATNUDX26,NUDX26","nudix hydrolase homolog 26",21
+"Bra004355","Bra004355","PF00010","","","","","AT1G69010.1","BIM2","BES1-interacting Myc-like protein 2",21
+"Bra017684","Bra017684","PF05922,PF00082,PF02225","PTHR10795","","","","AT4G34980.1","SLP2","subtilisin-like serine protease 2",21
+"Bra001372","Bra001372","","","","","","AT3G10650.1","","",21
+"Bra004562","Bra004562","PF02453","PTHR10994","KOG1792","","","AT2G46170.1","","Reticulon family protein",21
+"Bra028754","Bra028754","PF00487","","","","","AT5G05580.1","FAD8","fatty acid desaturase 8",21
+"Bra037651","Bra037651","PF00232","PTHR10353","KOG0626","3.2.1.21","K01188","AT2G44450.1","BGLU15","beta glucosidase 15",21
+"Bra023575","Bra023575","PF00005","PTHR19211","KOG0927","","K06185","AT5G60790.1","ATGCN1,GCN1","ABC transporter family protein",21
+"Bra035608","Bra035608","PF00400","PTHR22847","","","","AT5G56190.2","","Transducin/WD40 repeat-like superfamily protein",21
+"Bra005804","Bra005804","PF02365","","","","","AT5G04410.1","anac078,NAC2","NAC domain containing protein 2",21
+"Bra034897","Bra034897","PF04526,PF03188","PTHR23130","KOG4293","","","AT4G12980.1","","Auxin-responsive family protein",21
+"Bra023343","Bra023343","PF03096","PTHR11034","KOG2931","","","AT5G11790.1","NDL2","N-MYC downregulated-like 2",21
+"Bra008540","Bra008540","PF00201","PTHR11926","KOG1192","2.4.1.218","K08237","AT4G01070.1","GT72B1,UGT72B1","UDP-Glycosyltransferase superfamily protein",21
+"Bra038825","Bra038825","PF00069,PF07714","PTHR11295","KOG0661","","","AT4G13020.3","MHK","Protein kinase superfamily protein",21
+"Bra039735","Bra039735","PF01490","PTHR22950","KOG1303","","","AT5G49630.1","AAP6","amino acid permease 6",21
+"Bra009826","Bra009826","PF03790,PF03791,PF03789","PTHR11850","KOG0773","","","AT5G25220.1","KNAT3","KNOTTED1-like homeobox gene 3",21
+"Bra013674","Bra013674","PF00314","","","","","AT4G11650.1","ATOSM34,OSM34","osmotin 34",21
+"Bra003864","Bra003864","PF01582,PF00931","","","","","AT1G72890.1","","Disease resistance protein (TIR-NBS class)",21
+"Bra017752","Bra017752","PF00067","PTHR19383","KOG0156","1.14.-.-","K09755","AT4G36220.1","CYP84A1,FAH1","ferulic acid 5-hydroxylase 1",21
+"Bra001207","Bra001207","PF08240,PF00107","PTHR11695","KOG1198","","","AT4G13010.1","","Oxidoreductase, zinc-binding dehydrogenase family protein",21
+"Bra025450","Bra025450","PF10539","PTHR23230","","","","AT5G42050.1","","DCD (Development and Cell Death) domain protein",21
+"Bra025936","Bra025936","PF03097","PTHR23030","","","","AT1G17940.1","","Endosomal targeting BRO1-like domain-containing protein",21
+"Bra039238","Bra039238","PF01397,PF03936,PF00892,PF03151","","","","","AT2G24220.1","ATPUP5,PUP5","purine permease 5",21
+"Bra023084","Bra023084","PF00438,PF02772,PF02773","PTHR11964","KOG1506","2.5.1.6","K00789","AT2G36880.1","MAT3","methionine adenosyltransferase 3",21
+"Bra035211","Bra035211","PF08534,PF00255,PF00578","PTHR11592","KOG1651","","","AT4G11600.1","ATGPX6,GPX6,LSC803,PHGPX","glutathione peroxidase 6",21
+"Bra014283","Bra014283","","PTHR22814:SF13","","","","AT1G51090.1","","Heavy metal transport/detoxification superfamily protein",21
+"Bra012099","Bra012099*","PF00176,PF00270,PF11496,PF00271","PTHR10799","KOG0385","","","AT5G66750.1","ATDDM1,CHA1,CHR01,CHR1,DDM1,SOM1,SOM4","chromatin remodeling 1",21
+"Bra012100","Bra012100*","PF00890,PF02910","PTHR11632","KOG2403","1.3.5.1","K00234","AT5G66760.1","SDH1-1","succinate dehydrogenase 1-1",21
+"Bra001348","Bra001348*","","","","","","AT3G08670.1","","",21
+"Bra001349","Bra001349*","PF03000","","","","","AT3G08660.1","","Phototropic-responsive NPH3 family protein",21
+"Bra019072","Bra019072*","","PTHR10314","","","","AT4G27070.1","TSB2","tryptophan synthase beta-subunit 2",21
+"Bra019075","Bra019075*","PF00291","PTHR10314","KOG1395","4.2.1.20","K01696","AT4G27070.1","TSB2","tryptophan synthase beta-subunit 2",21
+"Bra028414","Bra028414*","PF00560","PTHR23258","","","","AT1G29720.1","","Leucine-rich repeat transmembrane protein kinase",21
+"Bra028415","Bra028415*","PF11721,PF07714,PF00069","PTHR23258","KOG1187","","","AT1G29720.1","","Leucine-rich repeat transmembrane protein kinase",21
+"Bra010956","Bra010956*","PF07889","","","","","AT1G24267.1","","Protein of unknown function (DUF1664)",21
+"Bra010957","Bra010957*","","","","","","AT5G13090.1","","",21
+"Bra018492","Bra018492*","PF01657,PF00069,PF07714","PTHR23258","KOG1187","","","AT4G04540.1","CRK39","cysteine-rich RLK (RECEPTOR-like protein kinase) 39",21
+"Bra018493","Bra018493*","PF01657,PF00069,PF07714","PTHR23258","KOG1187","","","AT4G04540.1","CRK39","cysteine-rich RLK (RECEPTOR-like protein kinase) 39",21
+"Bra018496","Bra018496*","PF01657,PF00069,PF07714","PTHR23258","KOG1187","","","AT4G04540.1","CRK39","cysteine-rich RLK (RECEPTOR-like protein kinase) 39",21
+"Bra035450","Bra035450*","PF08268","","","","","AT1G53550.1","","F-box family protein",21
+"Bra035451","Bra035451*","PF00300","PTHR23029","KOG4754","","","AT1G58280.1","","Phosphoglycerate mutase family protein",21
+"Bra019285","Bra019285*","PF02453","PTHR10994","KOG1792","","","AT4G23630.1","BTI1,RTNLB1","VIRB2-interacting protein 1",21
+"Bra000079","Bra000079*","PF04525","","","","","AT2G38640.1","","Protein of unknown function (DUF567)",21
+"Bra000080","Bra000080*","PF04525","","","","","AT2G38640.1","","Protein of unknown function (DUF567)",21
+"Bra015911","Bra015911*","PF00249","PTHR10641","","","K09422","AT1G74430.1","ATMYB95,ATMYBCP66,MYB95","myb domain protein 95",21
+"Bra015912","Bra015912*","PF00249","PTHR10641","KOG0048","","K09422","AT1G74430.1","ATMYB95,ATMYBCP66,MYB95","myb domain protein 95",21
+"Bra007698","Bra007698*","PF00232","PTHR10353","KOG0626","","","AT4G27830.1","BGLU10","beta glucosidase 10",21
+"Bra007699","Bra007699*","PF00232","PTHR10353","KOG0626","","","AT4G27830.1","BGLU10","beta glucosidase 10",21
+"Bra005441","Bra005441","PF10559,PF00344","PTHR10906","KOG1373","","K10956","AT2G34250.1","","SecY protein transport family protein",22
+"Bra013069","Bra013069","PF00149","PTHR22953","KOG1378","","","AT2G16430.2","ATPAP10,PAP10","purple acid phosphatase 10",22
+"Bra005546","Bra005546","PF00085","PTHR18929","KOG0191","5.3.4.1","K09584","AT2G32920.1","ATPDI9,ATPDIL2-3,PDI9,PDIL2-3","PDI-like 2-3",22
+"Bra015665","Bra015665","PF00085","PTHR18929","KOG0190","5.3.4.1","K09580","AT1G77510.1","ATPDI6,ATPDIL1-2,PDI6,PDIL1-2","PDI-like 1-2",22
+"Bra012696","Bra012696","PF00012","PTHR19375","KOG0104","","K09486","AT4G16660.1","","heat shock protein 70 (Hsp 70) family protein",22
+"Bra013774","Bra013774","PF02518,PF00183","PTHR11528","KOG0020","","","AT4G24190.1","AtHsp90-7,AtHsp90.7,HSP90.7,SHD","Chaperone protein htpG family protein",22
+"Bra023110","Bra023110","PF00012,PF06723","PTHR19375","KOG0100","","K09490","AT5G42020.1","BIP,BIP2","Heat shock protein 70 (Hsp 70) family protein",22
+"Bra015047","Bra015047","PF00012,PF06723","PTHR19375","KOG0100","","K09490","AT5G42020.1","BIP,BIP2","Heat shock protein 70 (Hsp 70) family protein",22
+"Bra035913","Bra035913","PF00262","PTHR11073","KOG0675","","K08054","AT5G61790.1","ATCNX1,CNX1","calnexin 1",22
+"Bra027936","Bra027936","PF00262","PTHR11073","KOG0674","","K08057","AT1G56340.2","AtCRT1a,CRT1,CRT1a","calreticulin 1a",22
+"Bra038166","Bra038166","PF00262","PTHR11073","KOG0674","","","AT1G56340.2","AtCRT1a,CRT1,CRT1a","calreticulin 1a",22
+"Bra021898","Bra021898*","PF10559,PF00344","PTHR10906","KOG1373","","K10956","AT2G34250.1","","SecY protein transport family protein",22
+"Bra021899","Bra021899*","PF04564,PF05804,PF00514","PTHR22849","","","","AT1G29340.1","ATPUB17,PUB17","plant U-box 17",22
+"Bra029307","Bra029307*","","","","","","AT5G61820.1","","",22
+"Bra029308","Bra029308*","PF00262","PTHR11073","KOG0675","","","AT5G61790.1","ATCNX1,CNX1","calnexin 1",22
+"Bra001925","Bra001925","PF00320","PTHR22949:SF3","","","","AT3G24050.1","GATA1","GATA transcription factor 1",23
+"Bra003942","Bra003942","","","","","","AT1G70780.1","","",23
+"Bra019718","Bra019718","PF01066","PTHR10414","KOG2877","","","AT1G13560.1","AAPT1,ATAAPT1","aminoalcoholphosphotransferase 1",23
+"Bra026043","Bra026043","","","","","","AT1G16520.1","","",23
+"Bra022600","Bra022600","","","","","","AT5G52550.1","","",23
+"Bra032192","Bra032192","","","","","","AT1G43850.1","SEU","SEUSS transcriptional co-regulator",23
+"Bra023619","Bra023619","PF00403","PTHR22814","KOG1603","","","AT5G17450.1","","Heavy metal transport/detoxification superfamily protein",23
+"Bra011921","Bra011921","PF00117,PF04715,PF00425","PTHR11236","KOG1224","2.6.1.85","K13950","AT2G28880.1","ADCS,emb1997","para-aminobenzoate (PABA) synthase family protein",23
+"Bra004118","Bra004118","PF07766","PTHR14009","KOG1043","","","AT1G65540.1","","LETM1-like protein",23
+"Bra007924","Bra007924","PF04864,PF00155","PTHR11751","","","","AT1G70560.1","SAV3,TAA1,WEI8","tryptophan aminotransferase of Arabidopsis 1",23
+"Bra000207","Bra000207","PF00097","PTHR22763","KOG1493","6.3.2.19","K11982","AT2G40830.1","RHC1A","RING-H2 finger C1A",23
+"Bra025363","Bra025363","PF04770","","","","","AT3G28920.1","AtHB34,HB34","homeobox protein 34",23
+"Bra030762","Bra030762","PF02541,PF01966","","","","","AT1G09195.2","","",23
+"Bra016259","Bra016259","PF00854","PTHR11654","KOG1237","","","AT1G69870.1","NRT1.7","nitrate transporter 1.7",23
+"Bra017604","Bra017604","PF04057,PF01336,PF08646","PTHR23273","KOG0851","","K07466","AT5G45400.1","ATRPA70C,RPA70C","Replication factor-A protein 1-related",23
+"Bra027207","Bra027207","PF01429,PF00332","","","","","AT3G15800.1","","Glycosyl hydrolase superfamily protein",23
+"Bra027080","Bra027080","","","","","","AT1G61660.1","","basic helix-loop-helix (bHLH) DNA-binding superfamily protein",23
+"Bra035633","Bra035633","PF00320","PTHR10071","","","","AT5G56860.1","GATA21,GNC","GATA type zinc finger transcription factor family protein",23
+"Bra033373","Bra033373","PF01027","PTHR23291","KOG2322","","","AT1G03070.1","","Bax inhibitor-1 family protein",23
+"Bra005727","Bra005727","","","","","","AT5G02480.1","","HSP20-like chaperones superfamily protein",23
+"Bra019827","Bra019827","","","","","","AT1G13360.1","","",23
+"Bra011786","Bra011786","PF00046,PF02183","PTHR19418","KOG0483","","K09338","AT4G37790.1","HAT22","Homeobox-leucine zipper protein family",23
+"Bra016074","Bra016074","PF04137","PTHR12613","KOG2608","","","AT1G72280.1","AERO1,ERO1","endoplasmic reticulum oxidoreductins 1",23
+"Bra020123","Bra020123","PF04570","","","","","AT5G20700.1","","Protein of unknown function (DUF581)",23
+"Bra024864","Bra024864","PF00293","PTHR12629","KOG2839","","","AT2G01670.1","atnudt17,NUDT17","nudix hydrolase homolog 17",23
+"Bra034608","Bra034608*","PF00201","PTHR11926","KOG1192","","","AT4G34131.1","UGT73B3","UDP-glucosyl transferase 73B3",23
+"Bra034609","Bra034609*","PF00201","PTHR11926","KOG1192","","","AT4G34131.1","UGT73B3","UDP-glucosyl transferase 73B3",23
+"Bra034610","Bra034610*","PF00201","PTHR11926","KOG1192","","","AT4G34138.1","UGT73B1","UDP-glucosyl transferase 73B1",23
+"Bra001958","Bra001958*","PF00042","PTHR22924","","","","AT2G16060.1","AHB1,ARATH GLB1,ATGLB1,GLB1,HB1,NSHB1","hemoglobin 1",23
+"Bra001959","Bra001959*","","","","","","AT2G16070.2","PDV2","plastid division2",23
+"Bra013909","Bra013909*","","","","","","AT4G25670.1","","",23
+"Bra013911","Bra013911*","","","","","","AT4G25670.1","","",23
+"Bra008699","Bra008699","PF00027","PTHR10217","KOG0498","","K05391","AT5G15410.1","ATCNGC2,CNGC2,DND1","Cyclic nucleotide-regulated ion channel family protein",24
+"Bra019539","Bra019539","PF01135,PF06325","PTHR11579","KOG1661","","","AT3G48330.1","ATPIMT1,PIMT1","protein-l-isoaspartate methyltransferase 1",24
+"Bra029099","Bra029099","PF00561","PTHR10992","KOG4178","","","AT5G53050.2","","alpha/beta-Hydrolases superfamily protein",24
+"Bra005306","Bra005306","PF06886","","","","","AT2G35880.1","","TPX2 (targeting protein for Xklp2) protein family",24
+"Bra009351","Bra009351","PF00400","PTHR22838","KOG0293","","","AT5G08560.1","","transducin family protein / WD-40 repeat family protein",24
+"Bra019147","Bra019147","PF01554","PTHR11206","KOG1347","","","AT4G25640.1","ATDTX35,DTX35,FFT","detoxifying efflux carrier 35",24
+"Bra012747","Bra012747","PF00561","PTHR10992","KOG4178","","","AT4G15960.1","","alpha/beta-Hydrolases superfamily protein",24
+"Bra013436","Bra013436","PF00583","PTHR13355","","","","AT4G19985.1","","Acyl-CoA N-acyltransferases (NAT) superfamily protein",24
+"Bra028011","Bra028011","PF00069,PF07714","PTHR11295","KOG0600","","","AT1G33770.1","","Protein kinase superfamily protein",24
+"Bra015301","Bra015301","PF03061","PTHR21660","KOG3328","","","AT1G04290.1","","Thioesterase superfamily protein",24
+"Bra015654","Bra015654","PF01762","PTHR11214","KOG2288","","","AT1G77810.2","","Galactosyltransferase family protein",24
+"Bra027698","Bra027698","","","","","","AT1G64385.1","","",24
+"Bra019026","Bra019026","PF00481","PTHR13832","KOG0698","","","AT4G27800.1","PPH1,TAP38","thylakoid-associated phosphatase 38",24
+"Bra033644","Bra033644","PF02545","PTHR11746","KOG1509","","","AT5G42770.2","","Maf-like protein",24
+"Bra025856","Bra025856","PF00270,PF00271","PTHR10967","KOG0334","3.6.4.13","K12811","AT1G20920.1","","P-loop containing nucleoside triphosphate hydrolases superfamily protein",24
+"Bra015225","Bra015225","PF00097","PTHR22766","","","","AT2G15580.1","","RING/U-box superfamily protein",24
+"Bra012371","Bra012371","PF00155","PTHR11751","KOG0258","","","AT1G23310.1","AOAT1,GGAT1,GGT1","glutamate:glyoxylate aminotransferase",24
+"Bra014209","Bra014209","","","","","","AT1G49740.1","","PLC-like phosphodiesterases superfamily protein",24
+"Bra005889","Bra005889","","","","","","","","",24
+"Bra017781","Bra017781","PF00258,PF03358,PF02525","","KOG3135","","","AT4G36750.1","","Quinone reductase family protein",24
+"Bra017693","Bra017693","PF00199,PF06628","PTHR11465","KOG0047","1.11.1.6","K03781","AT4G35090.1","CAT2","catalase 2",24
+"Bra029871","Bra029871","PF00561,PF06821","PTHR10992","KOG1454","","","AT3G10840.1","","alpha/beta-Hydrolases superfamily protein",24
+"Bra007587","Bra007587","PF00270,PF00271","PTHR10967","KOG0326","3.6.4.13","K12614","AT3G61240.1","","DEA(D/H)-box RNA helicase family protein",24
+"Bra013826","Bra013826","","","","","","AT4G24700.1","","",24
+"Bra013303","Bra013303","","","","","","AT4G18380.1","","F-box family protein",24
+"Bra017916","Bra017916","PF03083","PTHR10791","KOG1623","","","AT1G21460.1","","Nodulin MtN3 family protein",24
+"Bra038032","Bra038032","PF01852","PTHR19308","KOG2761","","","AT1G55960.1","","Polyketide cyclase/dehydrase and lipid transport superfamily protein",24
+"Bra034674","Bra034674","PF00199,PF06628","PTHR11465","KOG0047","1.11.1.6","K03781","AT4G35090.1","CAT2","catalase 2",24
+"Bra026954","Bra026954","PF01535","PTHR10483","","","","AT1G12775.1","","Pentatricopeptide repeat (PPR) superfamily protein",24
+"Bra006579","Bra006579","PF02383","PTHR11200","KOG1888","","","AT5G20840.1","","Phosphoinositide phosphatase family protein",24
+"Bra031222","Bra031222","PF00067","PTHR19383","KOG0157","","","AT2G21910.1","CYP96A5","cytochrome P450, family 96, subfamily A, polypeptide 5",24
+"Bra030805","Bra030805*","PF02176","PTHR16295","","","","AT1G09920.1","","TRAF-type zinc finger-related",24
+"Bra030806","Bra030806*","PF00300","PTHR23029","KOG4754","","","AT1G09932.1","","Phosphoglycerate mutase family protein",24
+"Bra027527","Bra027527*","","PTHR14095","KOG2562","","K11583","AT5G44090.1","","Calcium-binding EF-hand family protein",24
+"Bra027528","Bra027528*","PF00069,PF07714","PTHR11909","KOG1163","","","AT1G03930.1","ADK1,CKL9ALPHA,CKL9BETA","dual specificity kinase 1",24
+"Bra016809","Bra016809*","PF00364,PF00198","PTHR23151","KOG0559","","","AT4G26910.1","","Dihydrolipoamide succinyltransferase",24
+"Bra016810","Bra016810*","PF01571,PF08669","PTHR13847","KOG2770","2.1.2.10","K00605","AT1G11860.1","","Glycine cleavage T-protein family",24
+"Bra027032","Bra027032*","PF00743,PF03486,PF07992,PF00890,PF01593","PTHR23023","KOG1399","","","AT1G62600.1","","Flavin-binding monooxygenase family protein",24
+"Bra027033","Bra027033*","PF00743","PTHR23023","KOG1399","","","AT1G62600.1","","Flavin-binding monooxygenase family protein",24
+"Bra034736","Bra034736*","PF03381","PTHR10926","KOG2952","","","AT3G12740.1","ALIS1","ALA-interacting subunit 1",24
+"Bra034737","Bra034737*","PF00249","","","","","AT3G12730.1","","Homeodomain-like superfamily protein",24
+"Bra029292","Bra029292*","PF00447","PTHR10015","","","","AT5G62020.1","AT-HSFB2A,HSFB2A","heat shock transcription factor  B2A",24
+"Bra029293","Bra029293*","PF02362,PF06507","","","","","AT5G62000.1","ARF1-BP,ARF2,HSS,ORE14","auxin response factor 2",24
+"Bra029325","Bra029325*","PF05347","PTHR13166","KOG3801","","","AT5G61220.1","","LYR family of Fe/S cluster biogenesis protein",24
+"Bra029326","Bra029326*","PF01490","PTHR22950","KOG1304","","","AT5G65990.1","","Transmembrane amino acid transporter family protein",24
+"Bra032622","Bra032622*","PF00069,PF07714,PF03822","PTHR22982","KOG0583","","","AT1G01140.1","CIPK9,PKS6,SnRK3.12","CBL-interacting protein kinase 9",24
+"Bra032623","Bra032623*","PF05030","PTHR23107","KOG3227","","","AT1G01160.1","GIF2","GRF1-interacting factor 2",24
+"Bra013102","Bra013102*","","","","","","AT2G15580.2","","RING/U-box superfamily protein",24
+"Bra013103","Bra013103*","","","","","","AT2G15580.2","","RING/U-box superfamily protein",24
+"Bra018759","Bra018759","","","","","","AT3G26850.1","","histone-lysine N-methyltransferases",25
+"Bra016402","Bra016402","PF01476","","","","","AT1G21880.2","LYM1","lysm domain GPI-anchored protein 1 precursor",25
+"Bra038899","Bra038899","PF08450,PF03088","PTHR10426","KOG1520","","","AT3G51430.1","SSL5,YLS2","Calcium-dependent phosphotriesterase superfamily protein",25
+"Bra013805","Bra013805","PF06200,PF06203,PF00320","PTHR22949:SF3","","","","AT4G24470.1","GATA25,TIFY1,ZIM","GATA-type zinc finger protein with TIFY domain",25
+"Bra039661","Bra039661","PF01699","PTHR10891","","","","AT1G53210.1","","sodium/calcium exchanger family protein / calcium-binding EF hand family protein",25
+"Bra025262","Bra025262","PF00439","PTHR22880","","","","AT3G27260.1","GTE8","global transcription factor group E8",25
+"Bra017081","Bra017081","PF03399,PF10075","PTHR12436","KOG1861","","","AT2G39340.1","","SAC3/GANP/Nin1/mts3/eIF-3 p25 family",25
+"Bra019154","Bra019154","PF00249","PTHR10641","KOG0048","","K09422","AT4G25560.1","AtMYB18,MYB18","myb domain protein 18",25
+"Bra017436","Bra017436","PF02985,PF11916","PTHR16023","KOG0212","","","AT2G01690.1","","ARM repeat superfamily protein",25
+"Bra031413","Bra031413","PF00010","","","","","AT1G61660.1","","basic helix-loop-helix (bHLH) DNA-binding superfamily protein",25
+"Bra025865","Bra025865","PF04640","","","","","AT1G21000.1","","PLATZ transcription factor family protein",25
+"Bra011250","Bra011250","PF07714,PF00069","PTHR23257","KOG0192","","","AT4G31170.1","","Protein kinase superfamily protein",25
+"Bra000394","Bra000394","PF01553","PTHR23063","KOG4666","2.3.1.23,2.3.1.67","K13510","AT2G45670.1","","calcineurin B subunit-related",25
+"Bra000955","Bra000955","PF00069,PF07714","PTHR11295","KOG0660","2.7.11.24","K04371","AT4G01370.1","ATMPK4,MPK4","MAP kinase 4",25
+"Bra009771","Bra009771","PF03171","PTHR10209","KOG0143","","","AT5G24530.1","DMR6","2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein",25
+"Bra034917","Bra034917","PF00282","PTHR11999","KOG0629","4.1.1.22","K01590","AT1G43710.1","emb1075","Pyridoxal phosphate (PLP)-dependent transferases superfamily protein",25
+"Bra012008","Bra012008","","","","","","AT2G27660.1","","Cysteine/Histidine-rich C1 domain family protein",25
+"Bra011590","Bra011590","PF01490","PTHR22950","KOG1303","","","AT4G35180.1","LHT7","LYS/HIS transporter 7",25
+"Bra040958","Bra040958","PF00717","PTHR10806","KOG3342","","","AT1G52600.1","","Peptidase S24/S26A/S26B/S26C family protein",25
+"Bra012676","Bra012676","PF01373","","","3.2.1.2","K01177","AT4G17090.1","BAM3,BMY8,CT-BMY","chloroplast beta-amylase",25
+"Bra024117","Bra024117","PF12515,PF00690,PF00122,PF00702,PF00689","PTHR11939","KOG0204","3.6.3.8","K01537","AT4G29900.1","ACA10,ATACA10,CIF1","autoinhibited Ca(2+)-ATPase 10",25
+"Bra022697","Bra022697","PF00635","PTHR10809","KOG0439","","","AT5G54110.1","ATMAMI,MAMI","membrane-associated mannitol-induced",25
+"Bra000412","Bra000412","PF04564","PTHR22849","","","","AT1G01680.1","ATPUB54,PUB54","plant U-box 54",25
+"Bra004997","Bra004997","PF00153","PTHR11896","KOG0769","","K13354","AT2G39970.1","","Mitochondrial substrate carrier family protein",25
+"Bra004960","Bra004960","PF05633","","","","","AT2G46080.1","","",25
+"Bra020750","Bra020750","PF00642","PTHR12620","KOG1677","","","AT3G06410.1","","Zinc finger C-x8-C-x5-C-x3-H type family protein",25
+"Bra033597","Bra033597","PF00225","PTHR16012","KOG0242","","","AT4G39050.1","","Kinesin motor family protein",25
+"Bra028537","Bra028537","","","","","","AT3G52870.1","","IQ calmodulin-binding motif family protein",25
+"Bra033746","Bra033746","PF04321,PF00106,PF01370,PF02719,PF01073,PF07993","PTHR10366","KOG1371","5.1.3.5","K12448","AT5G44480.1","DUR","NAD(P)-binding Rossmann-fold superfamily protein",25
+"Bra037386","Bra037386","PF00201","PTHR11926","KOG1192","","","AT4G01070.1","GT72B1,UGT72B1","UDP-Glycosyltransferase superfamily protein",25
+"Bra024095","Bra024095","PF00258,PF00667,PF00175","PTHR19384","KOG1158","","","AT4G30210.2","AR2,ATR2","P450 reductase 2",25
+"Bra039557","Bra039557","PF00201","PTHR11926","KOG1192","","","AT4G15280.1","UGT71B5","UDP-glucosyl transferase 71B5",25
+"Bra005216","Bra005216","PF00230","PTHR19139","KOG0223","","","AT2G37170.1","PIP2;2,PIP2B","plasma membrane intrinsic protein 2",25
+"Bra021874","Bra021874","PF00179","PTHR11621","KOG0417","","","AT2G33770.1","ATUBC24,PHO2,UBC24","phosphate 2",25
+"Bra033254","Bra033254","PF05633","","","","","AT1G01550.1","BPS1","Protein of unknown function (DUF793)",25
+"Bra005310","Bra005310","PF07526,PF05920,PF00046","PTHR11850","KOG0773","","","AT2G35940.1","BLH1,EDA29","BEL1-like homeodomain 1",25
+"Bra002382","Bra002382","PF00515,PF00097","PTHR22764","KOG1493","","","AT5G21990.1","","Tetratricopeptide repeat (TPR)-like superfamily protein",25
+"Bra015845","Bra015845","PF07526,PF05920,PF00046","PTHR11850","KOG0773","","","AT1G75410.1","BLH3","BEL1-like homeodomain 3",25
+"Bra023129","Bra023129*","","","","","","AT1G30750.1","","",25
+"Bra023130","Bra023130*","PF11961,PF05003","","","","","AT1G30755.1","","Protein of unknown function (DUF668)",25
+"Bra013657","Bra013657*","PF01657,PF00069,PF07714","PTHR23258","KOG1187","","","AT4G23190.1","AT-RLK3,CRK11","cysteine-rich RLK (RECEPTOR-like protein kinase) 11",25
+"Bra013658","Bra013658*","PF01657,PF07714,PF00069","PTHR23258","","","","AT4G23190.1","AT-RLK3,CRK11","cysteine-rich RLK (RECEPTOR-like protein kinase) 11",25
+"Bra013659","Bra013659*","PF01657,PF07714,PF00069","PTHR23258","KOG1187","","","AT4G23190.1","AT-RLK3,CRK11","cysteine-rich RLK (RECEPTOR-like protein kinase) 11",25
+"Bra013660","Bra013660*","PF01657,PF00069,PF07714","PTHR23258","KOG1187","","","AT4G23190.1","AT-RLK3,CRK11","cysteine-rich RLK (RECEPTOR-like protein kinase) 11",25
+"Bra013664","Bra013664*","PF04424","PTHR18063","KOG2427","","","AT4G11860.1","","Protein of unknown function (DUF544)",25
+"Bra013678","Bra013678*","PF01657,PF00069,PF07714","PTHR23258","KOG1187","","","AT4G23180.1","CRK10,RLK4","cysteine-rich RLK (RECEPTOR-like protein kinase) 10",25
+"Bra013681","Bra013681*","PF01657,PF00069,PF07714","PTHR23258","KOG1187","","","AT4G23310.1","CRK23","cysteine-rich RLK (RECEPTOR-like protein kinase) 23",25
+"Bra032315","Bra032315*","PF05562","","","","","AT1G29390.1","COR314-TM2,COR413IM2","cold regulated 314 thylakoid membrane 2",25
+"Bra032316","Bra032316*","PF00076,PF04059","PTHR10432","KOG4660","","","AT1G29400.1","AML5,ML5","MEI2-like protein 5",25
+"Bra037273","Bra037273*","PF07992,PF00070","PTHR22912","KOG0404","1.8.1.9","K00384","AT2G17420.1","ATNTRA,NTR2,NTRA","NADPH-dependent thioredoxin reductase A",25
+"Bra037274","Bra037274*","PF07992","PTHR22912:SF20","KOG0404","","","AT2G17420.1","ATNTRA,NTR2,NTRA","NADPH-dependent thioredoxin reductase A",25
+"Bra016034","Bra016034*","PF00481","PTHR13832","KOG0698","","","AT1G72770.1","HAB1","homology to ABI1",25
+"Bra028568","Bra028568*","PF00026","PTHR13683","KOG1339","","","AT5G10770.1","","Eukaryotic aspartyl protease family protein",25
+"Bra028569","Bra028569*","PF00026","PTHR13683","KOG1339","","","AT5G10770.1","","Eukaryotic aspartyl protease family protein",25
+"Bra029228","Bra029228*","PF00447","PTHR10015","","","","AT4G18880.1","AT-HSFA4A,HSF A4A","heat shock transcription factor  A4A",25
+"Bra029229","Bra029229*","PF00501","PTHR11968","KOG1176","","","AT5G63380.1","","AMP-dependent synthetase and ligase family protein",25
+"Bra000483","Bra000483","PF00125,PF00808","PTHR23428","KOG1744","","K11252","AT2G28720.1","","Histone superfamily protein",26
+"Bra002273","Bra002273","PF05669","PTHR13186","KOG4086","","","AT5G19910.1","MED31","SOH1 family protein",26
+"Bra011536","Bra011536","PF00400","PTHR19850","KOG0286","","K04536","AT4G34460.1","AGB1,ATAGB1,ELK4","GTP binding protein beta 1",26
+"Bra015237","Bra015237","PF00160,PF00515,PF07719","PTHR11071","KOG0546","5.2.1.8","K05864","AT2G15790.1","CYP40,SQN","peptidyl-prolyl cis-trans isomerase / cyclophilin-40 (CYP40) / rotamase",26
+"Bra000240","Bra000240","PF03385","","","","","AT2G41770.1","","Protein of unknown function (DUF288)",26
+"Bra030540","Bra030540","PF00106,PF08659","PTHR19410","KOG1208","1.3.1.33","K00218","AT1G03630.1","POR C,PORC","protochlorophyllide oxidoreductase C",26
+"Bra010510","Bra010510","PF04997,PF00623,PF04983,PF05000,PF04998,PF04992,PF04990,PF05001","PTHR19376","KOG0260","2.7.7.6","K03006","AT4G35800.1","NRPB1,RNA_POL_II_LS,RNA_POL_II_LSRNA_POL_II_LS,RPB1","RNA polymerase II large subunit",26
+"Bra021079","Bra021079","PF00378","PTHR11941","KOG1679","4.2.1.18","K05607","AT4G16800.1","","ATP-dependent caseinolytic (Clp) protease/crotonase family protein",26
+"Bra007738","Bra007738","PF07714,PF00069","PTHR23257","KOG0192","","","AT3G63260.1","ATMRK1","Protein kinase superfamily protein",26
+"Bra006413","Bra006413","PF01722","PTHR12735","KOG2313","","","AT5G17560.1","","BolA-like family protein",26
+"Bra030316","Bra030316","PF00121","PTHR21139","KOG1643","5.3.1.1","K01803","AT2G21170.1","PDTPI,TIM","triosephosphate isomerase",26
+"Bra037196","Bra037196","","","","","","AT2G10940.1","","Bifunctional inhibitor/lipid-transfer protein/seed storage 2S albumin superfamily protein",26
+"Bra032617","Bra032617","PF00892","","","","","AT1G01070.1","","nodulin MtN21 /EamA-like transporter family protein",26
+"Bra029427","Bra029427","PF06697","","","","","AT4G11950.1","","Protein of unknown function (DUF1191)",26
+"Bra025223","Bra025223","PF00069,PF07714","PTHR23258","KOG1187","","","AT3G26700.1","","Protein kinase superfamily protein",26
+"Bra006297","Bra006297","PF02298","","","","","AT5G15350.1","AtENODL17,ENODL17","early nodulin-like protein 17",26
+"Bra015781","Bra015781","PF07732,PF00394,PF07731","PTHR11709","KOG1263","","","AT1G76160.1","sks5","SKU5 similar 5",26
+"Bra002684","Bra002684","","PTHR12651","KOG3129","","K06693","AT5G57950.1","","26S proteasome regulatory subunit, putative",26
+"Bra000942","Bra000942","PF00201","PTHR11926","","","","AT4G01070.1","GT72B1,UGT72B1","UDP-Glycosyltransferase superfamily protein",26
+"Bra005505","Bra005505","PF01657","","","","","AT2G33330.1","PDLP3","plasmodesmata-located protein 3",26
+"Bra040933","Bra040933","PF00224,PF02887","PTHR11817","KOG2323","2.7.1.40","K00873","AT5G52920.1","PKP-BETA1,PKP1,PKP2","plastidic pyruvate kinase beta subunit 1",26
+"Bra036904","Bra036904","PF00227","PTHR11599","KOG0177","3.4.25.1","K02734","AT3G22630.1","PBD1,PRCGB","20S proteasome beta subunit D1",26
+"Bra010977","Bra010977","PF01596","PTHR10509","KOG1663","2.1.1.104","K00588","AT1G24735.2","","S-adenosyl-L-methionine-dependent methyltransferases superfamily protein",26
+"Bra011190","Bra011190","","","","","","AT4G30410.1","","sequence-specific DNA binding transcription factors",26
+"Bra012899","Bra012899","","PTHR10992","KOG1454","","","AT3G50440.1","ATMES10,MES10","methyl esterase 10",26
+"Bra017162","Bra017162","PF09783","","","","","AT2G37680.1","","",26
+"Bra003486","Bra003486*","PF00587,PF03129,PF09180","PTHR11451","KOG4163","","","AT3G62120.1","","Class II aaRS and biotin synthetases superfamily protein",26
+"Bra003487","Bra003487*","PF00587,PF03129,PF09180","PTHR11451","KOG4163","","","AT3G62120.1","","Class II aaRS and biotin synthetases superfamily protein",26
+"Bra031084","Bra031084*","PF00154,PF08423,PF06745","PTHR22942","KOG1433","","","AT2G19490.1","","recA DNA recombination family protein",26
+"Bra031085","Bra031085*","PF12265,PF00400","PTHR22850","KOG0264","","K10752","AT2G19520.1","ACG1,ATMSI4,FVE,MSI4,NFC04,NFC4","Transducin family protein / WD-40 repeat family protein",26
+"Bra016016","Bra016016*","","","","","","AT1G73120.1","","",26
+"Bra016017","Bra016017*","PF00004","PTHR23077","KOG0651","","","AT1G73110.1","","P-loop containing nucleoside triphosphate hydrolases superfamily protein",26
+"Bra024819","Bra024819*","PF05991","","","","K06962","AT2G02410.1","","",26
+"Bra024820","Bra024820*","PF02798","PTHR11260","KOG0868","","","AT2G02390.1","ATGSTZ1,GST18,GSTZ1","glutathione S-transferase zeta 1",26
+"Bra024821","Bra024821*","PF09335","PTHR12677","","","","AT2G02370.1","","SNARE associated Golgi protein family",26
+"Bra024230","Bra024230*","","PTHR12601","","","","AT4G28080.1","","Tetratricopeptide repeat (TPR)-like superfamily protein",26
+"Bra024231","Bra024231*","PF02297","PTHR11387","","1.9.3.1","K02267","AT5G57815.1","","Cytochrome c oxidase, subunit Vib family protein",26
+"Bra005718","Bra005718*","PF00071","PTHR11708","","","","AT5G59840.1","","Ras-related small GTP-binding family protein",26
+"Bra005767","Bra005767*","PF00025,PF00071,PF08477,PF04670,PF00009","PTHR11708","KOG0078","","K07976","AT5G03520.1","ATRAB-E1D,ATRAB8C,ATRABE1D,RAB-E1D,RAB8C","RAB GTPase homolog 8C",26
+"Bra006795","Bra006795*","PF01063","PTHR11825","KOG0975","2.6.1.42","K00826","AT5G57850.1","","D-aminoacid aminotransferase-like PLP-dependent enzymes superfamily protein",26
+"Bra006796","Bra006796*","PF02458","","","","","AT5G57840.1","","HXXXD-type acyl-transferase family protein",26
+"Bra006797","Bra006797*","PF02458","","","","","AT5G57840.1","","HXXXD-type acyl-transferase family protein",26
+"Bra038098","Bra038098*","PF00069","PTHR11042","","","","AT1G53090.1","SPA4","SPA1-related 4",26
+"Bra038099","Bra038099*","PF00400,PF01479","PTHR22847","KOG4837","","","AT1G53090.1","SPA4","SPA1-related 4",26
+"Bra001358","Bra001358*","","","","","","AT3G10405.1","","",26
+"Bra001359","Bra001359*","PF00450","PTHR11802","KOG1282","3.4.16.5","K13289","AT3G10410.1","CPY,SCPL49","SERINE CARBOXYPEPTIDASE-LIKE 49",26
+"Bra016548","Bra016548*","PF07983,PF00702","PTHR10000","KOG1615","","","AT1G18640.2","PSP","3-phosphoserine phosphatase",26
+"Bra016549","Bra016549*","PF03031,PF00076","PTHR10432","KOG0121","","","AT4G26190.1","","Haloacid dehalogenase-like hydrolase (HAD) superfamily protein",26
+"Bra032053","Bra032053*","","","","","","AT2G24960.1","","",26
+"Bra032054","Bra032054*","","","","","","AT2G24960.2","","",26
+"Bra011134","Bra011134","PF07649,PF03107,PF05251","PTHR13636","KOG4452","","","AT5G22355.1","","Cysteine/Histidine-rich C1 domain family protein",27
+"Bra033493","Bra033493","","","","","","AT4G15545.1","","",27
+"Bra012054","Bra012054","PF01126","","KOG4480","","","AT2G26670.1","ATHO1,GUN2,HO1,HY1,HY6,TED4","Plant haem oxygenase (decyclizing) family protein",27
+"Bra020036","Bra020036","PF00639","PTHR10657","","","","AT5G19370.1","","rhodanese-like domain-containing protein / PPIC-type PPIASE domain-containing protein",27
+"Bra023164","Bra023164","","","","","","AT1G31175.1","","",27
+"Bra008627","Bra008627","PF01582","","","","","AT4G11340.1","","Disease resistance protein (TIR-NBS-LRR class) family",27
+"Bra000538","Bra000538","PF04690","","","","","AT2G26580.1","YAB5","plant-specific transcription factor YABBY family protein",27
+"Bra031296","Bra031296","PF01554","PTHR11206","KOG1347","","","AT3G21690.1","","MATE efflux family protein",27
+"Bra037191","Bra037191","PF00581","PTHR13253","KOG1530","","","AT5G66040.1","STR16","sulfurtransferase protein 16",27
+"Bra008842","Bra008842","","","","","","AT5G13260.1","","",27
+"Bra023432","Bra023432","PF07690","PTHR10074","","","","AT5G13740.1","ZIF1","zinc induced facilitator 1",27
+"Bra034297","Bra034297","PF00023","PTHR18958","","","","AT2G26210.1","","Ankyrin repeat family protein",27
+"Bra007241","Bra007241","PF08263,PF00560,PF07714,PF00069","PTHR23258","KOG1187","","","AT3G56370.1","","Leucine-rich repeat protein kinase family protein",27
+"Bra025081","Bra025081","PF08240,PF00107","PTHR11695","KOG0022","1.1.1.1,1.1.1.284","K00121","AT5G42250.1","","Zinc-binding alcohol dehydrogenase family protein",27
+"Bra025675","Bra025675","PF07983,PF00702","PTHR10000","KOG1615","3.1.3.3","K01079","AT1G18640.2","PSP","3-phosphoserine phosphatase",27
+"Bra002886","Bra002886","","","","","","AT5G55620.1","","",27
+"Bra028446","Bra028446","","","","","","","","",27
+"Bra002221","Bra002221","PF00483","PTHR22572","KOG1322","2.7.7.27","K00975","AT5G19220.1","ADG2,APL1","ADP glucose pyrophosphorylase large subunit 1",27
+"Bra024300","Bra024300","PF00300","PTHR23029","KOG4754","","","AT5G64460.1","","Phosphoglycerate mutase family protein",27
+"Bra022310","Bra022310","PF01814,PF05495","PTHR21319","KOG1940","","","AT3G18290.1","BTS,EMB2454","zinc finger protein-related",27
+"Bra022813","Bra022813","PF00067","PTHR19383","KOG0156","4.99.1.6","K11868","AT2G30770.1","CYP71A13","cytochrome P450, family 71, subfamily A, polypeptide 13",27
+"Bra003750","Bra003750","PF02270","PTHR10445","KOG2905","3.6.4.12","K03139","AT1G75510.1","","Transcription initiation factor IIF, beta subunit",27
+"Bra001950","Bra001950","PF08263","PTHR23258","","","","AT3G24480.1","","Leucine-rich repeat (LRR) family protein",27
+"Bra015305","Bra015305","PF05514","","","","","AT1G04340.1","","HR-like lesion-inducing protein-related",27
+"Bra037309","Bra037309","PF04755","","","","","AT4G00030.1","","Plastid-lipid associated protein PAP / fibrillin family protein",27
+"Bra017823","Bra017823","","","","","","AT2G23130.1","AGP17,ATAGP17","arabinogalactan protein 17",27
+"Bra013859","Bra013859","PF00550","PTHR20863","KOG1748","","","AT4G25050.1","ACP4","acyl carrier protein 4",27
+"Bra037412","Bra037412","PF03168","","","","","AT4G01410.1","","Late embryogenesis abundant (LEA) hydroxyproline-rich glycoprotein family",27
+"Bra033483","Bra033483","PF00378","PTHR11941","","","","AT4G14440.1","ATECI3,ECI3,HCD1","3-hydroxyacyl-CoA dehydratase 1",27
+"Bra007337","Bra007337","PF00696","","KOG1154","2.7.2.-,2.7.2.8","K00930","AT3G57560.1","NAGK","N-acetyl-l-glutamate kinase",27
+"Bra002677","Bra002677","PF05182","PTHR13484","KOG1049","","","AT5G58040.1","ATFIP1[V],ATFIPS5,FIP1[V],FIPS5","homolog of yeast FIP1 [V]",27
+"Bra005521","Bra005521","PF00564,PF00069,PF07714","PTHR23257","KOG0192","","","AT3G24715.1","","Protein kinase superfamily protein with octicosapeptide/Phox/Bem1p domain",27
+"Bra011097","Bra011097","PF04511","PTHR11009","KOG0858","","K13989","AT4G29330.1","DER1","DERLIN-1",27
+"Bra012045","Bra012045","PF08263,PF00560,PF07714,PF00069","PTHR23258","KOG1187","","","AT2G26730.1","","Leucine-rich repeat protein kinase family protein",27
+"Bra024000","Bra024000*","PF05368,PF01370,PF01073","PTHR10366","KOG1203","","","AT4G31530.1","","NAD(P)-binding Rossmann-fold superfamily protein",27
+"Bra024002","Bra024002*","PF00067","PTHR19383","","","","AT1G13080.1","CYP71B2","cytochrome P450, family 71, subfamily B, polypeptide 2",27
+"Bra024003","Bra024003*","","","","","","","","",27
+"Bra007608","Bra007608*","PF07064","PTHR22746","KOG2006","","","AT5G28350.1","","Quinoprotein amine dehydrogenase, beta chain-like; RIC1-like guanyl-nucleotide exchange factor",27
+"Bra007609","Bra007609*","PF00295","","","","","AT3G61490.1","","Pectin lyase-like superfamily protein",27
+"Bra016572","Bra016572*","PF00069,PF07714","PTHR11295","KOG0659","2.7.11.22","K02202","AT1G18040.1","AT;CDCKD;3,CAK2AT,CDKD1;3","cyclin-dependent kinase D1;3",27
+"Bra016573","Bra016573*","PF04928,PF01909,PF04926","PTHR10682","KOG2245","","","AT1G17980.1","PAPS1","poly(A) polymerase 1",27
+"Bra015695","Bra015695*","PF00141","","","","","AT1G77100.1","","Peroxidase superfamily protein",27
+"Bra015696","Bra015696*","PF01789","","","","","AT1G77090.1","","Mog1/PsbP/DUF1795-like photosystem II reaction center PsbP family protein",27
+"Bra015697","Bra015697*","PF00463","PTHR21631","","","","AT1G77060.1","","Phosphoenolpyruvate carboxylase family protein",27
+"Bra015698","Bra015698*","PF00226","PTHR11821","KOG0691","","","AT1G77020.1","","DNAJ heat shock N-terminal domain-containing protein",27
+"Bra024776","Bra024776*","PF02151,PF08755","","","","","AT2G03390.1","","uvrB/uvrC motif-containing protein",27
+"Bra024777","Bra024777*","PF01535","PTHR10483","","","","AT2G03380.1","","Pentatricopeptide repeat (PPR) superfamily protein",27
+"Bra022241","Bra022241*","PF00282","PTHR11999","KOG1383","4.1.1.15","K01580","AT3G17760.1","GAD5","glutamate decarboxylase 5",27
+"Bra022242","Bra022242*","PF02733,PF02734","","KOG2426","","","AT3G17770.1","","Dihydroxyacetone kinase",27
+"Bra018293","Bra018293*","PF07172,PF01424,PF00437,PF00270,PF00271,PF04408,PF07717","PTHR18934","KOG0922","","","AT2G30800.1","ATVT-1,HVT1","helicase in vascular tissue and tapetum",27
+"Bra018294","Bra018294*","PF01789","","","","K02717","AT1G06680.1","OE23,OEE2,PSBP-1,PSII-P","photosystem II subunit P-1",27
+"Bra000901","Bra000901","","","","","","AT4G01995.1","","",28
+"Bra006536","Bra006536","PF07714,PF00069,PF02230,PF03959,PF03583","PTHR23258","KOG1187","","","AT5G20050.1","","Protein kinase superfamily protein",28
+"Bra003053","Bra003053","PF00805","","","","","AT5G53490.1","","Tetratricopeptide repeat (TPR)-like superfamily protein",28
+"Bra004244","Bra004244","PF01432","PTHR11804","KOG2089","","","AT1G67690.1","","Zincin-like metalloproteases family protein",28
+"Bra024290","Bra024290*","PF00795","PTHR23088","KOG0808","3.5.1.6","K01431","AT5G64370.1","BETA-UP,PYD3","beta-ureidopropionase",29
+"Bra024291","Bra024291*","PF00316","PTHR11556","KOG1458","3.1.3.11","K03841","AT5G64380.1","","Inositol monophosphatase family protein",29
+"Bra024292","Bra024292*","PF00013","PTHR10288","KOG2192","","","AT5G64390.1","HEN4","RNA-binding KH domain-containing protein",29
+"Bra024293","Bra024293*","PF06747","","KOG4090","","","AT5G09570.1","","Cox19-like CHCH family protein",29
+"Bra024294","Bra024294*","PF04931","PTHR13213","KOG1926","2.7.7.7","K02331","AT5G64420.1","","DNA polymerase V family",29
+"Bra028689","Bra028689*","PF03986,PF03987,PF10381","PTHR12866","KOG2981","","K08343","AT5G61500.1","ATATG3,ATG3","autophagy 3 (APG3)",29
+"Bra030031","Bra030031","PF00479,PF02781","PTHR23429","KOG0563","1.1.1.49","K00036","AT1G24280.1","G6PD3","glucose-6-phosphate dehydrogenase 3",30
+"Bra000294","Bra000294","PF00463","PTHR21631","KOG1260","","","AT2G43180.1","","Phosphoenolpyruvate carboxylase family protein",30
+"Bra040771","Bra040771","PF01126","","KOG4480","","","AT2G26670.1","ATHO1,GUN2,HO1,HY1,HY6,TED4","Plant haem oxygenase (decyclizing) family protein",30
+"Bra007131","Bra007131","PF00481","PTHR13832","KOG0700","","","AT3G55050.1","","Protein phosphatase 2C family protein",31
+"Bra003841","Bra003841","PF00076","PTHR15241","KOG0130","","","AT1G73530.1","","RNA-binding (RRM/RBD/RNP motifs) family protein",31
+"Bra032284","Bra032284","PF00501","PTHR11968","KOG1256","6.2.1.3","K01897","AT1G49430.1","LACS2,LRD2","long-chain acyl-CoA synthetase 2",31
+"Bra018876","Bra018876","","PTHR18958:SF197","","","","AT1G50900.1","","Ankyrin repeat family protein",31
+"Bra001618","Bra001618","","PTHR23160","KOG0978","","","AT3G16000.1","MFP1","MAR binding filament-like protein 1",31
+"Bra023392","Bra023392","PF01190","","","","","AT5G13140.1","","Pollen Ole e 1 allergen and extensin family protein",31
+"Bra040932","Bra040932","PF03330,PF01357","","","","","AT2G28950.1","ATEXP6,ATEXPA6,ATHEXP ALPHA 1.8,EXPA6","expansin A6",31
+"Bra001415","Bra001415","PF00578,PF08534,PF10417","PTHR10681","KOG0852","1.11.1.15","K03386","AT3G11630.1","","Thioredoxin superfamily protein",31
+"Bra025958","Bra025958","PF03446,PF02558","PTHR22981","KOG0409","","","AT1G17650.1","GLYR2,GR2","glyoxylate reductase 2",31
+"Bra033438","Bra033438","PF00076","PTHR10432","KOG0131","","","AT3G52380.1","CP33,PDE322","chloroplast RNA-binding protein 33",31
+"Bra013869","Bra013869","","","","","","AT4G25170.1","","Uncharacterised conserved protein (UCP012943)",31
+"Bra018544","Bra018544","PF00234","","","","","AT4G00165.1","","Bifunctional inhibitor/lipid-transfer protein/seed storage 2S albumin superfamily protein",31
+"Bra012462","Bra012462","PF00118","PTHR11353","KOG0356","","","AT1G26230.1","","TCP-1/cpn60 chaperonin family protein",31
+"Bra019853","Bra019853","","","","","","AT1G11430.1","","plastid developmental protein DAG, putative",31
+"Bra040427","Bra040427","PF01765","PTHR20982","KOG4759","","K02838","AT3G63190.1","AtcpRRF,cpRRF,HFP108,RRF","ribosome recycling factor, chloroplast precursor",31
+"Bra039091","Bra039091","PF01165","","","","","AT3G27160.1","GHS1","Ribosomal protein S21 family protein",31
+"Bra012339","Bra012339","PF07719,PF00515","PTHR23083","","","","AT1G22700.2","","Tetratricopeptide repeat (TPR)-like superfamily protein",31
+"Bra015315","Bra015315","PF00248","PTHR11732","KOG1575","","","AT1G04420.1","","NAD(P)-linked oxidoreductase superfamily protein",31
+"Bra035101","Bra035101","PF00581","PTHR11364","KOG1529","2.8.1.1,2.8.1.2","K01011","AT1G79230.1","ATMST1,ATRDH1,MST1,ST1,STR1","mercaptopyruvate sulfurtransferase 1",31
+"Bra008070","Bra008070","","","","","","AT1G73090.1","","",31
+"Bra035490","Bra035490","PF00111","","","","K02639","AT1G32550.1","","2Fe-2S ferredoxin-like superfamily protein",31
+"Bra008975","Bra008975","PF00046","","","","","AT5G11270.1","OCP3","overexpressor of cationic peroxidase 3",31
+"Bra004639","Bra004639","PF07992,PF00890,PF00070,PF00085,PF00462","PTHR22912","KOG0404","1.8.1.9","K00384","AT2G41680.1","NTRC","NADPH-dependent thioredoxin reductase C",31
+"Bra014340","Bra014340","PF00274","PTHR11627","KOG1557","4.1.2.13","K01623","AT2G01140.1","","Aldolase superfamily protein",31
+"Bra006182","Bra006182","PF00160","PTHR11071","KOG0880","5.2.1.8","K03768","AT5G13120.1","ATCYP20-2,CYP20-2","cyclophilin 20-2",31
+"Bra032122","Bra032122","PF01632","","","","","AT2G24090.1","","Ribosomal protein L35",31
+"Bra026243","Bra026243","PF01336,PF00152","PTHR22594","KOG0554","6.1.1.22","K01893","AT4G17300.1","ATNS1,NS1,OVA8","Class II aminoacyl-tRNA and biotin synthetases superfamily protein",31
+"Bra006052","Bra006052","PF07977,PF01575","","","4.2.1.-","K02372","AT5G10160.1","","Thioesterase superfamily protein",31
+"Bra027163","Bra027163","PF04055","","","","","AT1G60230.1","","Radical SAM superfamily protein",31
+"Bra022734","Bra022734","PF00467","PTHR12903","KOG1708","","","AT5G54600.1","","Translation protein SH3-like family protein",31
+"Bra040448","Bra040448","PF00687","PTHR23105","KOG1569","","","AT3G63490.1","","Ribosomal protein L1p/L10e family",31
+"Bra037364","Bra037364","PF00281,PF00673","PTHR11994","KOG0398","","","AT4G01290.1","","",31
+"Bra027274","Bra027274","PF10508","PTHR13554","KOG4413","","K06692","AT3G15180.1","","ARM repeat superfamily protein",31
+"Bra036495","Bra036495","PF00677","PTHR21098","KOG3310","2.5.1.9","K00793","AT2G20690.1","","lumazine-binding family protein",31
+"Bra012040","Bra012040","PF00288","PTHR20861","","2.7.1.148","K00919","AT2G26930.1","ATCDPMEK,CDPMEK,ISPE,PDE277","4-(cytidine 5\'-phospho)-2-C-methyl-D-erithritol kinase",31
+"Bra001587","Bra001587","PF01649","","","","","AT3G15190.1","","chloroplast 30S ribosomal protein S20, putative",31
+"Bra025304","Bra025304","PF00542","PTHR11809","KOG1715","","","AT3G27850.1","RPL12-C","ribosomal protein L12-C",31
+"Bra027421","Bra027421*","PF00332,PF07983","","","","","AT3G13560.1","","O-Glycosyl hydrolases family 17 protein",31
+"Bra027422","Bra027422*","PF00179","PTHR11621","KOG0417","","","AT3G13550.1","CIN4,COP10,EMB144,FUS9","Ubiquitin-conjugating enzyme family protein",31
+"Bra037680","Bra037680*","PF00295","","","","","AT2G43860.1","","Pectin lyase-like superfamily protein",31
+"Bra037682","Bra037682*","PF00291","PTHR10314","KOG1252","2.5.1.47","K01738","AT2G43750.1","ACS1,ATCS-B,CPACS1,OASB","O-acetylserine (thiol) lyase B",31
+"Bra000952","Bra000952*","","","","","","AT4G01290.1","","",31
+"Bra000953","Bra000953*","PF00281,PF00673","PTHR11994","KOG0398","","K02931","AT4G01310.1","","Ribosomal L5P family protein",31
+"Bra027754","Bra027754","PF01169","PTHR12608","KOG2881","","","AT1G64150.1","","Uncharacterized protein family (UPF0016)",32
+"Bra013155","Bra013155","","","","","","AT2G11910.1","","",32
+"Bra014870","Bra014870","PF01154,PF08540","PTHR11877","KOG1393","2.3.3.10","K01641","AT4G11820.2","EMB2778,FKP1,HMGS,MVA1","hydroxymethylglutaryl-CoA synthase / HMG-CoA synthase / 3-hydroxy-3-methylglutaryl coenzyme A synthase",32
+"Bra005064","Bra005064","","PTHR10366","","","","AT2G39080.1","","NAD(P)-binding Rossmann-fold superfamily protein",32
+"Bra027196","Bra027196","","PTHR23160","KOG0978","","","AT3G16000.1","MFP1","MAR binding filament-like protein 1",32
+"Bra007462","Bra007462","","","","","","AT2G24615.1","","Defensin-like (DEFL) family protein",32
+"Bra022147","Bra022147","PF00808,PF00125","PTHR11064","KOG0869","","","AT5G47640.1","NF-YB2","nuclear factor Y, subunit B2",32
+"Bra012812","Bra012812","PF02536","PTHR13068","KOG1267","","","AT4G38160.1","pde191","Mitochondrial transcription termination factor family protein",32
+"Bra016752","Bra016752","PF03223","PTHR10137","KOG2909","3.6.3.14","K02148","AT1G12840.1","ATVHA-C,DET3","vacuolar ATP synthase subunit C (VATC) / V-ATPase C subunit / vacuolar proton pump C subunit (DET3)",32
+"Bra002665","Bra002665","PF10674","","","","","AT5G58250.1","","",32
+"Bra018264","Bra018264","PF01406,PF09334,PF00133,PF09190","PTHR10890","KOG2007","6.1.1.16","K01883","AT2G31170.1","SYCO ARATH","Cysteinyl-tRNA synthetase, class Ia family protein",32
+"Bra023675","Bra023675","PF03080","","","","","AT5G18460.1","","Protein of Unknown Function (DUF239)",32
+"Bra036243","Bra036243","","","","","","AT4G02725.1","","",32
+"Bra014938","Bra014938","PF07189","PTHR20978","KOG3485","","K12832","AT3G23325.1","","Splicing factor 3B subunit 5/RDS3 complex subunit 10",32
+"Bra013450","Bra013450","PF05558","PTHR22683","","","","AT4G20260.1","ATPCAP1,PCAP1","plasma-membrane associated cation-binding protein 1",32
+"Bra023474","Bra023474","PF07223","","","","","AT3G01560.1","","Protein of unknown function (DUF1421)",32
+"Bra006291","Bra006291","","","","","","AT5G15230.1","GASA4","GAST1 protein homolog 4",32
+"Bra025459","Bra025459","PF00133,PF09334,PF08264","PTHR11946","KOG0434","6.1.1.5","K01870","AT4G10320.1","","tRNA synthetase class I (I, L, M and V) family protein",32
+"Bra011824","Bra011824","","","","","","AT4G39900.1","","",32
+"Bra012176","Bra012176","PF00083,PF07690","PTHR11600","KOG0254","","","AT2G48020.1","","Major facilitator superfamily protein",32
+"Bra019264","Bra019264","PF00295","","","","","AT4G23820.1","","Pectin lyase-like superfamily protein",32
+"Bra033657","Bra033657","PF08246,PF00112,PF00396","PTHR12411","KOG1543","3.4.22.-","K01376","AT5G43060.1","","Granulin repeat cysteine protease family protein",32
+"Bra019492","Bra019492*","","","","","","AT3G46890.1","","",32
+"Bra019493","Bra019493*","PF00091,PF03953","PTHR11588","KOG1375","","K07375","AT5G62700.1","TUB3","tubulin beta chain 3",32
+"Bra021016","Bra021016*","PF07714,PF00069","PTHR23258","","","","AT4G18250.1","","receptor serine/threonine kinase, putative",32
+"Bra021017","Bra021017*","PF08323,PF00534","PTHR12526","","","","AT4G18240.1","ATSS4,SS4,SSIV","starch synthase 4",32
+"Bra013950","Bra013950","PF00651,PF11900,PF12313","PTHR18958","KOG4214","","","AT1G64280.1","ATNPR1,NIM1,NPR1,SAI1","regulatory protein (NPR1)",33
+"Bra005003","Bra005003","PF00412","PTHR18973","KOG1700","","","AT2G39900.1","","GATA type zinc finger transcription factor family protein",33
+"Bra005531","Bra005531","PF00231","PTHR11693","KOG1531","","","AT2G33040.1","ATP3","gamma subunit of Mt ATP synthase",33
+"Bra003504","Bra003504","PF01501","","","","","AT3G62660.1","GATL7","galacturonosyltransferase-like 7",33
+"Bra023435","Bra023435","PF00583,PF08445","PTHR23091","KOG3235","2.3.1.88","K00670","AT5G13780.1","","Acyl-CoA N-acyltransferases (NAT) superfamily protein",33
+"Bra003024","Bra003024","PF03226","PTHR13847","KOG3399","","","AT5G53940.1","","Yippee family putative zinc-binding protein",33
+"Bra012152","Bra012152","PF00067","PTHR19383","KOG0156","","","AT5G67310.1","CYP81G1","cytochrome P450, family 81, subfamily G, polypeptide 1",33
+"Bra005809","Bra005809","PF01148","","KOG4453","","","AT5G04490.1","VTE5","vitamin E pathway gene 5",33
+"Bra037380","Bra037380","","","","","","AT4G01150.1","","",33
+"Bra028483","Bra028483","PF01190","","","","","AT5G41050.1","","Pollen Ole e 1 allergen and extensin family protein",33
+"Bra039120","Bra039120","PF03098","PTHR11903","KOG2408","1.-.-.-","K10529","AT3G01420.1","ALPHA-DOX1,DIOX1,DOX1,PADOX-1","Peroxidase superfamily protein",33
+"Bra020748","Bra020748","PF01535","PTHR10483","","","","AT3G06430.1","EMB2750","Tetratricopeptide repeat (TPR)-like superfamily protein",33
+"Bra011839","Bra011839","PF00254","PTHR10516","KOG0552","","","AT4G39710.1","FKBP16-2","FK506-binding protein 16-2",33
+"Bra038729","Bra038729","","","","","","AT3G12560.1","ATTBP2,TRFL9","TRF-like 9",33
+"Bra026019","Bra026019","","","","","","AT1G16880.1","","uridylyltransferase-related",33
+"Bra040413","Bra040413","PF10184","","","","","AT3G04890.1","","Uncharacterized conserved protein (DUF2358)",33
+"Bra031011","Bra031011","PF05978,PF07690","PTHR23294","KOG3098","","","AT1G18010.1","","Major facilitator superfamily protein",33
+"Bra026649","Bra026649","","","","","","AT2G01590.1","CRR3","chlororespiratory reduction 3",33
+"Bra035973","Bra035973","","","","","","AT1G05440.1","","C-8 sterol isomerases",33
+"Bra039117","Bra039117","PF01429,PF05964,PF05965","PTHR14140","","","","AT3G01460.1","ATMBD9,MBD9","methyl-CPG-binding domain 9",33
+"Bra007912","Bra007912","PF00484","PTHR11002","KOG1578","4.2.1.1","K01673","AT1G70410.1","ATBCA4,BCA4,CA4","beta carbonic anhydrase 4",33
+"Bra026326","Bra026326","","","","","","","","",33
+"Bra023061","Bra023061","PF01754,PF01428","PTHR10634","KOG3173","","","AT2G36320.1","","A20/AN1-like zinc finger family protein",33
+"Bra020971","Bra020971","","","","","","AT4G19160.2","","",33
+"Bra011460","Bra011460","","","","","","AT4G33666.1","","",33
+"Bra000867","Bra000867","PF05564","","","","","AT1G56220.3","","Dormancy/auxin associated family protein",33
+"Bra025612","Bra025612","","PTHR13343","KOG3374","","","AT2G04690.1","","Pyridoxamine 5\'-phosphate oxidase family protein",33
+"Bra006227","Bra006227","PF01074,PF09261,PF07748","PTHR11607","KOG1959","","","AT5G13980.1","","Glycosyl hydrolase family 38 protein",33
+"Bra028524","Bra028524","","","","","","AT5G42070.1","","",33
+"Bra009330","Bra009330*","PF00855","PTHR12550","KOG1904","","","AT5G08230.1","","Tudor/PWWP/MBT domain-containing protein",33
+"Bra009331","Bra009331*","PF00574","PTHR10381","KOG0840","3.4.21.92","K01358","AT5G23140.1","CLPP2,NCLPP7","nuclear-encoded CLP protease P7",33
+"Bra011148","Bra011148*","PF04776","","","","","AT4G29550.1","","Protein of unknown function (DUF626)",33
+"Bra011150","Bra011150*","PF04776","PTHR11638","KOG1051","","","AT4G29920.1","","Double Clp-N motif-containing P-loop nucleoside triphosphate hydrolases superfamily protein",33
+"Bra027961","Bra027961*","PF00106","PTHR19410","KOG0725","","","AT1G07440.1","","NAD(P)-binding Rossmann-fold superfamily protein",33
+"Bra027962","Bra027962*","PF00106,PF08659","PTHR19410","","","","AT1G07440.1","","NAD(P)-binding Rossmann-fold superfamily protein",33
+"Bra025505","Bra025505*","PF00179","PTHR11621","KOG0416","6.3.2.19","K06689","AT1G63800.1","UBC5","ubiquitin-conjugating enzyme 5",33
+"Bra025506","Bra025506*","PF02214","PTHR14499","KOG2714","","","AT5G41330.1","","BTB/POZ domain with WD40/YVTN repeat-like protein",33
+"Bra027183","Bra027183*","","","","","","AT3G16200.1","","",33
+"Bra027184","Bra027184*","PF00857","PTHR11080","KOG4003","","","AT3G16190.1","","Isochorismatase family protein",33
+"Bra037181","Bra037181*","PF00069,PF07714","PTHR22982","KOG0032","","","AT5G66210.1","CPK28","calcium-dependent protein kinase 28",33
+"Bra037182","Bra037182*","PF00970,PF00175","PTHR19384","","","","AT5G66190.1","ATLFNR1,FNR1","ferredoxin-NADP(+)-oxidoreductase 1",33
+"Bra025178","Bra025178*","PF01603","PTHR10257","KOG2085","","K11584","AT3G26020.1","","Protein phosphatase 2A regulatory B subunit family protein",33
+"Bra025179","Bra025179*","PF01603","PTHR10257","KOG2085","","K11584","AT3G26030.1","ATB\' DELTA","serine/threonine protein phosphatase 2A 55 kDa regulatory subunit B prime delta",33
+"Bra025180","Bra025180*","PF04755","","","","","AT3G26070.1","","Plastid-lipid associated protein PAP / fibrillin family protein",33
+"Bra025181","Bra025181*","PF02517,PF00615","","","","","AT3G26090.1","ATRGS1,RGS1","G-protein coupled receptors;GTPase activators",33
+"Bra008476","Bra008476*","","","KOG2878","","","AT1G80380.2","","P-loop containing nucleoside triphosphate hydrolases superfamily protein",33
+"Bra008477","Bra008477*","PF00134,PF02984","PTHR10177","KOG0654","","","AT1G80370.1","CYCA2;4","Cyclin A2;4",33
+"Bra030607","Bra030607*","PF00141","","","","","AT1G05250.1","","Peroxidase superfamily protein",33
+"Bra030608","Bra030608*","PF01963","PTHR21530","","","","AT1G05270.1","","TraB family protein",33
+"Bra012076","Bra012076*","PF01535","PTHR10483","","","","AT5G66500.1","","Tetratricopeptide repeat (TPR)-like superfamily protein",33
+"Bra012077","Bra012077*","","PTHR22572","","","","AT5G66510.1","GAMMA CA3","gamma carbonic anhydrase 3",33
+"Bra012079","Bra012079*","PF04006,PF01263","PTHR11122","","","","AT5G66540.1","","",33
+"Bra004214","Bra004214*","PF00903","PTHR10374","KOG2943","4.4.1.5","K01759","AT1G67280.1","","Glyoxalase/Bleomycin resistance protein/Dioxygenase superfamily protein",33
+"Bra004215","Bra004215*","PF07250,PF09118","","","","","AT1G67290.1","","glyoxal oxidase-related protein",33
+"Bra020400","Bra020400*","PF00443","PTHR10420","KOG1867","3.1.2.15","K11855","AT5G57990.1","UBP23","ubiquitin-specific protease 23",33
+"Bra020401","Bra020401*","PF02421,PF01926","PTHR10229","KOG0410","","K03665","AT5G57960.1","","GTP-binding protein, HflX",33
+"Bra001200","Bra001200*","PF00397,PF00270,PF04851,PF00271","PTHR10967","KOG0331","3.6.4.13","K12823","AT3G06480.1","","DEAD box RNA helicase family protein",33
+"Bra001201","Bra001201*","PF10436,PF02518","PTHR11947","KOG0787","","","AT3G06483.1","ATPDHK,PDK","pyruvate dehydrogenase kinase",33
+"Bra020086","Bra020086*","","","","","","AT5G20120.1","","",33
+"Bra020087","Bra020087*","","","","","","AT5G20130.1","","",33
+"Bra013156","Bra013156","PF01928","","","","","AT2G11890.1","","adenylate cyclases",34
+"Bra026334","Bra026334","","","","","","AT4G27610.1","","",34
+"Bra006215","Bra006215","PF00561","PTHR10992","KOG1454","","","AT5G13800.1","CRN1,PPH","pheophytinase",34
+"Bra010124","Bra010124","PF04695","PTHR23058","KOG2629","","K13343","AT5G62810.1","ATPEX14,PED2,PEX14","peroxin 14",34
+"Bra012724","Bra012724","","PTHR22814","","","","AT4G16380.1","","Heavy metal transport/detoxification superfamily protein",34
+"Bra006482","Bra006482","","","","","","AT5G18850.1","","",34
+"Bra037476","Bra037476","PF00254","PTHR10516","KOG0549","5.2.1.8","K09569","AT5G48580.1","FKBP15-2","FK506- and rapamycin-binding protein 15 kD-2",34
+"Bra037669","Bra037669","PF03168,PF03947","PTHR13691","","","","AT2G44060.1","","Late embryogenesis abundant protein, group 2",34
+"Bra005601","Bra005601","PF01738,PF02230","PTHR17630","KOG3043","3.1.1.45","K01061","AT2G32520.1","","alpha/beta-Hydrolases superfamily protein",34
+"Bra013576","Bra013576","PF00141","","","1.11.1.7","K00430","AT4G21960.1","PRXR1","Peroxidase superfamily protein",34
+"Bra011469","Bra011469","","","","","","AT4G33780.1","","",34
+"Bra029073","Bra029073","PF07724,PF07728,PF00004,PF10431","PTHR11262","KOG0745","","K03544","AT5G53350.1","CLPX","CLP protease regulatory subunit X",34
+"Bra000659","Bra000659","PF00491","PTHR11358","KOG2964","3.5.3.1","K01476","AT4G08900.1","","arginase",34
+"Bra009080","Bra009080","PF01722","PTHR12735","KOG3348","","","AT5G09830.1","","BolA-like family protein",34
+"Bra000821","Bra000821","PF00085","PTHR10438","KOG0910","","","AT4G03520.1","ATHM2","Thioredoxin superfamily protein",34
+"Bra006857","Bra006857","PF06426,PF00132","PTHR23416:SF2","KOG4750","2.3.1.30","K00640","AT5G56760.1","ATSERAT1;1,SAT-52,SAT5,SERAT1;1","serine acetyltransferase 1;1",34
+"Bra035281","Bra035281","PF03328","","","","","AT4G10750.1","","Phosphoenolpyruvate carboxylase family protein",35
+"Bra037475","Bra037475","PF05542","","","","","AT5G48590.1","","Protein of unknown function (DUF760)",35
+"Bra004528","Bra004528","","","","","","AT2G46540.1","","",35
+"Bra016471","Bra016471","PF03171","PTHR10869","KOG1591","1.14.11.2","K00472","AT1G20270.1","","2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein",35
+"Bra028875","Bra028875","PF01439","","","","","AT3G09390.1","ATMT-1,ATMT-K,MT2A","metallothionein 2A",35
+"Bra018828","Bra018828","PF11865,PF02259,PF08771,PF00454,PF02260","PTHR11139","KOG0891","","K07203","AT1G50030.1","TOR","target of rapamycin",35
+"Bra033981","Bra033981","","PTHR21290","KOG3058","","","AT1G43580.1","","Sphingomyelin synthetase family protein",35
+"Bra033249","Bra033249","PF01553","","","2.3.1.15","K13508","AT1G01610.1","ATGPAT4,GPAT4","glycerol-3-phosphate acyltransferase 4",35
+"Bra031802","Bra031802","PF00378","PTHR11941","KOG1684","3.1.2.4","K05605","AT5G65940.1","CHY1","beta-hydroxyisobutyryl-CoA hydrolase 1",35
+"Bra014689","Bra014689","PF11969,PF01230","PTHR23089","KOG3275","","","AT3G56490.1","HINT1,HIT3","HIS triad family protein 3",35
+"Bra019239","Bra019239","PF10533,PF03106","","","","","AT4G24240.1","ATWRKY7,WRKY7","WRKY DNA-binding protein 7",35
+"Bra036931","Bra036931","","","KOG2181","","","AT1G43850.1","SEU","SEUSS transcriptional co-regulator",35
+"Bra010567","Bra010567","PF00083,PF07690","PTHR11600","KOG0254","","","AT4G36670.1","","Major facilitator superfamily protein",35
+"Bra037623","Bra037623","","PTHR13205","KOG2468","2.7.1.108","K00902","AT3G45040.1","","phosphatidate cytidylyltransferase family protein",35
+"Bra016986","Bra016986","PF02705","","","","K03549","AT2G40540.1","ATKT2,ATKUP2,KT2,KUP2,SHY3,TRK2","potassium transporter 2",35
+"Bra011706","Bra011706","PF05687","","","","","AT4G36780.1","BEH2","BES1/BZR1 homolog 2",35
+"Bra022769","Bra022769","PF03660","PTHR13120","KOG1705","","K12834","AT2G30000.1","","PHF5-like protein",35
+"Bra009649","Bra009649","","","","","","","","",35
+"Bra039740","Bra039740","PF01124","PTHR10250","","2.5.1.18","K00799","AT1G65820.3","","microsomal glutathione s-transferase, putative",35
+"Bra015170","Bra015170","PF10584,PF00227","PTHR11599","KOG0182","3.4.25.1","K02730","AT2G05840.1","PAA2","20S proteasome subunit PAA2",35
+"Bra015317","Bra015317","PF00069,PF07714","PTHR11909","KOG1163","2.7.1.-","K00924","AT1G04440.1","CKL13","casein kinase like 13",35
+"Bra012417","Bra012417","PF01501","","","","","AT1G24170.1","GATL8,LGT9","Nucleotide-diphospho-sugar transferases superfamily protein",35
+"Bra036074","Bra036074","","","","","","AT3G50370.1","","",35
+"Bra024075","Bra024075","PF01370,PF04321,PF02719,PF01073,PF07993","PTHR10366","KOG1371","5.1.3.6","K08679","AT4G30440.1","GAE1","UDP-D-glucuronate 4-epimerase 1",35
+"Bra036615","Bra036615","PF01423","PTHR23338","KOG3293","","K12623","AT5G27720.1","emb1644","Small nuclear ribonucleoprotein family protein",35
+"Bra029923","Bra029923","","PTHR23125","","","","AT3G48880.1","","RNI-like superfamily protein",35
+"Bra033056","Bra033056","PF00067","PTHR19383","KOG0156","","","AT3G28740.1","CYP81D1","Cytochrome P450 superfamily protein",35
+"Bra022168","Bra022168","PF05498","","","","","AT3G16570.1","ATRALF23,RALF23","rapid alkalinization factor 23",35
+"Bra026187","Bra026187","PF05183","PTHR23079","KOG0988","","","AT1G14790.1","ATRDRP1,RDR1","RNA-dependent RNA polymerase 1",35
+"Bra000657","Bra000657","PF08263,PF00560,PF00069,PF07714","PTHR23258","KOG1187","","","AT4G08850.1","","Leucine-rich repeat receptor-like protein kinase family protein",35
+"Bra000130","Bra000130","PF11721,PF07714,PF00069","PTHR23258","KOG1187","","","AT2G39360.1","","Protein kinase superfamily protein",35
+"Bra002080","Bra002080","","","","","","AT2G17710.1","","",35
+"Bra027432","Bra027432","PF04146","PTHR12357","KOG1901","","","AT3G13460.1","ECT2","evolutionarily conserved C-terminal region 2",35
+"Bra002697","Bra002697","","","","","","AT5G57780.1","","",35
+"Bra007776","Bra007776*","PF00013","PTHR10288","KOG1676","","","AT2G25970.1","","KH domain-containing protein",35
+"Bra007777","Bra007777*","PF10604","","","","","AT2G25770.1","","Polyketide cyclase/dehydrase and lipid transport superfamily protein",35
+"Bra023597","Bra023597*","","","","","","AT5G17170.1","ENH1","rubredoxin family protein",35
+"Bra023599","Bra023599*","PF05529","","","","","AT5G17190.1","","",35
+"Bra008903","Bra008903*","PF00091,PF03953","PTHR11588","KOG1375","","K07375","AT5G12250.1","TUB6","beta-6 tubulin",35
+"Bra008904","Bra008904*","","","","","","AT5G12240.2","","",35
+"Bra008392","Bra008392*","PF04725","","","","K03541","AT1G79040.1","PSBR","photosystem II subunit R",35
+"Bra008393","Bra008393*","PF00154,PF06745,PF08423","PTHR22942","KOG1433","","","AT1G79050.1","","recA DNA recombination family protein",35
+"Bra040512","Bra040512*","PF03179","PTHR12713","KOG1772","","","AT3G01390.1","AVMA10,VMA10","vacuolar membrane ATPase 10",35
+"Bra040514","Bra040514*","PF01693,PF00075","PTHR10642","","","","AT3G01410.1","","Polynucleotidyl transferase, ribonuclease H-like superfamily protein",35
+"Bra035188","Bra035188*","","PTHR10209:SF3","","","","AT1G80320.1","","2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein",35
+"Bra035189","Bra035189*","PF00916","","","","","AT1G80310.1","","sulfate transmembrane transporters",35
+"Bra035190","Bra035190*","PF03219","","","","","AT1G80300.1","ATNTT1,NTT1","nucleotide transporter 1",35
+"Bra002655","Bra002655*","","PTHR12133","","","","AT5G58375.1","","Methyltransferase-related protein",35
+"Bra002656","Bra002656*","PF02421,PF01926","PTHR11649","KOG2486","","","AT5G58370.2","","P-loop containing nucleoside triphosphate hydrolases superfamily protein",35
+"Bra002630","Bra002630","PF10262","PTHR13544","KOG3286","","","AT5G58640.1","","Selenoprotein, Rdx type",36
+"Bra026474","Bra026474","PF00168","PTHR22949","","","","AT5G23950.1","","Calcium-dependent lipid-binding (CaLB domain) family protein",36
+"Bra036321","Bra036321","PF08127,PF00112","PTHR12411","KOG1543","3.4.22.1","K01363","AT4G01610.1","","Cysteine proteinases superfamily protein",36
+"Bra027456","Bra027456","PF10584,PF00227","PTHR11599","KOG0863","3.4.25.1","K02725","AT5G42790.1","ARS5,ATPSM30,PAF1","proteasome alpha subunit F1",36
+"Bra022598","Bra022598","PF05684","","","","","AT5G52540.1","","Protein of unknown function (DUF819)",36
+"Bra021384","Bra021384","PF01336,PF08784","PTHR13989","KOG3108","","K10739","AT3G02920.1","ATRPA32B,RPA32B","Replication protein A, subunit RPA32",36
+"Bra005817","Bra005817","PF04568","","","","","AT5G04750.1","","F1F0-ATPase inhibitor protein, putative",36
+"Bra012809","Bra012809","PF05873","PTHR12700","KOG3366","3.6.3.14","K02138","AT3G52300.1","ATPQ","ATP synthase D chain, mitochondrial",36
+"Bra009001","Bra009001","PF04857","PTHR10797","KOG0304","","K12581","AT5G10960.1","","Polynucleotidyl transferase, ribonuclease H-like superfamily protein",36
+"Bra025785","Bra025785","","","","","","AT1G19960.1","","",36
+"Bra027350","Bra027350","PF04043,PF01095","","","","","AT3G14310.1","ATPME3,PME3","pectin methylesterase 3",36
+"Bra020014","Bra020014","PF00190,PF07883","","","","","AT1G09560.1","GLP5","germin-like protein 5",36
+"Bra000623","Bra000623","PF00406,PF05191","PTHR23359","KOG3078","2.7.4.3","K00939","AT5G50370.1","","Adenylate kinase family protein",36
+"Bra010727","Bra010727","PF01190","PTHR23201","","","","AT4G38770.1","ATPRP4,PRP4","proline-rich protein 4",36
+"Bra027225","Bra027225","PF01426,PF01215","PTHR10122","KOG3352","","","AT3G15605.4","","nucleic acid binding",36
+"Bra024516","Bra024516","PF07992,PF00070","PTHR22912","KOG0404","","","AT2G17420.1","ATNTRA,NTR2,NTRA","NADPH-dependent thioredoxin reductase A",36
+"Bra039175","Bra039175","PF06480,PF07728,PF00004","PTHR23076","KOG0731","","","AT3G02450.1","","cell division protein ftsH, putative",36
+"Bra027468","Bra027468","PF02213","PTHR14445","KOG1862","","","AT5G42950.1","","GYF domain-containing protein",36
+"Bra031158","Bra031158","PF01490","PTHR22950","KOG1303","","K13946","AT2G21050.1","LAX2","like AUXIN RESISTANT 2",36
+"Bra020234","Bra020234","PF00097,PF05762,PF00092","PTHR11439","KOG1493","","","AT5G60710.1","","Zinc finger (C3HC4-type RING finger) family protein",36
+"Bra009109","Bra009109","PF10890","","","","","AT5G05370.1","","Cytochrome b-c1 complex, subunit 8 protein",36
+"Bra002322","Bra002322","PF04570","","","","","AT5G20700.1","","Protein of unknown function (DUF581)",36
+"Bra030908","Bra030908","PF00076","PTHR10432","KOG0148","","","AT1G54080.1","UBP1A","oligouridylate-binding protein 1A",36
+"Bra005177","Bra005177","PF00249","PTHR10641","KOG0048","","K09422","AT2G37630.1","AS1,ATMYB91,ATPHAN,MYB91","myb-like HTH transcriptional regulator family protein",36
+"Bra038957","Bra038957","PF02990","PTHR10766","KOG1277","","","AT5G37310.1","","Endomembrane protein 70 protein family",36
+"Bra037962","Bra037962","PF00076","PTHR10432","KOG0148","","","AT1G54080.1","UBP1A","oligouridylate-binding protein 1A",36
+"Bra039109","Bra039109","PF00400,PF00344","PTHR22850","","","","AT5G58230.1","ATMSI1,MEE70,MSI1","Transducin/WD40 repeat-like superfamily protein",36
+"Bra013462","Bra013462","","PTHR13768","KOG1585","","","AT4G20410.1","GAMMA-SNAP,GSNAP","gamma-soluble NSF attachment protein",36
+"Bra002485","Bra002485","PF08246,PF00112","PTHR12411","KOG1543","3.4.22.16","K01366","AT5G60360.1","AALP,ALP,SAG2","aleurain-like protease",36
+"Bra011315","Bra011315","","","","","","AT4G32020.1","","",36
+"Bra014042","Bra014042","PF00069,PF07714","PTHR22985","KOG0606","","","AT1G45160.2","","Protein kinase superfamily protein",36
+"Bra036247","Bra036247","","","","","","AT4G02715.1","","",36
+"Bra000849","Bra000849","PF00400","PTHR19847","KOG0266","","K11801","AT4G03020.1","","transducin family protein / WD-40 repeat family protein",36
+"Bra018338","Bra018338","PF00899,PF10585,PF02134,PF09358","PTHR10953","KOG2012","6.3.2.19","K03178","AT2G30110.1","ATUBA1,MOS5,UBA1","ubiquitin-activating enzyme 1",36
+"Bra029472","Bra029472*","PF03650","PTHR14154","KOG1589","","","AT1G64590.1","","NAD(P)-binding Rossmann-fold superfamily protein",36
+"Bra029473","Bra029473*","PF08387","","","","","AT5G18770.1","","F-box/FBD-like domains containing protein",36
+"Bra004834","Bra004834*","PF00232","PTHR10353","","","","AT2G44450.1","BGLU15","beta glucosidase 15",36
+"Bra004835","Bra004835*","PF00232","PTHR10353","KOG0626","3.2.1.21","K01188","AT2G44450.1","BGLU15","beta glucosidase 15",36
+"Bra004836","Bra004836*","PF00232","PTHR10353","KOG0626","","","AT5G44640.1","BGLU13","beta glucosidase 13",36
+"Bra027302","Bra027302*","PF11721,PF00069,PF07714","PTHR23258","KOG1187","","","AT3G14840.2","","Leucine-rich repeat transmembrane protein kinase",36
+"Bra027306","Bra027306*","PF11721,PF07714,PF00069","PTHR23258","KOG1187","","","AT3G14840.2","","Leucine-rich repeat transmembrane protein kinase",36
+"Bra027307","Bra027307*","PF00560,PF11721,PF07714,PF00069","PTHR23258","KOG1187","","","AT3G14840.2","","Leucine-rich repeat transmembrane protein kinase",36
+"Bra018009","Bra018009*","PF00380","PTHR21569","KOG1697","","K02996","AT3G49080.1","","Ribosomal protein S5 domain 2-like superfamily protein",36
+"Bra018010","Bra018010*","PF00069,PF07714","PTHR22986","KOG0198","","","AT3G45670.1","","Protein kinase superfamily protein",36
+"Bra031191","Bra031191*","PF00899,PF10585,PF02134","PTHR10953","KOG2013","6.3.2.19","K10685","AT2G21470.1","ATSAE2,EMB2764,SAE2","SUMO-activating enzyme 2",36
+"Bra031192","Bra031192*","PF00257","","","","","AT2G21490.1","LEA","dehydrin LEA",36
+"Bra032018","Bra032018*","PF00083,PF07690","PTHR11600","KOG0254","","","AT3G03090.1","AtVGT1,VGT1","vacuolar glucose transporter 1",36
+"Bra032019","Bra032019*","PF00107","PTHR11695","KOG1196","1.3.1.74","K08070","AT5G16970.1","AER,AT-AER","alkenal reductase",36
+"Bra017769","Bra017769*","PF00382","PTHR11618","KOG1597","","K03124","AT4G36650.1","ATPBRP,PBRP","plant-specific TFIIB-related protein",36
+"Bra017770","Bra017770*","PF06708","","","","","AT4G36660.1","","Protein of unknown function (DUF1195)",36
+"Bra017771","Bra017771*","PF00083,PF07690","PTHR11600","KOG0254","","","AT4G36670.1","","Major facilitator superfamily protein",36
+"Bra032664","Bra032664*","PF04054","PTHR13162","KOG1831","","","AT1G02080.1","","transcription regulators",36
+"Bra032665","Bra032665*","PF00847","","","","","AT2G44840.1","ATERF13,EREBP,ERF13","ethylene-responsive element binding factor 13",36
+"Bra032666","Bra032666*","PF01399","PTHR15350","KOG3250","","K12180","AT1G02090.1","ATCSN7,COP15,CSN7,FUS5","Proteasome component (PCI) domain protein",36
+"Bra007283","Bra007283","PF01529","PTHR22883","","","","AT5G05070.1","","DHHC-type zinc finger family protein",37
+"Bra013132","Bra013132","","PTHR13168","","","","AT2G14045.1","","",37
+"Bra033389","Bra033389","","","","","","AT1G03320.1","","",37
+"Bra011116","Bra011116","PF04718","","","3.6.3.14","K02140","AT4G29480.1","","Mitochondrial ATP synthase subunit G protein",37
+"Bra036823","Bra036823","PF09202,PF01163,PF06293","PTHR10593","KOG2268","2.7.11.1","K07179","AT3G51270.1","","protein serine/threonine kinases;ATP binding;catalytics",37
+"Bra039713","Bra039713*","","","","","","AT4G14805.1","","Bifunctional inhibitor/lipid-transfer protein/seed storage 2S albumin superfamily protein",37
+"Bra039714","Bra039714*","PF00227","PTHR11599","KOG0177","3.4.25.1","K02734","AT3G22630.1","PBD1,PRCGB","20S proteasome beta subunit D1",37
+"Bra006748","Bra006748","PF00160","PTHR11071","KOG0880","","","AT5G58710.1","ROC7","rotamase CYP 7",38
+"Bra004850","Bra004850","PF00025,PF00071,PF08477,PF04670,PF09439,PF00009","PTHR11708","KOG0094","","K07893","AT2G44610.1","ATRAB6A,ATRABH1B,RAB6,RAB6A","Ras-related small GTP-binding family protein",38
+"Bra020980","Bra020980","PF01399","PTHR10539","KOG2908","","K03039","AT4G19006.1","","Proteasome component (PCI) domain protein",38
+"Bra013223","Bra013223*","PF04720","","","","","AT3G25240.1","","Protein of unknown function (DUF506)",38
+"Bra013224","Bra013224*","PF00254,PF00515,PF07719","PTHR10516","KOG0543","5.2.1.8","K09571","AT3G25230.1","ATFKBP62,FKBP62,ROF1","rotamase FKBP 1",38
+"Bra011488","Bra011488","PF00076,PF00658","PTHR10432","KOG0123","","K13126","AT4G34110.1","ATPAB2,PAB2,PABP2","poly(A) binding protein 2",39
+"Bra020040","Bra020040","PF00069,PF07714,PF00036","PTHR22982","KOG0032","2.7.11.1","K13412","AT5G19450.1","CDPK19,CPK8","calcium-dependent protein kinase 19",39
+"Bra010085","Bra010085","PF00249","PTHR10641","KOG0048","","","AT5G62470.2","ATMYB96,MYB96,MYBCOV1","myb domain protein 96",39
+"Bra024214","Bra024214","","","","","","AT4G28260.1","","",39
+"Bra026231","Bra026231","PF00025,PF00071,PF08477,PF04670,PF00009","PTHR11708","KOG0098","","K07976","AT4G17170.1","AT-RAB2,ATRAB-B1B,ATRAB2A,ATRABB1C,RAB-B1B,RAB2A,RABB1C","RAB GTPase homolog B1C",39
+"Bra003062","Bra003062","PF04043,PF01095","PTHR22931:SF5","","","","AT5G53370.1","ATPMEPCRF,PMEPCRF","pectin methylesterase PCR fragment F",39
+"Bra020051","Bra020051","PF04398","","","","","AT5G19590.1","","Protein of unknown function, DUF538",39
+"Bra002703","Bra002703","PF02861","PTHR11638","KOG1051","","","AT5G57710.1","","Double Clp-N motif-containing P-loop nucleoside triphosphate hydrolases superfamily protein",39
+"Bra025461","Bra025461","","PTHR23160","KOG0978","","","AT5G41790.1","CIP1","COP1-interactive protein 1",39
+"Bra019792","Bra019792","PF03223","PTHR10137","KOG2909","3.6.3.14","K02148","AT1G12840.1","ATVHA-C,DET3","vacuolar ATP synthase subunit C (VATC) / V-ATPase C subunit / vacuolar proton pump C subunit (DET3)",39
+"Bra019433","Bra019433","PF01433,PF11940","PTHR11533","KOG1046","3.4.11.2","K01256","AT1G63770.5","","Peptidase M1 family protein",39
+"Bra033837","Bra033837","PF00335","","KOG3882","","","AT3G45600.1","TET3","tetraspanin3",39
+"Bra003063","Bra003063","PF07724,PF07728,PF00004,PF10431","PTHR11262","KOG0745","","K03544","AT5G53350.1","CLPX","CLP protease regulatory subunit X",39
+"Bra029067","Bra029067","PF00310,PF04898,PF01645,PF01493,PF07992,PF00070,PF03486,PF01593","PTHR11938","KOG0399","1.4.1.13,1.4.1.14","K00264","AT5G53460.1","GLT1","NADH-dependent glutamate synthase 1",39
+"Bra023045","Bra023045","PF07526,PF05920,PF00046","PTHR11850","KOG0773","","","AT2G35940.1","BLH1,EDA29","BEL1-like homeodomain 1",39
+"Bra027866","Bra027866","PF00931","","KOG4658","","","AT1G58390.1","","Disease resistance protein (CC-NBS-LRR class) family",39
+"Bra003617","Bra003617","PF00581","PTHR11364","KOG1529","2.8.1.1,2.8.1.2","K01011","AT1G79230.1","ATMST1,ATRDH1,MST1,ST1,STR1","mercaptopyruvate sulfurtransferase 1",39
+"Bra016674","Bra016674","PF00561","PTHR11005","","","","AT1G15060.1","","Uncharacterised conserved protein UCP031088, alpha/beta hydrolase",39
+"Bra038835","Bra038835","PF00690,PF00122,PF00702","PTHR11939","KOG0205","3.6.3.6","K01535","AT2G18960.1","AHA1,HA1,OST2,PMA","H(+)-ATPase 1",39
+"Bra020599","Bra020599","PF00999","PTHR10110","KOG1965","","","AT5G27150.1","AT-NHX1,ATNHX,ATNHX1,NHX1","Na+/H+ exchanger 1",40
+"Bra034989","Bra034989","PF02221","","KOG4680","","","AT3G44100.1","","MD-2-related lipid recognition domain-containing protein",40
+"Bra027736","Bra027736","PF00847","","","","","AT1G64380.1","","Integrase-type DNA-binding superfamily protein",40
+"Bra037358","Bra037358","PF00917","PTHR10420","KOG1987","","","AT4G00780.1","","TRAF-like family protein",40
+"Bra018695","Bra018695","PF04043","","","","","AT1G47960.1","ATC/VIF1,C/VIF1","cell wall / vacuolar inhibitor of fructosidase 1",40
+"Bra015594","Bra015594","","","","","","AT1G07610.1","MT1C","metallothionein 1C",40
+"Bra019928","Bra019928","PF01521","PTHR10072","KOG1120","","K13628","AT1G10500.1","ATCPISCA,CPISCA","chloroplast-localized ISCA-like protein",40
+"Bra000739","Bra000739","PF02453","PTHR10994","KOG1792","","","AT4G11220.1","BTI2,RTNLB2","VIRB2-interacting protein 2",41
+"Bra013171","Bra013171","PF00892","PTHR22911","KOG4510","","","AT2G05755.1","","Nodulin MtN21 /EamA-like transporter family protein",41
+"Bra018232","Bra018232","PF00255,PF00578,PF08534","PTHR11592","KOG1651","1.11.1.9","K00432","AT2G31570.1","ATGPX2,GPX2","glutathione peroxidase 2",41
+"Bra006710","Bra006710*","PF03171","PTHR10209","KOG0143","","","AT5G59540.1","","2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein",41
+"Bra006711","Bra006711*","PF03171","PTHR10209","KOG0143","","","AT5G59540.1","","2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein",41
+"Bra006712","Bra006712*","PF03171","PTHR10209","KOG0143","","","AT5G59540.1","","2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein",41
+"Bra006713","Bra006713*","PF03171","PTHR10209","KOG0143","","","AT5G59540.1","","2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein",41
+"Bra006714","Bra006714*","PF03171","PTHR10209","","","","AT5G59530.1","","2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein",41
+"Bra014730","Bra014730","","","","","","AT3G55646.1","","",42
+"Bra010483","Bra010483","PF00076","PTHR10432","KOG0131","","","AT4G24770.1","ATRBP31,ATRBP33,CP31,RBP31","31-kDa RNA binding protein",42
+"Bra013563","Bra013563","PF04511","PTHR11009","KOG0858","","","AT4G21810.1","DER2.1","DERLIN-2.1",42
+"Bra037215","Bra037215","PF00023,PF01529","PTHR22883","KOG0509","","","AT2G14255.1","","Ankyrin repeat family protein with DHHC zinc finger domain",42
+"Bra001009","Bra001009","PF01145","PTHR10264","KOG2620","","","AT3G01290.1","","SPFH/Band 7/PHB domain-containing membrane-associated protein family",42
+"Bra035067","Bra035067","PF01453,PF08276","","","","","AT1G78830.1","","Curculin-like (mannose-binding) lectin family protein",42
+"Bra013931","Bra013931","PF01263","PTHR11122","KOG1594","","","AT4G25900.1","","Galactose mutarotase-like superfamily protein",42
+"Bra029614","Bra029614*","PF00544","","","4.2.2.2","K01728","AT3G07010.1","","Pectin lyase-like superfamily protein",42
+"Bra029615","Bra029615*","PF03033","PTHR11926:SF2","KOG1192","2.4.1.173","K05841","AT3G07020.2","","UDP-Glycosyltransferase superfamily protein",42
+"Bra009609","Bra009609*","","","","","","AT5G02160.1","","",42
+"Bra009610","Bra009610*","PF00314","","","","","AT5G02140.1","","Pathogenesis-related thaumatin superfamily protein",42
+"Bra013924","Bra013924","PF04535","PTHR11615","","","","AT4G25830.1","","Uncharacterised protein family (UPF0497)",43
+"Bra040100","Bra040100","PF09598,PF04774","PTHR12299","KOG2945","","","AT4G16830.1","","Hyaluronan / mRNA binding family",43
+"Bra036908","Bra036908","PF04844","","","","","AT4G14860.1","atofp11,OFP11","ovate family protein 11",43
+"Bra002710","Bra002710","PF01261","","","5.3.1.5","K01805","AT5G57655.2","","xylose isomerase family protein",43
+"Bra032196","Bra032196","PF00025,PF00071,PF08477,PF04670","PTHR11708","KOG0080","","K07910","AT1G43890.1","ATRAB-C1,ATRAB18,ATRABC1,RAB18,RAB18-1,RABC1","RAB GTPASE HOMOLOG B18",43
+"Bra030622","Bra030622","PF00560,PF07714,PF00069","PTHR23258","KOG1187","","","AT1G05700.1","","Leucine-rich repeat transmembrane protein kinase protein",43
+"Bra021314","Bra021314","","","","","","","","",43
+"Bra039925","Bra039925","PF06241","","","","","AT5G43745.1","","Protein of unknown function (DUF1012)",43
+"Bra007840","Bra007840","PF02362,PF00076,PF00098","PTHR10548","KOG0107","","","AT2G24650.1","","DNA binding;DNA binding;sequence-specific DNA binding transcription factors",43
+"Bra024547","Bra024547","PF00076","PTHR10432","KOG0149","","","AT1G22910.1","","RNA-binding (RRM/RBD/RNP motifs) family protein",43
+"Bra019307","Bra019307","PF00230","PTHR19139","KOG0223","","K09872","AT4G00430.1","PIP1;4,PIP1E,TMP-C","plasma membrane intrinsic protein 1;4",43
+"Bra025671","Bra025671","PF01694","PTHR22936","KOG2980","","","AT1G18600.1","ATRBL12,RBL12","RHOMBOID-like protein 12",43
+"Bra022804","Bra022804","PF07765","","","","","AT2G30500.1","","Kinase interacting (KIP1-like) family protein",43
+"Bra030082","Bra030082","PF05678","","","","","AT1G28280.2","","VQ motif-containing protein",43
+"Bra025376","Bra025376","PF01095","","","3.1.1.11","K01051","AT3G29090.1","ATPME31,PME31","pectin methylesterase 31",43
+"Bra032484","Bra032484","","","","","","AT1G05065.1","CLE20","CLAVATA3/ESR-RELATED 20",43
+"Bra005335","Bra005335","PF07777,PF00170,PF07716","PTHR22952","","","K09060","AT2G35530.1","AtbZIP16,bZIP16","basic region/leucine zipper transcription factor 16",43
+"Bra012753","Bra012753","PF00400","PTHR19923","KOG0285","","K12862","AT4G15900.1","PRL1","pleiotropic regulatory locus 1",43
+"Bra014238","Bra014238","PF08737","","","","","AT1G50120.1","","",43
+"Bra017267","Bra017267*","PF03134","PTHR12300","KOG1726","","","AT2G36020.1","HVA22J","HVA22-like protein J",43
+"Bra017268","Bra017268*","PF02319","PTHR12081","KOG2577","","","AT2G36010.1","ATE2FA,E2F3","E2F transcription factor 3",43
+"Bra023023","Bra023023","PF05191","PTHR23359","","","","AT5G47840.1","AMK2","adenosine monophosphate kinase",44
+"Bra022505","Bra022505","PF04884","PTHR12770","KOG4249","","","AT5G49820.1","EMB1879,RUS6","Protein of unknown function, DUF647",44
+"Bra003716","Bra003716","PF03547","","KOG2722","","","AT1G76520.1","","Auxin efflux carrier family protein",44
+"Bra013430","Bra013430","PF07819,PF02450,PF00561,PF05057","PTHR11440","KOG2369","","","AT4G19860.1","","alpha/beta-Hydrolases superfamily protein",44
+"Bra014195","Bra014195","","","","","","AT1G49500.1","","",44
+"Bra019908","Bra019908","","","","","","AT1G10660.1","","",44
+"Bra001501","Bra001501","PF00400","PTHR22847","KOG4532","","","AT3G13340.1","","Transducin/WD40 repeat-like superfamily protein",44
+"Bra015065","Bra015065","PF04367","","","","","AT2G20120.1","COV1","Protein of unknown function (DUF502)",44
+"Bra028849","Bra028849","","","","","","AT5G03120.1","","",44
+"Bra002220","Bra002220","","","","","","AT5G19190.1","","",44
+"Bra004188","Bra004188","PF01554","PTHR11206","KOG1347","","","AT1G66760.2","","MATE efflux family protein",44
+"Bra026253","Bra026253","PF00249","","","","","AT5G47390.1","","myb-like transcription factor family protein",44
+"Bra016284","Bra016284","PF03105,PF03124","PTHR10783","KOG1162","","","AT1G35350.1","","EXS (ERD1/XPR1/SYG1) family protein",44
+"Bra013904","Bra013904","","","","","","AT4G25620.1","","hydroxyproline-rich glycoprotein family protein",44
+"Bra024474","Bra024474","PF00010","PTHR12565:SF7","","","","AT2G18300.1","","basic helix-loop-helix (bHLH) DNA-binding superfamily protein",44
+"Bra038649","Bra038649*","PF08240,PF00107","PTHR11695","KOG0022","","","AT5G63620.1","","GroES-like zinc-binding alcohol dehydrogenase family protein",44
+"Bra038650","Bra038650*","PF00270,PF04851,PF00271","PTHR10967","KOG0342","","","AT5G63630.1","","P-loop containing nucleoside triphosphate hydrolases superfamily protein",44
+"Bra029362","Bra029362*","","","","","","AT5G23200.1","","",44
+"Bra029363","Bra029363*","PF00450","PTHR11802","KOG1282","","","AT5G23210.1","SCPL34","serine carboxypeptidase-like 34",44
+"Bra033713","Bra033713*","PF03767","","","","","AT5G44020.1","","HAD superfamily, subfamily IIIB acid phosphatase",44
+"Bra033714","Bra033714*","PF03552","PTHR13301:SF1","","2.4.1.12","K10999","AT5G44030.1","CESA4,IRX5,NWS2","cellulose synthase A4",44
+"Bra030587","Bra030587","","","","","","AT1G04730.1","CTF18","P-loop containing nucleoside triphosphate hydrolases superfamily protein",45
+"Bra032166","Bra032166","PF00503","PTHR10218","KOG0082","","","AT2G23460.1","ATXLG1,XLG1","extra-large G-protein 1",45
+"Bra019560","Bra019560","PF03083","PTHR10791","KOG1623","","","AT3G48740.1","","Nodulin MtN3 family protein",45
+"Bra024531","Bra024531","PF07719,PF00515","PTHR23083","","","","AT1G22700.1","","Tetratricopeptide repeat (TPR)-like superfamily protein",45
+"Bra023688","Bra023688","PF00462","PTHR10168","KOG1752","","","AT5G18600.1","","Thioredoxin superfamily protein",45
+"Bra018039","Bra018039","PF03083","PTHR10791","KOG1623","","","AT3G48740.1","","Nodulin MtN3 family protein",45
+"Bra022923","Bra022923","PF00917","PTHR10420","KOG1987","","","AT2G32870.1","","TRAF-like family protein",45
+"Bra004066","Bra004066","","","","","","AT1G67870.1","","glycine-rich protein",45
+"Bra004267","Bra004267","","","","","","AT1G67870.1","","glycine-rich protein",45
+"Bra012364","Bra012364","PF00407,PF10604","","","","","AT1G23130.1","","Polyketide cyclase/dehydrase and lipid transport superfamily protein",45
+"Bra020949","Bra020949","","","","","","AT4G19840.1","ATPP2-A1,ATPP2A-1,PP2-A1","phloem protein 2-A1",45
+"Bra026905","Bra026905","PF00076","PTHR23365","","","","AT5G03495.1","","RNA-binding (RRM/RBD/RNP motifs) family protein",45
+"Bra027355","Bra027355*","PF00847","","","","K09286","AT3G14230.3","RAP2.2","related to AP2 2",45
+"Bra027356","Bra027356*","PF00657","PTHR22835:SF27","","","","AT5G40990.1","GLIP1","GDSL lipase 1",45
+"Bra027792","Bra027792*","PF00069,PF07714","PTHR22986","KOG0198","","","AT1G63700.1","EMB71,MAPKKK4,YDA","Protein kinase superfamily protein",45
+"Bra027793","Bra027793*","PF02225,PF04258","PTHR12174","KOG2442","","","AT1G63690.1","ATSPPL2,SPPL2","SIGNAL PEPTIDE PEPTIDASE-LIKE 2",45
+"Bra033879","Bra033879","PF02201","PTHR13844","","","","AT1G31760.1","","SWIB/MDM2 domain superfamily protein",46
+"Bra021990","Bra021990","PF00281,PF00673","PTHR11994","KOG0397","","","AT2G42740.1","RPL16A","ribosomal protein large subunit 16A",46
+"Bra018184","Bra018184","PF00091,PF03953","PTHR11588","KOG1375","","K07375","AT5G62700.1","TUB3","tubulin beta chain 3",46
+"Bra029591","Bra029591","","","","","","AT3G06600.1","","",46
+"Bra009292","Bra009292","PF02458","","","","","AT5G07080.1","","HXXXD-type acyl-transferase family protein",46
+"Bra006289","Bra006289","PF00163,PF01479","PTHR11831","KOG3301","","K02997","AT5G15200.1","","Ribosomal protein S4",46
+"Bra014081","Bra014081","","PTHR10483","","","","AT1G47580.1","","Pentatricopeptide repeat (PPR) superfamily protein",46
+"Bra027911","Bra027911","PF01105","PTHR22811","KOG1691","","","AT1G57620.1","","emp24/gp25L/p24 family/GOLD family protein",46
+"Bra006626","Bra006626","PF00687","PTHR23105","KOG1570","","","AT5G22450.1","","",46
+"Bra004722","Bra004722","PF00687","PTHR23105","KOG1569","","","AT2G42710.1","","Ribosomal protein L1p/L10e family",46
+"Bra011664","Bra011664","PF00181,PF03947","PTHR13691","KOG2309","","K02938","AT4G36130.1","","Ribosomal protein L2 family",46
+"Bra002483","Bra002483","PF00009,PF03144,PF03143","PTHR23115","KOG0052","3.6.5.3","K03231","AT1G07920.1","","GTP binding Elongation factor Tu family protein",46
+"Bra030292","Bra030292","PF03297","PTHR12850","KOG1767","","K02975","AT4G39200.1","","Ribosomal protein S25 family protein",46
+"Bra005759","Bra005759","","PTHR23083","","","","AT5G02590.1","","Tetratricopeptide repeat (TPR)-like superfamily protein",46
+"Bra028546","Bra028546","PF01246","PTHR10792","KOG1722","","","AT3G53020.1","RPL24,RPL24B,STV1","Ribosomal protein L24e family protein",46
+"Bra036117","Bra036117","PF01282","PTHR10496","KOG3424","","K02974","AT3G04920.1","","Ribosomal protein S24e family protein",46
+"Bra020280","Bra020280","PF00410","PTHR11758","KOG1754","","K02957","AT5G59850.1","","Ribosomal protein S8 family protein",46
+"Bra008643","Bra008643","PF01251","PTHR11278","KOG3320","","K02993","AT5G16130.1","","Ribosomal protein S7e family protein",46
+"Bra001127","Bra001127","PF01015","PTHR11830","KOG1628","","K02984","AT4G34670.1","","Ribosomal protein S3Ae",46
+"Bra001156","Bra001156","PF00828","PTHR10934","KOG1714","","K02883","AT3G05590.1","RPL18","ribosomal protein L18",46
+"Bra009577","Bra009577","PF00831","PTHR13872","KOG3436","","K02918","AT5G02610.1","","Ribosomal L29 family protein",46
+"Bra010455","Bra010455","PF01269,PF08704","PTHR10335","KOG1596","","","AT4G25630.1","ATFIB2,FIB2","fibrillarin 2",46
+"Bra005784","Bra005784","PF01200","PTHR10769","KOG3502","","K02979","AT5G03850.1","","Nucleic acid-binding, OB-fold-like protein",46
+"Bra035939","Bra035939","PF01090","PTHR11710","KOG3411","","","AT5G61170.1","","Ribosomal protein S19e family protein",46
+"Bra023104","Bra023104","PF03946,PF00298","PTHR11661","KOG0886","","","AT3G53430.1","","Ribosomal protein L11 family protein",46
+"Bra024896","Bra024896","PF01467","PTHR12039","","","","AT2G01220.2","","Nucleotidylyl transferase superfamily protein",46
+"Bra001154","Bra001154","PF01776","PTHR10064","KOG3434","","","AT3G05560.1","","Ribosomal L22e protein family",46
+"Bra009431","Bra009431","PF00833","PTHR10732","KOG0187","","K02962","AT5G04800.1","","Ribosomal S17 family protein",46
+"Bra026484","Bra026484","PF00366","PTHR10744","KOG1728","","K02949","AT5G23740.1","RPS11-BETA","ribosomal protein S11-beta",46
+"Bra016062","Bra016062","PF00318","PTHR11489","KOG0830","","","AT1G72370.1","AP40,P40,RP40,RPSAA","40s ribosomal protein SA",46
+"Bra034800","Bra034800","PF00582","","","","","AT3G11930.2","","Adenine nucleotide alpha hydrolases-like superfamily protein",46
+"Bra005296","Bra005296","PF00411","PTHR11759","KOG0407","","K02955","AT3G11510.1","","Ribosomal protein S11 family protein",46
+"Bra011871","Bra011871","PF03297","PTHR12850","KOG1767","","K02975","AT4G39200.1","","Ribosomal protein S25 family protein",46
+"Bra001213","Bra001213","PF01779","PTHR12884","","","K02905","AT3G06680.1","","Ribosomal L29e protein family",46
+"Bra040409","Bra040409","PF01015","PTHR11830","KOG1628","","","AT4G34670.1","","Ribosomal protein S3Ae",46
+"Bra034834","Bra034834","PF01423","PTHR10553","KOG1780","","K11099","AT3G11500.1","","Small nuclear ribonucleoprotein family protein",46
+"Bra001450","Bra001450","PF01849","PTHR21713","KOG2239","","K03626","AT3G12390.1","","Nascent polypeptide-associated complex (NAC), alpha subunit family protein",46
+"Bra028856","Bra028856","PF00164","PTHR11652","KOG1749","","K02973","AT5G02960.1","","Ribosomal protein S12/S23 family protein",46
+"Bra001911","Bra001911","PF00935","PTHR10369","KOG3464","","K02929","AT3G23390.1","","Zinc-binding ribosomal protein family protein",46
+"Bra014387","Bra014387","PF01248","PTHR23105","KOG3166","","","AT3G62870.1","","Ribosomal protein L7Ae/L30e/S12e/Gadd45 family protein",46
+"Bra028708","Bra028708","PF08071,PF01479,PF00900,PF00467","PTHR11581","KOG0378","","K02987","AT5G07090.1","","Ribosomal protein S4 (RPS4A) family protein",46
+"Bra029751","Bra029751","PF00139","","","","","AT3G09190.1","","Concanavalin A-like lectin family protein",46
+"Bra035298","Bra035298","PF00297","PTHR11363","KOG0746","","K02925","AT1G43170.1","ARP1,emb2207,RP1,RPL3A","ribosomal protein 1",46
+"Bra013215","Bra013215","PF00861","PTHR23410","KOG0875","","K02932","AT3G25520.1","ATL5,OLI5,PGY3,RPL5A","ribosomal protein L5",46
+"Bra004654","Bra004654","PF00333,PF03719","PTHR13718","KOG0877","","K02981","AT1G58983.1","","Ribosomal protein S5 family protein",46
+"Bra028778","Bra028778","PF00833","PTHR10732","KOG0187","","K02962","AT5G04800.1","","Ribosomal S17 family protein",46
+"Bra015088","Bra015088","PF00572","PTHR11545","KOG3204","","K02872","AT3G24830.1","","Ribosomal protein L13 family protein",46
+"Bra007669","Bra007669","PF00481","PTHR13832","KOG0698","","","AT3G62260.1","","Protein phosphatase 2C family protein",46
+"Bra033346","Bra033346","PF01280","PTHR10722","KOG1696","","","AT3G16780.1","","Ribosomal protein L19e family protein",46
+"Bra010943","Bra010943","PF00237","PTHR11593","KOG3353","","K02880","AT1G27400.1","","Ribosomal protein L22p/L17e family protein",46
+"Bra013284","Bra013284","PF01655","PTHR23413","KOG0878","","K02912","AT4G18100.1","","Ribosomal protein L32e",46
+"Bra006768","Bra006768","PF11793,PF08071,PF01479,PF00900,PF00467","PTHR12389","KOG0803","","","AT5G58410.1","","HEAT/U-box domain-containing protein",46
+"Bra020681","Bra020681","PF00572","PTHR11545","KOG3204","","K02872","AT5G48760.1","","Ribosomal protein L13 family protein",46
+"Bra023052","Bra023052","PF00411","PTHR11759","KOG0407","","K02955","AT3G11510.1","","Ribosomal protein S11 family protein",46
+"Bra036669","Bra036669","PF00572","PTHR11545","KOG3204","","K02872","AT3G24830.1","","Ribosomal protein L13 family protein",46
+"Bra011551","Bra011551","PF01015","PTHR11830","KOG1628","","","AT4G34670.1","","Ribosomal protein S3Ae",46
+"Bra019662","Bra019662","PF00252","PTHR11726","","","","AT1G14320.1","RPL10,RPL10A,SAC52","Ribosomal protein L16p/L10e family protein",46
+"Bra034643","Bra034643","PF01015","PTHR11830","KOG1628","","K02984","AT4G34670.1","","Ribosomal protein S3Ae",46
+"Bra038714","Bra038714","PF00023","PTHR18958","KOG4412","","","AT3G12360.1","ITN1","Ankyrin repeat family protein",46
+"Bra006629","Bra006629","","","","","","AT5G22650.2","ATHD2,ATHD2B,HD2,HD2B,HDA4,HDT02,HDT2","histone deacetylase 2B",46
+"Bra003949","Bra003949","PF04874","PTHR23405","KOG3064","","","AT1G23280.1","","MAK16 protein-related",46
+"Bra034758","Bra034758","PF00022","PTHR11937","KOG0676","","K11672","AT3G12380.1","ARP5,ATARP5","actin-related protein 5",46
+"Bra010228","Bra010228","PF02362","","","","","AT4G31610.1","ATREM1,REM1","Transcriptional factor B3 family protein",46
+"Bra022878","Bra022878","PF01248","PTHR11843","KOG3406","","K02951","AT2G32060.1","","Ribosomal protein L7Ae/L30e/S12e/Gadd45 family protein",46
+"Bra014558","Bra014558","PF00281,PF00673","PTHR11994","KOG0397","","","AT2G42740.1","RPL16A","ribosomal protein large subunit 16A",46
+"Bra040895","Bra040895","PF00557","PTHR10804","KOG2776","","","AT3G51800.3","ATEBP1,ATG2,EBP1","metallopeptidase M24 family protein",46
+"Bra012012","Bra012012","PF00687","PTHR23105","KOG1570","","","AT2G27530.1","PGY1","Ribosomal protein L1p/L10e family",46
+"Bra033012","Bra033012","PF07039,PF00400","PTHR19877","KOG0643","","K03246","AT2G46290.1","","Transducin/WD40 repeat-like superfamily protein",46
+"Bra005881","Bra005881","PF00400,PF09384","PTHR19924","KOG0310","","K14549","AT2G47990.1","EDA13,EDA19,SWA1","transducin family protein / WD-40 repeat family protein",46
+"Bra030790","Bra030790","PF02798,PF00043,PF00647","PTHR11260","KOG1627","","K03233","AT1G09640.1","","Translation elongation factor EF1B, gamma chain",46
+"Bra035819","Bra035819*","PF00179","PTHR11621","KOG0421","6.3.2.19","K06688","AT3G20060.1","UBC19","ubiquitin-conjugating enzyme19",46
+"Bra035820","Bra035820*","PF00118","PTHR11353","KOG0360","","","AT3G20050.1","ATTCP-1,TCP-1","T-complex protein 1 alpha subunit",46
+"Bra030045","Bra030045*","PF00237,PF07646,PF01344","PTHR11593","KOG3353","","","AT1G27420.1","","Galactose oxidase/kelch repeat superfamily protein",46
+"Bra009706","Bra009706*","PF00366","PTHR10744","KOG1728","","K02949","AT5G23740.1","RPS11-BETA","ribosomal protein S11-beta",46
+"Bra009707","Bra009707*","PF03766,PF03763","","","","","AT5G23750.2","","Remorin family protein",46
+"Bra007151","Bra007151*","PF03939,PF00276,PF00106,PF08659","PTHR11620","KOG0725","","","AT3G55290.2","","NAD(P)-binding Rossmann-fold superfamily protein",46
+"Bra007152","Bra007152*","PF00076,PF00098","PTHR10432","KOG4210","","","AT3G55340.1","PHIP1","phragmoplastin interacting protein 1",46
+"Bra019068","Bra019068*","PF01253","PTHR10388","KOG1770","","K03113","AT4G27130.1","","Translation initiation factor SUI1 family protein",46
+"Bra019069","Bra019069*","PF09756","PTHR13270","KOG3054","","","AT4G27120.1","","",46
+"Bra019070","Bra019070*","PF01929","PTHR11127","KOG3421","","K02875","AT4G27090.1","","Ribosomal protein L14",46
+"Bra012580","Bra012580*","PF00281,PF00673","PTHR11994","KOG0397","","","AT4G18730.1","RPL16B","ribosomal protein L16B",46
+"Bra019205","Bra019205*","PF06148,PF12022","PTHR12961","KOG2307","","","AT4G24840.1","","",46
+"Bra019206","Bra019206*","PF00764","PTHR11587","KOG1706","6.3.4.5","K01940","AT4G24830.1","","arginosuccinate synthase family",46
+"Bra027985","Bra027985*","PF08449,PF03151","PTHR11132","KOG1441","","","AT5G42420.1","","Nucleotide-sugar transporter family protein",46
+"Bra027986","Bra027986*","PF00297","PTHR11363","KOG0746","","","AT1G43170.1","ARP1,emb2207,RP1,RPL3A","ribosomal protein 1",46
+"Bra008144","Bra008144*","PF01247","PTHR10902","KOG0887","","K02917","AT1G07070.1","","Ribosomal protein L35Ae family protein",46
+"Bra008145","Bra008145*","PF07297","","KOG3488","","K09658","AT1G74340.1","","dolichol phosphate-mannose biosynthesis regulatory protein-related",46
+"Bra019143","Bra019143*","PF03501","PTHR12146","KOG3344","","K02947","AT4G25740.1","","RNA binding Plectin/S10 domain-containing protein",46
+"Bra019144","Bra019144*","PF01728,PF11861,PF07780","PTHR10920","KOG1098","","","AT4G25730.1","","FtsJ-like methyltransferase family protein",46
+"Bra023796","Bra023796*","PF08423,PF00154,PF06745","PTHR22942","KOG1434","","K10872","AT3G22880.1","ARLIM15,ATDMC1,DMC1","DNA repair (Rad51) family protein",46
+"Bra023797","Bra023797*","PF01105","PTHR22811","KOG1692","","","AT3G22845.1","","emp24/gp25L/p24 family/GOLD family protein",46
+"Bra002799","Bra002799*","PF01336,PF00152","PTHR22594","KOG0555","6.1.1.22","K01893","AT5G56680.1","EMB2755,SYNC1,SYNC1 ARATH","Class II aminoacyl-tRNA and biotin synthetases superfamily protein",46
+"Bra027789","Bra027789*","PF04427","PTHR22734","KOG2781","","K14561","AT1G63780.1","IMP4","Ribosomal RNA processing Brix domain protein",46
+"Bra001934","Bra001934","PF00118","PTHR11353","KOG0356","","K04077","AT3G23990.1","HSP60,HSP60-3B","heat shock protein 60",47
+"Bra030885","Bra030885","","","","","","AT1G55140.1","","Ribonuclease III family protein",47
+"Bra001788","Bra001788","PF01042","PTHR11803","KOG2317","","","AT3G20390.1","","endoribonuclease L-PSP family protein",47
+"Bra039865","Bra039865","PF02421,PF01926,PF06071","PTHR23305","KOG1491","","K06942","AT1G30580.1","","GTP binding",47
+"Bra019994","Bra019994","","PTHR10552","KOG1644","","","AT1G09760.1","U2A\'","U2 small nuclear ribonucleoprotein A",47
+"Bra030561","Bra030561","PF03208","PTHR19317","KOG3142","","","AT1G04260.1","MPI7,MPIP7,PRA1.D","CAMV movement protein interacting protein 7",47
+"Bra034356","Bra034356","PF00561,PF00687","PTHR23105","KOG1570","","","AT1G08310.1","","alpha/beta-Hydrolases superfamily protein",47
+"Bra001297","Bra001297","PF02359,PF02933,PF00004,PF05496,PF07724,PF07728","PTHR23077","KOG0730","","K13525","AT3G09840.1","ATCDC48,CDC48,CDC48A","cell division cycle 48",47
+"Bra028189","Bra028189","","PTHR23101:SF6","","","","AT3G27750.1","","",47
+"Bra030879","Bra030879","","","","","","AT1G55205.2","","",47
+"Bra006338","Bra006338","PF00118","PTHR11353","KOG0359","","","AT3G02530.1","","TCP-1/cpn60 chaperonin family protein",47
+"Bra003427","Bra003427*","PF08069,PF00312","PTHR11885","KOG0400","","K02953","AT4G00100.1","ATRPS13A,PFL2,RPS13,RPS13A","ribosomal protein S13A",47
+"Bra003428","Bra003428*","PF00227","PTHR11599","KOG0179","3.4.25.1","K02732","AT3G60820.1","PBF1","N-terminal nucleophile aminohydrolases (Ntn hydrolases) superfamily protein",47
+"Bra036992","Bra036992","PF12014","","","","","AT4G33630.1","EX1","Protein of unknown function (DUF3506)",48
+"Bra029071","Bra029071","PF04969","PTHR12356","KOG2265","","","AT5G53400.1","BOB1","HSP20-like chaperones superfamily protein",48
+"Bra035881","Bra035881","PF02670,PF08436","","","1.1.1.267","K00099","AT5G62790.1","DXR,PDE129","1-deoxy-D-xylulose 5-phosphate reductoisomerase",48
+"Bra005371","Bra005371","PF02142,PF01808","PTHR11692","KOG2555","2.1.2.3,3.5.4.10","K00602","AT2G35040.1","","AICARFT/IMPCHase bienzyme family protein",48
+"Bra009004","Bra009004","PF01795,PF00206","PTHR11444","KOG1316","4.3.2.1","K01755","AT5G10920.1","","L-Aspartase-like family protein",48
+"Bra018681","Bra018681","PF06984","PTHR21183","KOG3331","","","AT1G07830.1","","ribosomal protein L29 family protein",48
+"Bra018137","Bra018137","PF00056,PF01073,PF02866","PTHR11540","KOG1494","1.1.1.37","K00026","AT3G47520.1","MDH","malate dehydrogenase",48
+"Bra037984","Bra037984","","","","","","AT1G55205.2","","",48
+"Bra011568","Bra011568","PF00160","PTHR11071","KOG0865","","","AT4G34870.1","ATCYP1,ROC5","rotamase cyclophilin 5",48
+"Bra021983","Bra021983","PF01632","","","","","AT5G45590.1","","Ribosomal protein L35",48
+"Bra009617","Bra009617","PF02330","PTHR10826","KOG2536","","","AT5G02050.1","","Mitochondrial glycoprotein family protein",48
+"Bra014414","Bra014414","PF00160","PTHR11071","KOG0880","","","AT3G62030.1","ROC4","rotamase CYP 4",48
+"Bra021937","Bra021937","PF02375,PF02373,PF02928,PF05964,PF05965","PTHR10694","KOG1246","","","AT2G34880.1","MEE27,PKDM7C","Transcription factor jumonji (jmj) family protein / zinc finger (C5HC2 type) family protein",48
+"Bra005514","Bra005514","PF00118","PTHR11353","KOG0356","","K04077","AT2G33210.2","HSP60-2","heat shock protein 60-2",48
+"Bra036234","Bra036234","PF00009,PF03144,PF03143","PTHR23115","KOG0460","3.6.5.3","K02358","AT4G02930.1","","GTP binding Elongation factor Tu family protein",48
+"Bra032332","Bra032332","PF00560,PF11721,PF07714,PF00069","PTHR23258","KOG1187","","","AT1G29720.1","","Leucine-rich repeat transmembrane protein kinase",48
+"Bra011108","Bra011108","PF00410","PTHR11758","KOG1754","","","AT4G29430.1","rps15ae","ribosomal protein S15A E",48
+"Bra000853","Bra000853","PF00009,PF03144,PF03143","PTHR23115","KOG0460","3.6.5.3","K02358","AT4G02930.1","","GTP binding Elongation factor Tu family protein",48
+"Bra022298","Bra022298","PF10213","PTHR13490:SF4","","","","AT3G18240.1","","Ribosomal protein S24/S35, mitochondrial",48
+"Bra005607","Bra005607","PF05899","","","","","AT2G32650.1","","RmlC-like cupins superfamily protein",48
+"Bra000989","Bra000989","PF00572","PTHR11545","KOG3203","","K02871","AT3G01790.1","","Ribosomal protein L13 family protein",48
+"Bra005097","Bra005097","PF03647","PTHR12668","KOG4267","","","AT2G38550.1","","Transmembrane proteins 14C",48
+"Bra015538","Bra015538","","","","","","AT1G06950.1","ATTIC110,TIC110","translocon at the inner envelope membrane of chloroplasts 110",48
+"Bra035251","Bra035251","PF00889","PTHR11741","KOG1071","","","AT4G11120.1","","translation elongation factor Ts (EF-Ts), putative",48
+"Bra024688","Bra024688","PF00856","PTHR12197","","","","AT1G26760.1","ATXR1,SDG35","SET domain protein 35",48
+"Bra035119","Bra035119","PF00171","PTHR11699","KOG2451","1.2.1.16","K00135","AT1G79440.1","ALDH5F1,SSADH,SSADH1","aldehyde dehydrogenase 5F1",48
+"Bra001020","Bra001020","PF01053,PF01212","PTHR11808","KOG0053","2.5.1.48","K01739","AT3G01120.1","ATCYS1,CGS,CGS1,MTO1","Pyridoxal phosphate (PLP)-dependent transferases superfamily protein",48
+"Bra018381","Bra018381","PF02953","PTHR11038","KOG3480","","","AT2G29530.1","TIM10","Tim10/DDP family zinc finger protein",48
+"Bra032697","Bra032697","PF00106,PF08659","PTHR19410","KOG0725","1.1.1.294","K13606","AT4G13250.1","NYC1","NAD(P)-binding Rossmann-fold superfamily protein",48
+"Bra014184","Bra014184","PF05140","","","","K07399","AT1G49380.1","","cytochrome c biogenesis protein family",48
+"Bra023312","Bra023312","PF00270,PF00271","PTHR10967","KOG0329","","","AT5G11170.1","","DEAD/DEAH box RNA helicase family protein",48
+"Bra005668","Bra005668","PF04525","","","","","AT5G01750.2","","Protein of unknown function (DUF567)",48
+"Bra006380","Bra006380","","","","","","AT5G16950.1","","",48
+"Bra026790","Bra026790","PF10250","","","","","AT1G14970.1","","O-fucosyltransferase family protein",48
+"Bra005677","Bra005677","PF00210","PTHR11431","KOG2332","1.16.3.1","K00522","AT5G01600.1","ATFER1,FER1","ferretin 1",48
+"Bra019071","Bra019071","PF00085,PF07970","PTHR10984","KOG2667","","","AT4G27080.1","ATPDI7,ATPDIL5-4,PDI7,PDIL5-4","PDI-like 5-4",48
+"Bra026338","Bra026338","","","","","","","","",48
+"Bra027452","Bra027452","PF00342","PTHR11469","KOG2446","5.3.1.9","K01810","AT5G42740.1","","Sugar isomerase (SIS) family protein",48
+"Bra039311","Bra039311*","PF03766,PF03763","","","","","AT2G45820.1","","Remorin family protein",48
+"Bra039312","Bra039312*","PF00270,PF00271","PTHR10967","KOG0326","","","AT2G45810.1","","DEA(D/H)-box RNA helicase family protein",48
+"Bra039314","Bra039314*","PF08282,PF03332","PTHR10466","KOG3189","5.4.2.8","K01840","AT2G45790.1","ATPMM,PMM","phosphomannomutase",48
+"Bra039315","Bra039315*","PF02881,PF06414,PF00448","PTHR11564","","","","AT2G45770.1","CPFTSY,FRD4","signal recognition particle receptor protein, chloroplast (FTSY)",48
+"Bra024320","Bra024320*","PF00828","PTHR12934","KOG0846","","","AT5G64670.1","","Ribosomal protein L18e/L15 superfamily protein",48
+"Bra024321","Bra024321*","","PTHR12746","","","","AT5G64690.1","","neurofilament triplet H protein-related",48
+"Bra019634","Bra019634*","PF00224,PF02887","PTHR11817","KOG2323","2.7.1.40","K00873","AT3G52990.1","","Pyruvate kinase family protein",48
+"Bra019635","Bra019635*","","","","","","","","",48
+"Bra010620","Bra010620*","PF00012,PF06723,PF02782","PTHR19375","KOG0102","","K04043","AT4G37910.1","mtHsc70-1","mitochondrial heat shock protein 70-1",48
+"Bra010621","Bra010621*","PF10664","","","","","AT4G37925.1","NDH-M","subunit NDH-M of NAD(P)H:plastoquinone dehydrogenase complex",48
+"Bra034368","Bra034368*","","","","","","AT2G27775.1","","",48
+"Bra034369","Bra034369*","","PTHR20957:SF1","","","","AT5G27300.1","","pentatricopeptide (PPR) repeat-containing protein",48
+"Bra016541","Bra016541*","PF00956","PTHR11875","KOG1508","","K11290","AT1G18800.1","NRP2","NAP1-related protein 2",48
+"Bra016542","Bra016542*","PF02042","","","","","AT1G18790.1","","RWP-RK domain-containing protein",48
+"Bra009571","Bra009571*","","PTHR13976","","","","AT5G02740.1","","Ribosomal protein S24e family protein",48
+"Bra009572","Bra009572*","PF00188","PTHR10334","KOG3017","","","AT5G02730.1","","CAP (Cysteine-rich secretory proteins, Antigen 5, and Pathogenesis-related 1 protein) superfamily protein",48
+"Bra031347","Bra031347*","PF07970","PTHR10984","KOG2667","","","AT3G22290.1","","Endoplasmic reticulum vesicle transporter protein",48
+"Bra031348","Bra031348*","PF00338","PTHR11700","","","","AT3G22300.1","RPS10","ribosomal protein S10",48
+"Bra031349","Bra031349*","PF00270,PF00271","PTHR10967","KOG0331","","","AT3G22310.1","ATRH9,PMH1","putative mitochondrial RNA helicase 1",48
+"Bra003001","Bra003001*","PF00027","PTHR10217","KOG0498","","","AT5G54250.1","ATCNGC4,CNGC4,DND2,HLM1","cyclic nucleotide-gated cation channel 4",48
+"Bra003002","Bra003002*","PF06764","","","","","AT5G54240.1","","Protein of unknown function (DUF1223)",48
+"Bra031789","Bra031789*","PF00646","","","","","AT2G32560.1","","F-box family protein",48
+"Bra031790","Bra031790*","PF00026,PF03489,PF05184","PTHR13683","KOG1339","3.4.23.40","K08245","AT1G11910.1","APA1,ATAPA1","aspartic proteinase A1",48
+"Bra038600","Bra038600","PF02466","","KOG4608","","","AT5G63000.1","","Mitochondrial import inner membrane translocase subunit Tim17/Tim22/Tim23 family protein",49
+"Bra001306","Bra001306","PF00831","PTHR13872","KOG3436","","K02918","AT3G09500.1","","Ribosomal L29 family protein",49
+"Bra039041","Bra039041","PF01199","PTHR10759","KOG1790","","K02915","AT3G28900.1","","Ribosomal protein L34e superfamily protein",49
+"Bra007930","Bra007930","","","","","","AT1G70620.3","","cyclin-related",49
+"Bra029780","Bra029780","PF00573","PTHR19431","KOG1475","","K02930","AT3G09630.1","","Ribosomal protein L4/L1 family",49
+"Bra018549","Bra018549","PF02518,PF01119,PF08676,PF04969","PTHR10073","KOG3158","","K10858","AT4G02460.1","PMS1","DNA mismatch repair protein, putative",49
+"Bra022114","Bra022114","PF09598,PF04774","PTHR12299","KOG2945","","","AT4G17520.1","","Hyaluronan / mRNA binding family",49
+"Bra018454","Bra018454","PF00412","PTHR18973","KOG1700","","","AT1G10200.1","WLIM1","GATA type zinc finger transcription factor family protein",49
+"Bra013804","Bra013804","PF08627","","","","","AT4G24460.1","CLT2","CRT (chloroquine-resistance transporter)-like transporter 2",49
+"Bra040120","Bra040120","PF06026","PTHR11934","KOG3075","","","AT3G04790.1","","Ribose 5-phosphate isomerase, type A protein",49
+"Bra039014","Bra039014","PF01778","PTHR10544","KOG3412","","K02903","AT2G19730.1","","Ribosomal L28e protein family",49
+"Bra035980","Bra035980","PF00347","PTHR11655","KOG3255","","K02940","AT1G33140.1","PGY2","Ribosomal protein L6 family",49
+"Bra039066","Bra039066","PF00542","PTHR11809","KOG1715","","K02935","AT3G27850.1","RPL12-C","ribosomal protein L12-C",49
+"Bra033473","Bra033473","PF00153","PTHR11896","KOG0752","","","AT3G51870.1","","Mitochondrial substrate carrier family protein",49
+"Bra005923","Bra005923","PF08071,PF01479,PF00900,PF00467","PTHR11581","KOG0378","","K02987","AT5G07090.1","","Ribosomal protein S4 (RPS4A) family protein",49
+"Bra009940","Bra009940","PF00828","PTHR10934","KOG1714","","K02883","AT3G05590.1","RPL18","ribosomal protein L18",49
+"Bra017279","Bra017279","PF00009,PF03144,PF03764,PF00679","PTHR23115","KOG0469","3.6.5.3","K03234","AT1G56070.1","LOS1","Ribosomal protein S5/Elongation factor G/III/V family protein",49
+"Bra005745","Bra005745","PF00164","PTHR11652","KOG1749","","","AT5G02960.1","","Ribosomal protein S12/S23 family protein",49
+"Bra006553","Bra006553","PF01201","PTHR10394","KOG3283","","K02995","AT5G59240.1","","Ribosomal protein S8e family protein",49
+"Bra003512","Bra003512","PF01248,PF01423","PTHR12777","KOG3166","","","AT2G47610.1","","Ribosomal protein L7Ae/L30e/S12e/Gadd45 family protein",49
+"Bra006567","Bra006567","PF00190,PF07883","","","","","AT5G20630.1","ATGER3,GER3,GLP3,GLP3A,GLP3B","germin 3",49
+"Bra003471","Bra003471","PF02681","","","","","AT3G61770.1","","Acid phosphatase/vanadium-dependent haloperoxidase-related protein",49
+"Bra006936","Bra006936","","PTHR10774","","","","AT5G04220.2","ATSYTC,NTMC2T1.3,NTMC2TYPE1.3,SYT3,SYTC","Calcium-dependent lipid-binding (CaLB domain) family protein",49
+"Bra040197","Bra040197","PF01657,PF10440,PF05033,PF00856,PF00238","PTHR11761","KOG0901","","","AT3G04380.1","SDG31,SUVR4","SET-domain containing protein lysine methyltransferase family protein",49
+"Bra005180","Bra005180","PF01158","PTHR10114","KOG3452","","K02920","AT3G53740.2","","Ribosomal protein L36e family protein",49
+"Bra000159","Bra000159","PF00466,PF00428","PTHR21141","KOG0815","","K02941","AT2G40010.1","","Ribosomal protein L10 family protein",49
+"Bra033172","Bra033172","PF03141,PF08241","PTHR10108:SF26","","","","AT4G10440.1","","S-adenosyl-L-methionine-dependent methyltransferases superfamily protein",49
+"Bra036611","Bra036611","PF00828","PTHR10934","KOG1714","","K02883","AT5G27850.1","","Ribosomal protein L18e/L15 superfamily protein",49
+"Bra036448","Bra036448","PF00291","PTHR10314","KOG1252","2.5.1.47","K01738","AT3G03630.1","CS26","cysteine synthase 26",49
+"Bra002045","Bra002045","PF00411","PTHR11759","KOG0407","","K02955","AT3G11510.1","","Ribosomal protein S11 family protein",49
+"Bra010413","Bra010413","PF00085,PF07970","PTHR10984","KOG2667","","","AT4G27080.1","ATPDI7,ATPDIL5-4,PDI7,PDIL5-4","PDI-like 5-4",49
+"Bra039999","Bra039999","PF00347","PTHR11655","KOG3255","","K02940","AT1G33140.1","PGY2","Ribosomal protein L6 family",49
+"Bra000242","Bra000242","PF00333,PF03719","PTHR13718","KOG0877","","K02981","AT1G58983.1","","Ribosomal protein S5 family protein",49
+"Bra012667","Bra012667*","PF00827","PTHR11847","KOG1678","","K02877","AT4G16720.1","","Ribosomal protein L23/L15e family protein",49
+"Bra012694","Bra012694*","PF00827","PTHR11847","KOG1678","","K02877","AT4G16720.1","","Ribosomal protein L23/L15e family protein",49
+"Bra011794","Bra011794*","PF00012,PF06723","PTHR19375","KOG0102","","K04043","AT4G37910.1","mtHsc70-1","mitochondrial heat shock protein 70-1",49
+"Bra011795","Bra011795*","","","","","","AT4G37920.1","","",49
+"Bra002290","Bra002290*","PF01201","PTHR10394","KOG3283","","K02995","AT5G59240.1","","Ribosomal protein S8e family protein",49
+"Bra002291","Bra002291*","PF04548,PF01926,PF11886","PTHR10903","","","","AT5G20300.1","","Avirulence induced gene (AIG1) family protein",49
+"Bra008958","Bra008958*","PF02421,PF01926","PTHR11649","KOG2486","","","AT5G11480.1","","P-loop containing nucleoside triphosphate hydrolases superfamily protein",49
+"Bra036709","Bra036709*","PF01198","PTHR10956","KOG0893","","K02910","AT2G19740.1","","Ribosomal protein L31e family protein",49
+"Bra036710","Bra036710*","PF01778","PTHR10544","KOG3412","","K02903","AT2G19730.1","","Ribosomal L28e protein family",49
+"Bra015319","Bra015319","PF00238","PTHR11761","KOG0901","","","AT1G04480.1","","Ribosomal protein L14p/L23e family protein",50
+"Bra005635","Bra005635","PF01248","PTHR11843","KOG3406","","K02951","AT2G32060.1","","Ribosomal protein L7Ae/L30e/S12e/Gadd45 family protein",50
+"Bra008030","Bra008030","PF00318","PTHR11489","KOG0830","","","AT1G72370.1","AP40,P40,RP40,RPSAA","40s ribosomal protein SA",50
+"Bra033491","Bra033491","PF00935","PTHR10369","KOG3464","","K02929","AT4G14320.1","","Zinc-binding ribosomal protein family protein",50
+"Bra018689","Bra018689","PF00410","PTHR11758","KOG1754","","K02957","AT1G07770.1","RPS15A","ribosomal protein S15A",50
+"Bra036625","Bra036625","PF00153","PTHR11896","KOG0769","","","AT5G27520.1","PNC2","peroxisomal adenine nucleotide carrier 2",50
+"Bra005820","Bra005820","PF00833","PTHR10732","KOG0187","","K02962","AT2G05220.1","","Ribosomal S17 family protein",50
+"Bra033311","Bra033311","PF03193,PF04548,PF01926","PTHR10903","","","","AT1G02280.1","ATTOC33,PPI1,TOC33","translocon at the outer envelope membrane of chloroplasts 33",50
+"Bra015131","Bra015131","PF01554,PF00861","PTHR23410","KOG1347","","","AT2G04040.1","ATDTX1,TX1","MATE efflux family protein",50
+"Bra026477","Bra026477","PF01294","PTHR11722","KOG3295","","K02873","AT3G49010.1","ATBBC1,BBC1,RSU2","breast basic conserved 1",50
+"Bra036618","Bra036618","PF01249","PTHR10442","KOG3486","","K02971","AT5G27700.1","","Ribosomal protein S21e",50
+"Bra032134","Bra032134","PF00026","PTHR13683","KOG1339","","","AT2G23945.1","","Eukaryotic aspartyl protease family protein",50
+"Bra009039","Bra009039","PF01092","PTHR11502","KOG1646","","K02991","AT5G10360.1","EMB3010,RPS6B","Ribosomal protein S6e",50
+"Bra030786","Bra030786","PF01105","PTHR22811","KOG1691","","","AT1G09580.1","","emp24/gp25L/p24 family/GOLD family protein",50
+"Bra011477","Bra011477","PF00253","PTHR12010","KOG3506","","K02980","AT4G33865.1","","Ribosomal protein S14p/S29e family protein",50
+"Bra026380","Bra026380","PF01929","PTHR11127","KOG3421","","K02875","AT4G27090.1","","Ribosomal protein L14",50
+"Bra040415","Bra040415","PF01282","PTHR10496","KOG3424","","K02974","AT5G28060.1","","Ribosomal protein S24e family protein",50
+"Bra004806","Bra004806","PF08079,PF00327","PTHR11524","KOG3184","","K02937","AT2G44120.2","","Ribosomal protein L30/L7 family protein",50
+"Bra010330","Bra010330","PF00332,PF07983","","","","","AT4G29360.1","","O-Glycosyl hydrolases family 17 protein",50
+"Bra040117","Bra040117","PF00579,PF08389","PTHR10055","KOG2145","","","AT3G05040.1","HST,HST1","ARM repeat superfamily protein",50
+"Bra004225","Bra004225","PF00237","PTHR11593","KOG3353","","","AT1G67430.1","","Ribosomal protein L22p/L17e family protein",50
+"Bra030791","Bra030791","PF00013","PTHR11208","KOG1588","","","AT1G09660.1","","RNA-binding KH domain-containing protein",50
+"Bra029167","Bra029167","PF00338","PTHR11700","KOG0900","","K02969","AT3G45030.1","","Ribosomal protein S10p/S20e family protein",50
+"Bra039149","Bra039149","PF01501","PTHR11226","","2.4.1.43","K13648","AT3G01040.1","GAUT13","galacturonosyltransferase 13",50
+"Bra019574","Bra019574","PF01294","PTHR11722","KOG3295","","","AT3G49010.1","ATBBC1,BBC1,RSU2","breast basic conserved 1",50
+"Bra008824","Bra008824*","PF00466","","","","","AT5G13510.1","","Ribosomal protein L10 family protein",50
+"Bra008825","Bra008825*","","","","","","AT5G13500.1","","",50
+"Bra008826","Bra008826*","PF00153","PTHR11896","KOG0749","","","AT5G13490.1","AAC2","ADP/ATP carrier 2",50
+"Bra004087","Bra004087*","PF04389,PF01546","PTHR12147","KOG2194","","","AT1G67420.2","","Zn-dependent exopeptidases superfamily protein",50
+"Bra025894","Bra025894*","PF00225","PTHR16012","KOG0242","","","AT1G18550.1","","ATP binding microtubule motor family protein",50
+"Bra025895","Bra025895*","PF03868,PF01159","PTHR10715","KOG1694","","K02934","AT1G74050.1","","Ribosomal protein L6 family protein",50
+"Bra012446","Bra012446*","PF05008,PF12352,PF03908","PTHR21230","KOG1666","","K08493","AT1G26670.1","ATVTI12,VTI12,VTI1B","Vesicle transport v-SNARE family protein",50
+"Bra012447","Bra012447*","PF00467,PF01287,PF02996,PF09748","PTHR11673","KOG3271","","","AT1G26665.1","","Mediator complex, subunit Med10",50
+"Bra036585","Bra036585","PF00043,PF00749,PF03950","PTHR10119","KOG1147","6.1.1.17","K01885","AT5G26710.1","","Glutamyl/glutaminyl-tRNA synthetase, class Ic",51
+"Bra006053","Bra006053","PF00733","PTHR11772","KOG0571","6.3.5.4","K01953","AT5G10240.1","ASN3","asparagine synthetase 3",51
+"Bra026126","Bra026126","PF03219","","","","K03301","AT1G15500.1","ATNTT2","TLC ATP/ADP transporter",51
+"Bra028666","Bra028666","PF01379,PF03900","PTHR11557","KOG2892","2.5.1.61","K01749","AT5G08280.1","HEMC","hydroxymethylbilane synthase",51
+"Bra019115","Bra019115","PF03485,PF00750,PF05746","PTHR11956","KOG4426","6.1.1.19","K01887","AT4G26300.1","emb1027","Arginyl-tRNA synthetase, class Ic",51
+"Bra011515","Bra011515","","","","","","AT2G15000.4","","",51
+"Bra033871","Bra033871","PF01502,PF01503,PF03819","PTHR21256","KOG4311","3.5.4.19,3.6.1.31","K11755","AT1G31860.1","AT-IE,HISN2","histidine biosynthesis bifunctional protein (HISIE)",51
+"Bra026128","Bra026128","PF00400,PF01535","PTHR19877","KOG0278","","","AT1G15480.1","","Tetratricopeptide repeat (TPR)-like superfamily protein",51
+"Bra013239","Bra013239","PF00572","PTHR11545","KOG3204","","","AT3G24830.1","","Ribosomal protein L13 family protein",51
+"Bra016007","Bra016007*","PF00197","","","","","AT1G73260.1","ATKTI1,KTI1","kunitz trypsin inhibitor 1",51
+"Bra016008","Bra016008*","PF04321,PF01370","PTHR10366","KOG1431","1.1.1.271","K02377","AT1G73250.1","ATFX,GER1","GDP-4-keto-6-deoxymannose-3,5-epimerase-4-reductase 1",51
+"Bra016009","Bra016009*","PF09531","","","","","AT1G73240.1","","",51
+"Bra016010","Bra016010*","PF01849","PTHR10351","KOG2240","","K01527","AT1G73230.1","","Nascent polypeptide-associated complex NAC",51
+"Bra005476.1","Bra005476","PF00226","PTHR11821","","","","AT2G33735.1","","Chaperone DnaJ-domain superfamily protein",52
+"Bra031705.1","Bra031705","PF00289,PF02786,PF08443,PF02222,PF07478,PF02785","PTHR18866","","6.3.4.14,6.4.1.2","K01961","AT5G35360.1","CAC2","acetyl Co-enzyme a carboxylase biotin carboxylase subunit",53
+"Bra021826.1","Bra021826","PF00231","PTHR11693","KOG1531","3.6.3.14","K02136","AT2G33040.1","ATP3","gamma subunit of Mt ATP synthase",53
+"Bra010339.1","Bra010339","PF00575","PTHR10724","","","","AT4G29060.1","emb2726","elongation factor Ts family protein",53
+"Bra029966.1","Bra029966","PF01063","PTHR11825","KOG0975","2.6.1.42","K00826","AT3G49680.1","ATBCAT-3,BCAT3","branched-chain aminotransferase 3",53
+"Bra037080.1","Bra037080","PF01777","PTHR10497","KOG3418","","K02901","AT4G15000.1","","Ribosomal L27e protein family",53
+"Bra000711.1","Bra000711","PF01849,PF00627","PTHR21713","KOG2239","","","AT4G10480.2","","Nascent polypeptide-associated complex (NAC), alpha subunit family protein",53
+"Bra014493.1","Bra014493","PF00254","PTHR10516","KOG0552","","","AT3G60370.1","","FKBP-like peptidyl-prolyl cis-trans isomerase family protein",53
+"Bra016153.1","Bra016153","PF01207","PTHR11082","KOG2335","","","AT3G63510.1","","FMN-linked oxidoreductases superfamily protein",53
+"Bra006515.1","Bra006515","PF04117","PTHR11266","KOG1944","","K13348","AT5G19750.1","","Peroxisomal membrane 22 kDa (Mpv17/PMP22) family protein",53
+"Bra007343.1","Bra007343","PF03016","PTHR11062","KOG1021","","","AT3G57630.1","","exostosin family protein",53
+"Bra010126.1","Bra010126","PF00300","PTHR23029","KOG0235","","","AT5G62840.1","","Phosphoglycerate mutase family protein",55
+"Bra019384.1","Bra019384","PF03650","PTHR14154","KOG1589","","","AT4G22310.1","","Uncharacterised protein family (UPF0041)",55
+"Bra027278.1","Bra027278","PF11282","","","","","AT3G15110.1","","",55
+"Bra039094.1","Bra039094","","","","","","AT3G27050.1","","",55
+"Bra040955.1","Bra040955","","","","","","AT1G47420.1","SDH5","succinate dehydrogenase 5",55
+"Bra022503.1","Bra022503","PF02353,PF01209,PF08241,PF08242","PTHR10108","","","","AT1G64970.1","G-TMT,TMT1,VTE4","gamma-tocopherol methyltransferase",55
+"Bra024312.1","Bra024312","PF05496,PF00004,PF01434","PTHR23076","KOG0731","","","AT5G64580.1","","AAA-type ATPase family protein",55
+"Bra017625.1","Bra017625","","","","","","AT4G34090.1","","",55
+"Bra006538.1","Bra006538","PF00970,PF00175","PTHR19370","KOG0534","1.6.2.2","K00326","AT5G20080.1","","FAD/NAD(P)-binding oxidoreductase",55
+"Bra023072.1","Bra023072","PF03952,PF00113,PF07476","PTHR11902","KOG2670","4.2.1.11","K01689","AT2G36530.1","ENO2,LOS2","Enolase",55
+"Bra016502.1","Bra016502","","PTHR22572","","","","AT1G19580.1","GAMMA CA1","gamma carbonic anhydrase 1",55
+"Bra033706.1","Bra033706","PF08240,PF00107","PTHR11695","KOG0022","1.1.1.1,1.1.1.284","K00121","AT5G43940.1","ADH2,ATGSNOR1,GSNOR,HOT5,PAR2","GroES-like zinc-binding dehydrogenase family protein",55
+"Bra039708.1","Bra039708","PF00291","PTHR10314","KOG1252","2.5.1.47","K01738","AT4G14880.1","ATCYS-3A,CYTACS1,OASA1,OLD3","O-acetylserine (thiol) lyase (OAS-TL) isoform A1",55
+"Bra014436.1","Bra014436","PF00291","PTHR10314","KOG1252","2.5.1.47,4.4.1.9","K13034","AT3G61440.1","ARATH;BSAS3;1,ATCYSC1,CYSC1","cysteine synthase C1",55
+"Bra002422.1","Bra002422","PF07876","","","","","AT5G22580.1","","Stress responsive A/B Barrel Domain",56
+"Bra028543.1","Bra028543","PF00274","PTHR11627","KOG1557","4.1.2.13","K01623","AT3G52930.1","","Aldolase superfamily protein",57
+"Bra030922.1","Bra030922","PF00004,PF07724","PTHR23073","KOG0729","","K03061","AT1G53750.1","RPT1A","regulatory particle triple-A 1A",57
+"Bra033999.1","Bra033999","PF00237","PTHR11593","KOG3353","","K02880","AT1G67430.1","","Ribosomal protein L22p/L17e family protein",57
+"Bra007070","Bra007070","PF00026","PTHR13683","KOG1339","","","AT3G54400.1","","Eukaryotic aspartyl protease family protein",58
+"Bra028963","Bra028963","","","","","","AT5G55710.1","","",58
+"Bra028404","Bra028404","PF01195","PTHR17224","KOG2255","","","AT5G38290.2","","Peptidyl-tRNA hydrolase family protein",58
+"Bra009670","Bra009670","PF00081,PF02777","PTHR11404","KOG0876","","","AT5G23310.1","FSD3","Fe superoxide dismutase 3",58
+"Bra010616","Bra010616","PF00349,PF03727","PTHR19443","KOG1369","2.7.1.1","K00844","AT4G37840.1","HKL3","hexokinase-like 3",58
+"Bra028796","Bra028796","PF00194,PF02518,PF00204,PF01751,PF00986","PTHR10169","KOG0355","5.99.1.3","K02470","AT5G04130.1","GYRB2","DNA GYRASE B2",58
+"Bra029922","Bra029922","PF02861,PF00004,PF07728,PF02151,PF00158,PF07724,PF10431","PTHR11638","KOG1051","","K03696","AT3G48870.1","ATCLPC,ATHSP93-III,HSP93-III","Clp ATPase",58
+"Bra008747","Bra008747","PF01327","PTHR10458","KOG3137","3.5.1.88","K01462","AT5G14660.1","ATDEF2,DEF2,PDF1B","peptide deformylase 1B",58
+"Bra002561","Bra002561","PF04140","PTHR12714","KOG2628","","","AT5G59500.1","","protein C-terminal S-isoprenylcysteine carboxyl O-methyltransferases",58
+"Bra025254","Bra025254","","PTHR11061","","2.1.1.-","K00599","AT3G27180.1","","S-adenosyl-L-methionine-dependent methyltransferases superfamily protein",58
+"Bra011546","Bra011546","PF00886","PTHR12919","KOG3419","","K02959","AT4G34620.1","SSR16","small subunit ribosomal protein 16",58
+"Bra019231","Bra019231","PF00012,PF06723","PTHR19375","KOG0102","","K03283","AT4G24280.1","cpHsc70-1","chloroplast heat shock protein 70-1",58
+"Bra017976","Bra017976","PF02466,PF00536","","KOG3225","","","AT5G24650.1","","Mitochondrial import inner membrane translocase subunit Tim17/Tim22/Tim23 family protein",58
+"Bra031272","Bra031272","PF05958,PF05175,PF01170,PF09445,PF03602","PTHR11061","KOG2187","2.1.1.-","K00599","AT3G21300.1","","RNA methyltransferase family protein",58
+"Bra003253","Bra003253","PF07716,PF00170","PTHR22952","","","","AT3G56850.1","AREB3,DPBF3","ABA-responsive element binding protein 3",58
+"Bra002101","Bra002101","PF01025","PTHR21237","KOG3003","","","AT5G17710.2","EMB1241","Co-chaperone GrpE family protein",58
+"Bra023634","Bra023634","PF01025","PTHR21237","KOG3003","","K03687","AT5G17710.2","EMB1241","Co-chaperone GrpE family protein",58
+"Bra025173","Bra025173","PF07800","","","","","AT3G25910.1","","Protein of unknown function (DUF1644)",58
+"Bra005404","Bra005404","","","","","","AT2G34640.1","HMR,PTAC12","plastid transcriptionally active 12",58
+"Bra001715","Bra001715","PF00696","PTHR21499","","2.7.4.22","K09903","AT3G18680.1","","Amino acid kinase family protein",58
+"Bra022830","Bra022830","PF07498","PTHR11939:SF2","","","","AT1G06190.1","","Rho termination factor",58
+"Bra001116","Bra001116","","PTHR23023","","","","AT3G04650.1","","FAD/NAD(P)-binding oxidoreductase family protein",58
+"Bra000338","Bra000338","PF01113,PF05173","PTHR20836","","1.3.1.26","K00215","AT2G44040.1","","Dihydrodipicolinate reductase, bacterial/plant",58
+"Bra032124","Bra032124","PF05198,PF00707","PTHR10938","","","K02520","AT2G24060.1","","Translation initiation factor 3 protein",58
+"Bra012074","Bra012074","PF00150,PF01535","PTHR10483","","","","AT3G47840.1","","Tetratricopeptide repeat (TPR)-like superfamily protein",58
+"Bra020935","Bra020935","PF02991,PF00856,PF09273","PTHR10969","KOG1654","","","AT4G20130.1","PTAC14","plastid transcriptionally active 14",58
+"Bra012807","Bra012807","PF00076","PTHR10432","KOG0131","","","AT3G52380.1","CP33,PDE322","chloroplast RNA-binding protein 33",58
+"Bra015023","Bra015023","PF00920","PTHR21000","KOG2448","4.2.1.9","K01687","AT3G23940.1","","dehydratase family",58
+"Bra009789","Bra009789*","PF11891","","","","","AT5G24690.1","","Protein of unknown function (DUF3411)",58
+"Bra009790","Bra009790*","PF00400","PTHR22847","KOG0276","","","AT5G24710.1","","Transducin/WD40 repeat-like superfamily protein",58
+"Bra002917","Bra002917*","PF02919,PF01028","PTHR10290","KOG0981","5.99.1.2","K03163","AT5G55310.1","TOP1,TOP1BETA","DNA topoisomerase 1 beta",58
+"Bra002918","Bra002918*","PF00091,PF12327","","","","K03531","AT5G55280.1","ATFTSZ1-1,CPFTSZ,FTSZ1-1","homolog of bacterial cytokinesis Z-ring protein FTSZ 1-1",58
+"Bra016835","Bra016835*","","","","","","AT1G11430.1","","plastid developmental protein DAG, putative",58
+"Bra016836","Bra016836*","PF01453,PF00954,PF08276,PF07714,PF00069,PF11883","PTHR23258","KOG1187","","","AT1G11340.1","","S-locus lectin protein kinase family protein",58
+"Bra035803","Bra035803*","PF02519","","","","K14488","AT3G20220.1","","SAUR-like auxin-responsive protein family",58
+"Bra035804","Bra035804*","PF01650","PTHR12000","KOG1348","3.4.22.34","K01369","AT3G20210.1","DELTA-VPE,DELTAVPE","delta vacuolar processing enzyme",58
+"Bra018435","Bra018435","","PTHR13824","KOG4308","","","AT1G10510.1","emb2004","RNI-like superfamily protein",59
+"Bra028975","Bra028975","PF02466","PTHR14110","KOG1652","","","AT5G55510.1","","Mitochondrial import inner membrane translocase subunit Tim17/Tim22/Tim23 family protein",59
+"Bra002106","Bra002106","PF00641","PTHR23238:SF5","","","","AT5G17790.1","VAR3","zinc finger (Ran-binding) family protein",59
+"Bra004400","Bra004400","PF01199","PTHR10759","KOG1790","","K02915","AT1G69620.1","RPL34","ribosomal protein L34",59
+"Bra040285","Bra040285","PF04802","PTHR23318","KOG2175","","","AT3G06670.1","","binding",59
+"Bra034364","Bra034364","","","","","","AT2G27730.1","","copper ion binding",59
+"Bra020005","Bra020005","PF02798,PF00043,PF00647","PTHR11260","KOG1627","","K03233","AT1G09640.1","","Translation elongation factor EF1B, gamma chain",59
+"Bra005258","Bra005258","PF01246","PTHR10792","KOG1722","","K02896","AT2G36620.1","RPL24A","ribosomal protein L24",59
+"Bra038389","Bra038389","PF00076","PTHR10432","KOG0131","","","AT4G09040.1","","RNA-binding (RRM/RBD/RNP motifs) family protein",59
+"Bra002258","Bra002258","PF04117","PTHR11266","KOG1944","","K13348","AT5G19750.1","","Peroxisomal membrane 22 kDa (Mpv17/PMP22) family protein",59
+"Bra016123","Bra016123","PF00575","PTHR10724","","","K02945","AT1G71720.1","","Nucleic acid-binding proteins superfamily",59
+"Bra011770","Bra011770","PF00636","","","","","AT4G37510.1","","Ribonuclease III family protein",59
+"Bra014503","Bra014503","PF01780","PTHR11517","KOG0402","","K02921","AT3G60245.1","","Zinc-binding ribosomal protein family protein",59
+"Bra011106","Bra011106","PF01778","PTHR10544","KOG3412","","K02903","AT4G29410.1","","Ribosomal L28e protein family",59
+"Bra039975","Bra039975","PF00378","PTHR11941","KOG1684","","","AT5G65940.1","CHY1","beta-hydroxyisobutyryl-CoA hydrolase 1",59
+"Bra001406","Bra001406","PF00411","PTHR11759","KOG0407","","K02955","AT3G11510.1","","Ribosomal protein S11 family protein",59
+"Bra017749","Bra017749","PF00181,PF03947","PTHR13691","KOG2309","","K02938","AT4G36130.1","","Ribosomal protein L2 family",59
+"Bra023511","Bra023511","PF00163,PF01479","PTHR11831","KOG3301","","","AT5G15200.1","","Ribosomal protein S4",59
+"Bra016703","Bra016703","PF00179","PTHR11621","KOG0419","6.3.2.19","K10573","AT1G14400.1","ATUBC1,UBC1","ubiquitin carrier protein 1",59
+"Bra000440","Bra000440","PF00069,PF07714","PTHR23258","","","","AT2G47115.1","","",59
+"Bra006454","Bra006454","PF00380","PTHR21569","KOG1753","","K02960","AT5G18380.1","","Ribosomal protein S5 domain 2-like superfamily protein",59
+"Bra006340","Bra006340","PF01251","PTHR11278","KOG3320","","K02993","AT5G16130.1","","Ribosomal protein S7e family protein",59
+"Bra007220","Bra007220*","PF05470,PF01399","PTHR13937","KOG1076","","K03252","AT3G56150.1","ATEIF3C-1,ATTIF3C1,EIF3C,EIF3C-1,TIF3C1","eukaryotic translation initiation factor 3C",59
+"Bra007221","Bra007221*","PF01758","PTHR18640","KOG4821","","K14347","AT3G56160.1","","Sodium Bile acid symporter family",59
+"Bra007499","Bra007499*","PF00557","PTHR10804","KOG2775","3.4.11.18","K01265","AT3G59990.1","MAP2B","methionine aminopeptidase 2B",59
+"Bra007500","Bra007500*","PF03931,PF01466","PTHR11165","KOG1724","","","AT1G20140.1","ASK4,SK4","SKP1-like 4",59
+"Bra002424","Bra002424*","PF02493","PTHR10091","","","","AT5G22640.1","emb1211","MORN (Membrane Occupation and Recognition Nexus) repeat-containing protein",59
+"Bra002425","Bra002425*","","","","","","AT5G22650.1","ATHD2,ATHD2B,HD2,HD2B,HDA4,HDT02,HDT2","histone deacetylase 2B",59
+"Bra034715","Bra034715*","","","","","","AT3G12940.1","","2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein",59
+"Bra034716","Bra034716*","PF02410","PTHR21043","","","","AT3G12930.1","","Lojap-related protein",59
+"Bra039057","Bra039057","PF01192","PTHR10773","KOG3405","","","AT5G51940.1","NRPB6A,NRPD6A,NRPE6A","RNA polymerase Rpb6",60
+"Bra018595","Bra018595","PF00125,PF00808","PTHR23430","KOG1756","","K11251","AT1G08880.1","G-H2AX,GAMMA-H2AX,H2AXA,HTA5","Histone superfamily protein",60
+"Bra014389","Bra014389","PF01423","PTHR12777","KOG3459","","K11096","AT3G62840.1","","Small nuclear ribonucleoprotein family protein",60
+"Bra009998","Bra009998","","","","","","AT5G28500.1","","",60
+"Bra014046","Bra014046","PF11523","","","","","AT1G45230.1","","Protein of unknown function (DUF3223)",60
+"Bra004675","Bra004675","PF02466","PTHR14110","KOG3225","","","AT2G42210.2","ATOEP16-3,OEP16-3","Mitochondrial import inner membrane translocase subunit Tim17/Tim22/Tim23 family protein",60
+"Bra026917","Bra026917","PF00847,PF02362","","","","K09287","AT1G13260.1","EDF4,RAV1","related to ABI3/VP1 1",60
+"Bra035168","Bra035168","PF00202","PTHR11986","KOG1401","","","AT1G80600.1","WIN1","HOPW1-1-interacting 1",60
+"Bra021292","Bra021292","PF00232","PTHR10353","KOG0626","3.2.1.21","K05350","AT3G18080.1","BGLU44","B-S glucosidase 44",60
+"Bra024701","Bra024701","PF00696","","","","","AT1G26640.1","","Amino acid kinase family protein",60
+"Bra022458","Bra022458","PF02620","","","","","AT3G19810.1","","Protein of unknown function (DUF177)",60
+"Bra037306","Bra037306","PF08294","PTHR13032","KOG4836","","","AT4G00026.1","","",60
+"Bra018100","Bra018100","PF01565,PF04030","PTHR13878","KOG4730","1.3.2.3","K00225","AT3G47930.1","ATGLDH,GLDH","L-galactono-1,4-lactone dehydrogenase",60
+"Bra032540","Bra032540","PF00462","PTHR10168","KOG1752","","","AT1G03850.2","","Glutaredoxin family protein",60
+"Bra018736","Bra018736","PF00641","PTHR23238","KOG4198","","","AT1G48570.1","","zinc finger (Ran-binding) family protein",60
+"Bra035413","Bra035413","PF00270,PF00271","PTHR10967","KOG0333","","","AT1G59990.1","","DEA(D/H)-box RNA helicase family protein",60
+"Bra011825","Bra011825","PF00276","","KOG4089","","","AT4G39880.1","","Ribosomal protein L23/L15e family protein",60
+"Bra005026","Bra005026","PF04055","","","","","AT2G39670.1","","Radical SAM superfamily protein",60
+"Bra036169","Bra036169","","","","","","AT5G48470.1","","",60
+"Bra022868","Bra022868","","","","","","AT2G31840.1","","Thioredoxin superfamily protein",60
+"Bra013786","Bra013786*","PF00012,PF06723","PTHR19375","KOG0102","","K03283","AT4G24280.1","cpHsc70-1","chloroplast heat shock protein 70-1",60
+"Bra013788","Bra013788*","PF00012,PF06723","PTHR19375","","","","AT4G24280.1","cpHsc70-1","chloroplast heat shock protein 70-1",60
+"Bra000616","Bra000616*","PF01535","PTHR10483","","","","AT5G50280.1","EMB1006","Pentatricopeptide repeat (PPR) superfamily protein",60
+"Bra000617","Bra000617*","PF01344,PF07646","PTHR23244","KOG1230","","","AT5G50310.1","","Galactose oxidase/kelch repeat superfamily protein",60
+"Bra025838","Bra025838*","PF00505","PTHR13711","KOG0381","","","AT1G20696.3","HMGB3,NFD03,NFD3","high mobility group B3",60
+"Bra025839","Bra025839*","PF00046","PTHR19418","","","","AT1G20700.1","ATWOX14,WOX14","WUSCHEL related homeobox 14",60
+"Bra007745","Bra007745*","PF00400,PF07304","PTHR13923","KOG0307","","K14005","AT3G63460.1","","transducin family protein / WD-40 repeat family protein",60
+"Bra007746","Bra007746*","","","","","","","","",60
+"Bra007747","Bra007747*","PF00400,PF07304","PTHR13923","KOG0307","","K14005","AT3G63460.1","","transducin family protein / WD-40 repeat family protein",60
+"Bra007748","Bra007748*","PF00762,PF00504","PTHR11108","KOG1321","","","AT2G30390.1","ATFC-II,FC-II,FC2","ferrochelatase 2",60
+"Bra021852","Bra021852*","","","","","","AT2G33430.1","DAL,DAL1","differentiation and greening-like 1",60
+"Bra021853","Bra021853*","PF00830","","","","","AT2G33450.1","","Ribosomal L28 family",60
+"Bra017546","Bra017546","PF00595,PF03572","","","","","AT5G46390.2","","Peptidase S41 family protein",61
+"Bra008003","Bra008003","PF01712","PTHR10513","KOG4235","","","AT1G72040.1","","P-loop containing nucleoside triphosphate hydrolases superfamily protein",61
+"Bra018616","Bra018616","PF07137","","","1.10.99.3","K09839","AT1G08550.1","AVDE1,NPQ1","non-photochemical quenching 1",61
+"Bra029256","Bra029256","PF03134","PTHR12300","","","","AT5G62490.1","ATHVA22B,HVA22B","HVA22 homologue B",61
+"Bra037696","Bra037696","PF02290","PTHR12013","KOG1761","","","AT2G43640.1","","Signal recognition particle, SRP9/SRP14 subunit",61
+"Bra038942","Bra038942","PF00160","PTHR11071","KOG0880","","","AT5G35100.1","","Cyclophilin-like peptidyl-prolyl cis-trans isomerase family protein",61
+"Bra039648","Bra039648","PF00091,PF03953","PTHR11588","KOG1376","","K07374","AT1G04820.1","TOR2,TUA4","tubulin alpha-4 chain",61
+"Bra037799","Bra037799","PF02446","","","2.4.1.25","K00705","AT5G64860.1","DPE1","disproportionating enzyme",61
+"Bra023430","Bra023430","PF04542,PF04539,PF04545,PF02353,PF01209,PF08241,PF08242,PF08498","PTHR10108","KOG1269","2.1.1.41","K00559","AT5G13710.1","CPH,SMT1","sterol methyltransferase 1",61
+"Bra039612","Bra039612","PF00347","PTHR11655","","","K02933","AT2G18400.1","","ribosomal protein L6 family protein",61
+"Bra008957","Bra008957","PF05670","PTHR13049","KOG3272","","","AT5G11500.1","","",61
+"Bra009352","Bra009352","PF00224,PF02887","PTHR11817","KOG2323","2.7.1.40","K00873","AT5G08570.1","","Pyruvate kinase family protein",61
+"Bra030856","Bra030856","PF02779,PF02780","PTHR11624","KOG0525","1.2.4.4","K00167","AT1G55510.1","BCDH BETA1","branched-chain alpha-keto acid decarboxylase E1 beta subunit",61
+"Bra018819","Bra018819","PF05479","","","","","AT1G49975.1","","",61
+"Bra039441","Bra039441","PF00083","PTHR11600","","","","AT3G05400.1","","Major facilitator superfamily protein",61
+"Bra005570","Bra005570","PF05899","","","","","AT2G32650.1","","RmlC-like cupins superfamily protein",61
+"Bra026290","Bra026290","","","","","","AT4G28025.1","","",61
+"Bra003705","Bra003705","PF01423","PTHR13110","KOG3460","","K12622","AT1G76860.1","","Small nuclear ribonucleoprotein family protein",61
+"Bra003336","Bra003336","PF00180","PTHR11822","KOG1526","1.1.1.42","K00031","AT1G54340.1","ICDH","isocitrate dehydrogenase",61
+"Bra015638","Bra015638","PF01190","","","","","AT1G78040.1","","Pollen Ole e 1 allergen and extensin family protein",61
+"Bra026185","Bra026185*","PF00650","PTHR10174","KOG1471","","","AT1G14820.3","","Sec14p-like phosphatidylinositol transfer family protein",61
+"Bra026186","Bra026186*","PF01118,PF02774","PTHR10174","KOG4777","1.2.1.11","K00133","AT1G14810.1","","semialdehyde dehydrogenase family protein",61
+"Bra003241","Bra003241*","PF08240,PF00107,PF00085","PTHR11695","KOG1198","","","AT3G56460.1","","GroES-like zinc-binding alcohol dehydrogenase family protein",61
+"Bra003242","Bra003242*","","","","","","AT3G56480.1","","myosin heavy chain-related",61
+"Bra028940","Bra028940","PF03737","","","","K02553","AT5G56260.1","","Ribonuclease E inhibitor RraA/Dimethylmenaquinone methyltransferase",62
+"Bra029859","Bra029859","PF00069,PF07714,PF00036","PTHR22982","KOG0032","2.7.11.1","K13412","AT3G10660.1","ATCPK2,CPK2","calmodulin-domain protein kinase cdpk isoform 2",62
+"Bra018030","Bra018030","PF02861,PF00004,PF07728,PF02151,PF00158,PF07724,PF10431","PTHR11638","KOG1051","","","AT3G48870.2","ATCLPC,ATHSP93-III,HSP93-III","Clp ATPase",62
+"Bra015061","Bra015061","PF00717,PF10502","PTHR12383","KOG0171","3.4.21.89","K03100","AT3G24590.1","PLSP1","plastidic type i signal peptidase 1",62
+"Bra037787","Bra037787","PF01196","PTHR14413","KOG3280","","","AT5G64650.1","","Ribosomal protein L17 family protein",62
+"Bra032551","Bra032551","PF07765","","","","","AT1G03470.1","","Kinase interacting (KIP1-like) family protein",62
+"Bra001104","Bra001104","PF10440,PF05033,PF00856,PF00238","PTHR11761","KOG1082","","","AT3G04380.1","SDG31,SUVR4","SET-domain containing protein lysine methyltransferase family protein",62
+"Bra029000","Bra029000","","","","","","AT5G54970.1","","",62
+"Bra007181","Bra007181","PF00153","PTHR11896","KOG0752","","","AT3G55640.1","","Mitochondrial substrate carrier family protein",62
+"Bra035565","Bra035565","PF00091,PF12327","","","","","AT5G55280.1","ATFTSZ1-1,CPFTSZ,FTSZ1-1","homolog of bacterial cytokinesis Z-ring protein FTSZ 1-1",62
+"Bra024794","Bra024794","","","","","","","","",62
+"Bra006200","Bra006200","PF00213","PTHR11910","KOG1662","3.6.3.14","K02137","AT5G13450.1","ATP5","delta subunit of Mt ATP synthase",62
+"Bra037068","Bra037068","PF00227","PTHR11599","KOG0177","3.4.25.1","K02734","AT3G22630.1","PBD1,PRCGB","20S proteasome beta subunit D1",62
+"Bra039013","Bra039013","PF00410","PTHR11758","KOG1754","","K02957","AT2G19720.1","rps15ab","ribosomal protein S15A B",62
+"Bra028367","Bra028367","PF00920","PTHR21000","KOG2448","4.2.1.9","K01687","AT3G23940.1","","dehydratase family",62
+"Bra013342","Bra013342","PF00281,PF00673","PTHR11994","KOG0397","","","AT4G18730.1","RPL16B","ribosomal protein L16B",62
+"Bra035847","Bra035847","PF00406,PF05191","PTHR23359","KOG3078","","","AT5G63400.1","ADK1","adenylate kinase 1",62
+"Bra012616","Bra012616","PF01655","PTHR23413","KOG0878","","K02912","AT4G18100.1","","Ribosomal protein L32e",62
+"Bra013915","Bra013915","PF03501","PTHR12146","KOG3344","","K02947","AT4G25740.1","","RNA binding Plectin/S10 domain-containing protein",62
+"Bra005341","Bra005341*","PF04909","","","","","AT2G35450.1","","catalytics;hydrolases",62
+"Bra005342","Bra005342*","PF00642","PTHR12547","","","","AT2G35430.1","","Zinc finger C-x8-C-x5-C-x3-H type family protein",62
+"Bra035260","Bra035260*","PF00334","PTHR11349","KOG0888","2.7.4.6","K00940","AT4G11010.1","NDPK3","nucleoside diphosphate kinase 3",62
+"Bra035261","Bra035261*","","PTHR18958:SF79","","","","AT4G11000.1","","Ankyrin repeat family protein",62
+"Bra005211","Bra005211*","PF00578,PF08534","PTHR22274:SF17","KOG4498","","","AT2G37240.1","","Thioredoxin superfamily protein",62
+"Bra005212","Bra005212*","PF00076","PTHR10432","KOG0131","","","AT2G37220.1","","RNA-binding (RRM/RBD/RNP motifs) family protein",62
+"Bra034556.1","Bra034556","PF05659,PF00931,PF00560","PTHR23155","KOG4658","","","AT4G33300.1","ADR1-L1","ADR1-like 1",63
+"Bra004771.1","Bra004771","PF00187,PF00182","PTHR22595","KOG4742","","","AT2G43570.1","CHI","chitinase, putative",63
+"Bra013540.1","Bra013540","PF08240,PF00107","PTHR11695","KOG1198","","","AT4G21580.1","","oxidoreductase, zinc-binding dehydrogenase family protein",63
+"Bra017633.1","Bra017633","PF04199","","","","","AT4G34180.1","","Cyclase family protein",63
+"Bra029107.1","Bra029107","PF00403","PTHR22814","KOG1603","","","AT5G52760.1","","Copper transport protein family",63
+"Bra018543.1","Bra018543","PF02798,PF00043","PTHR11260","KOG0867","2.5.1.18","K00799","AT2G02930.1","ATGSTF3,GST16,GSTF3","glutathione S-transferase F3",63
+"Bra014842.1","Bra014842","PF06521","","","","","AT3G54040.1","","PAR1 protein",63
+"Bra000310.1","Bra000310","PF00187,PF00182","PTHR22595","KOG4742","","","AT2G43570.1","CHI","chitinase, putative",63
+"Bra002914.1","Bra002914","","","","","","AT5G55410.2","","Bifunctional inhibitor/lipid-transfer protein/seed storage 2S albumin superfamily protein",63
+"Bra003273.1","Bra003273","PF00332","","","","","AT3G57240.1","BG3","beta-1,3-glucanase 3",63
+"Bra012805.1","Bra012805","PF01764","","","","","AT3G52430.1","ATPAD4,PAD4","alpha/beta-Hydrolases superfamily protein",63
+"Bra022610.1","Bra022610","PF03121,PF02423,PF01488","PTHR13812","KOG3007","","","AT5G52800.3","","DNA primases",63
+"Bra014622.1","Bra014622","PF00675,PF05193","PTHR11851","KOG0959","3.4.24.56","K01408","AT2G41790.1","","Insulinase (Peptidase family M16) family protein",63
+"Bra005982.1","Bra005982","PF02629,PF00549","PTHR11117","KOG1255","6.2.1.4,6.2.1.5","K01899","AT5G08300.1","","Succinyl-CoA ligase, alpha subunit",63
+"Bra013719.1","Bra013719","PF00069,PF07714,PF00036","PTHR22982","KOG0032","2.7.11.1","K13412","AT4G23650.1","CDPK6,CPK3","calcium-dependent protein kinase 6",63
+"Bra014037.1","Bra014037","PF00085,PF00578","PTHR10438","KOG0907","","","AT1G45145.1","ATH5,ATTRX5,LIV1,TRX5","thioredoxin H-type 5",64
+"Bra019626.1","Bra019626","PF00153","PTHR11896","KOG0749","","","AT5G17400.1","ER-ANT1","endoplasmic reticulum-adenine nucleotide transporter 1",64
+"Bra004101.1","Bra004101","PF03009","PTHR23344","KOG2258","","","AT4G26690.1","GPDL2,MRH5,SHV3","PLC-like phosphodiesterase family protein",64
+"Bra016226.1","Bra016226","PF11721","PTHR23258","","","","AT1G56130.1","","Leucine-rich repeat transmembrane protein kinase",64
+"Bra002255.1","Bra002255","PF02516","PTHR13872","KOG2292","2.4.1.119","K07151","AT5G19690.1","STT3A","staurosporin and temperature sensitive 3-like A",64
+"Bra009368.1","Bra009368","","","","","","AT5G08770.1","","",64
+"Bra013507.1","Bra013507","PF05817","PTHR12640","KOG2447","","","AT4G21150.1","HAP6","ribophorin II (RPN2) family protein",64
+"Bra021067.1","Bra021067","PF00169,PF06101","PTHR16166","","","","AT4G17140.3","","pleckstrin homology (PH) domain-containing protein",64
+"Bra003239.1","Bra003239","PF03106","","","","","AT3G56400.1","ATWRKY70,WRKY70","WRKY DNA-binding protein 70",64
+"Bra012871.1","Bra012871","PF00320","PTHR22949:SF2","KOG1601","","","AT3G51050.1","","FG-GAP repeat-containing protein",64
+"Bra014291.1","Bra014291","PF01532","PTHR11742","KOG2204","3.2.1.113","K01230","AT1G51590.1","MANIB,MNS1","alpha-mannosidase 1",64
+"Bra017019.1","Bra017019","PF07714,PF00069","PTHR23258","KOG1187","","","AT2G40270.1","","Protein kinase family protein",64
+"Bra001662.1","Bra001662","PF00069,PF07714","PTHR23258","KOG1187","","","AT3G17410.1","","Protein kinase superfamily protein",64
+"Bra014903.1","Bra014903","","","","","","AT1G31130.1","","",64
+"Bra034432.1","Bra034432","PF00481,PF07228","PTHR13832","KOG0698","","","AT1G34750.1","","Protein phosphatase 2C family protein",64
+"Bra036593.1","Bra036593","PF00069,PF07714","PTHR11295","KOG0658","2.7.1.-","K00924","AT5G26751.1","ATSK11,SK 11","shaggy-related kinase 11",64
+"Bra002023.1","Bra002023","PF00180","PTHR11835","KOG0784","1.1.1.41","K00030","AT2G17130.1","IDH-II,IDH2","isocitrate dehydrogenase subunit 2",64
+"Bra011500.1","Bra011500","PF00168","PTHR10024","KOG1030","","","AT4G34150.1","","Calcium-dependent lipid-binding (CaLB domain) family protein",64
+"Bra019122.1","Bra019122","PF07714,PF00069","PTHR22986","KOG0581","2.7.12.2","K04368","AT4G26070.2","ATMEK1,MEK1,MKK1,NMAPKK","MAP kinase/ ERK kinase 1",64
+"Bra000391.1","Bra000391","PF00067","PTHR19383","KOG0157","","","AT2G45510.1","CYP704A2","cytochrome P450, family 704, subfamily A, polypeptide 2",64
+"Bra036316.1","Bra036316","PF00182","PTHR22595","KOG4742","","","AT4G01700.1","","Chitinase family protein",64
+"Bra004537.1","Bra004537","PF00520,PF00027","PTHR10217","KOG0498","","K05391","AT2G46430.1","ATCNGC3,CNGC3,CNGC3.C","cyclic nucleotide gated channel 3",64
+"Bra035574.1","Bra035574","","","","","","AT5G55450.1","","Bifunctional inhibitor/lipid-transfer protein/seed storage 2S albumin superfamily protein",64
+"Bra011016","Bra011016","PF03798","PTHR12560","KOG1607","","","AT1G26200.1","","TRAM, LAG1 and CLN8 (TLC) lipid-sensing domain containing protein",65
+"Bra005329","Bra005329","PF04144","PTHR10687","KOG3088","","","AT1G32050.1","","SCAMP family protein",65
+"Bra022836","Bra022836","PF00753","PTHR11935","KOG0813","","","AT2G31350.1","GLX2-5","glyoxalase 2-5",65
+"Bra001317","Bra001317","PF01237","PTHR10972","KOG2209","","","AT3G09300.1","ORP3B","OSBP(oxysterol binding protein)-related protein 3B",65
+"Bra013693","Bra013693","PF04749","","","","","AT4G23470.1","","PLAC8 family protein",65
+"Bra000741","Bra000741","PF04969,PF05002","PTHR22904","KOG1309","","K12795","AT4G11260.1","ATSGT1B,EDM1,ETA3,RPR1,SGT1B","phosphatase-related",65
+"Bra037655","Bra037655","PF03107,PF07649","PTHR13871:SF2","","","","AT2G44370.1","","Cysteine/Histidine-rich C1 domain family protein",65
+"Bra036840","Bra036840*","","","","","","AT3G51010.1","","",65
+"Bra036841","Bra036841*","PF00561","PTHR10992","KOG4178","","","AT3G51000.1","","alpha/beta-Hydrolases superfamily protein",65
+"Bra013863","Bra013863","PF00081,PF02777","PTHR11404","KOG0876","","","AT4G25100.1","ATFSD1,FSD1","Fe superoxide dismutase 1",66
+"Bra014252","Bra014252","PF01222","PTHR21257","KOG1435","1.3.1.21","K00213","AT1G50430.1","7RED,DWF5,LE,PA,ST7R","Ergosterol biosynthesis ERG4/ERG24 family",66
+"Bra022884","Bra022884","PF03124","PTHR10783","","","","AT2G32295.1","","EXS (ERD1/XPR1/SYG1) family protein",66
+"Bra026638","Bra026638","PF04597","PTHR21049","KOG2291","","","AT2G01720.1","","Ribophorin I",66
+"Bra011541","Bra011541","PF05368,PF01370","PTHR10366","","","","AT4G34540.1","","NmrA-like negative transcriptional regulator family protein",66
+"Bra008517","Bra008517","PF11721","","","","","AT4G00300.2","","fringe-related protein",66
+"Bra002715","Bra002715*","PF00202","PTHR11986","KOG1401","2.6.1.62","K00833","AT5G57590.1","BIO1","adenosylmethionine-8-amino-7-oxononanoate transaminases",66
+"Bra002716","Bra002716*","PF07887","","","","K02183","AT5G57580.1","","Calmodulin-binding protein",66
+"Bra030727","Bra030727*","PF00262","PTHR11073","KOG0674","","","AT1G08450.3","AtCRT3,CRT3,EBS2,PSL1","calreticulin 3",66
+"Bra030760","Bra030760*","PF00307,PF00225","PTHR16012","KOG0239","","","AT1G09170.1","","P-loop nucleoside triphosphate hydrolases superfamily protein with CH (Calponin Homology) domain",66
+"Bra030763","Bra030763*","PF00262,PF00125,PF00025,PF09439,PF08477,PF00071,PF00503","PTHR11073","KOG0674","","K08057","AT1G09210.1","AtCRT1b,CRT1b","calreticulin 1b",66
+"Bra006332","Bra006332*","","","","","","AT5G15880.1","","",66
+"Bra006333","Bra006333*","PF02463","PTHR19306","KOG0979","","","AT5G15920.1","SMC5","structural maintenance of chromosomes 5",66
+"Bra006700","Bra006700","PF00069,PF07714","PTHR23258","KOG1187","","","AT3G46420.1","","Leucine-rich repeat protein kinase family protein",67
+"Bra040899","Bra040899","PF08263,PF00560","PTHR23258","","","","AT5G21090.1","","Leucine-rich repeat (LRR) family protein",67
+"Bra039216","Bra039216","PF00348","PTHR12001","KOG0776","2.5.1.1,2.5.1.10,2.5.1.29","K13789","AT2G23800.1","GGPS2,GGPS5","geranylgeranyl pyrophosphate synthase 2",67
+"Bra013445","Bra013445","PF02225","PTHR22765","KOG3920","","","AT4G20110.1","BP80-3;1,VSR3;1,VSR7","VACUOLAR SORTING RECEPTOR 7",67
+"Bra021170","Bra021170","","","","","","AT3G16220.1","","Predicted eukaryotic LigT",67
+"Bra019870","Bra019870","PF00083,PF07690","PTHR11600","KOG0254","","","AT1G11260.1","ATSTP1,STP1","sugar transporter 1",67
+"Bra033467","Bra033467","PF00036","PTHR10891","KOG0027","","K13448","AT3G51920.1","ATCML9,CAM9,CML9","calmodulin 9",67
+"Bra038281","Bra038281","PF00069,PF07714,PF06293","PTHR11295","KOG0660","2.7.11.24","K04371","AT3G45640.1","ATMAPK3,ATMPK3,MPK3","mitogen-activated protein kinase 3",67
+"Bra002086","Bra002086","PF00026","PTHR13683","KOG1339","","","AT2G17760.1","","Eukaryotic aspartyl protease family protein",67
+"Bra015564","Bra015564","PF04185","","","3.1.4.3","K01114","AT1G07230.1","NPC1","non-specific phospholipase C1",67
+"Bra019760","Bra019760","PF00995","PTHR11679","KOG1300","","","AT1G12360.1","KEU","Sec1/munc18-like (SM) proteins superfamily",67
+"Bra000875","Bra000875*","PF02798,PF00043","PTHR11260","KOG0867","2.5.1.18","K00799","AT2G02930.1","ATGSTF3,GST16,GSTF3","glutathione S-transferase F3",67
+"Bra000876","Bra000876*","PF02798,PF00043","PTHR11260","KOG0867","","","AT4G02520.1","ATGSTF2,ATPM24,ATPM24.1,GST2,GSTF2","glutathione S-transferase PHI 2",67
+"Bra021634","Bra021634*","PF10502","PTHR12383","","","","AT2G30440.1","TPP","thylakoid processing peptide",67
+"Bra016252","Bra016252*","PF02798,PF00043","PTHR11260","KOG0406","","","AT1G69920.1","ATGSTU12,GSTU12","glutathione S-transferase TAU 12",67
+"Bra016253","Bra016253*","PF02798","PTHR11260","KOG0406","","","AT1G69920.1","ATGSTU12,GSTU12","glutathione S-transferase TAU 12",67
+"Bra038610","Bra038610*","PF00149","","KOG1432","","","AT5G63140.1","ATPAP29,PAP29","purple acid phosphatase 29",67
+"Bra038611","Bra038611*","PF00149","","KOG1432","","","AT5G63140.1","ATPAP29,PAP29","purple acid phosphatase 29",67
+"Bra003114","Bra003114*","PF00403","PTHR22814","KOG1603","","","AT5G52760.1","","Copper transport protein family",67
+"Bra003115","Bra003115*","PF00403","PTHR22814","KOG1603","","","AT5G52760.1","","Copper transport protein family",67
+"Bra000382","Bra000382","PF04043,PF01095","","","3.1.1.11","K01051","AT2G45220.1","","Plant invertase/pectin methylesterase inhibitor superfamily",68
+"Bra038040","Bra038040","PF03859,PF00023,PF00612","PTHR23335","KOG0520","","","AT4G16150.1","","calmodulin binding;transcription regulators",68
+"Bra037160","Bra037160","PF00412,PF12315","PTHR18973","KOG1703","","","AT5G66620.1","DAR6","DA1-related protein 6",68
+"Bra006623","Bra006623","PF00957","PTHR21136","KOG0859","","","AT5G22360.1","ATVAMP714,VAMP714","vesicle-associated membrane protein 714",68
+"Bra009434","Bra009434","PF05659,PF00931,PF00560","PTHR23155","","","","AT5G04720.1","ADR1-L2","ADR1-like 2",68
+"Bra018085","Bra018085","PF01764","","","","","AT3G48080.1","","alpha/beta-Hydrolases superfamily protein",68
+"Bra035244","Bra035244","PF03009","PTHR23344","KOG2258","","","AT4G26690.1","GPDL2,MRH5,SHV3","PLC-like phosphodiesterase family protein",68
+"Bra033218","Bra033218","PF02893","PTHR23319","KOG1032","","","AT1G02120.1","VAD1","GRAM domain family protein",68
+"Bra001816","Bra001816","PF01532","PTHR11742","KOG2204","3.2.1.113","K01230","AT3G21160.1","MANIA,MNS2","alpha-mannosidase 2",68
+"Bra033968","Bra033968","PF01596","PTHR10509","KOG1663","","","AT1G67980.1","CCOAMT","caffeoyl-CoA 3-O-methyltransferase",68
+"Bra010453","Bra010453","PF01554","PTHR11206","KOG1347","","","AT4G25640.1","ATDTX35,DTX35,FFT","detoxifying efflux carrier 35",68
+"Bra004540","Bra004540","PF03106","","","","","AT2G46400.1","ATWRKY46,WRKY46","WRKY DNA-binding protein 46",68
+"Bra033820","Bra033820","PF04564,PF00514,PF05804","PTHR22849","","","","AT3G46510.1","ATPUB13,PUB13","plant U-box 13",68
+"Bra011299","Bra011299","PF03106","","","","","AT4G31800.1","ATWRKY18,WRKY18","WRKY DNA-binding protein 18",68
+"Bra014692","Bra014692","PF03106","","","","","AT3G56400.1","ATWRKY70,WRKY70","WRKY DNA-binding protein 70",68
+"Bra010816","Bra010816*","PF11721,PF07714,PF00069","PTHR23258","KOG1187","","","AT1G29720.1","","Leucine-rich repeat transmembrane protein kinase",68
+"Bra010817","Bra010817*","PF11721,PF00069,PF07714","PTHR23258","KOG1187","","","AT1G29720.1","","Leucine-rich repeat transmembrane protein kinase",68
+"Bra031939","Bra031939*","PF03005","","","","","AT5G64020.1","TBL14","TRICHOME BIREFRINGENCE-LIKE 14",68
+"Bra031940","Bra031940*","PF00459","PTHR20854","KOG1528","3.1.3.57,3.1.3.7","K01082,K01107","AT5G64000.1","ATSAL2,SAL2","Inositol monophosphatase family protein",68
+"Bra034037","Bra034037*","PF03009","PTHR23344","KOG2258","","","AT4G26690.1","GPDL2,MRH5,SHV3","PLC-like phosphodiesterase family protein",68
+"Bra034039","Bra034039*","PF07714,PF00069","PTHR23258","KOG1187","","","AT1G66920.2","","Protein kinase superfamily protein",68
+"Bra034040","Bra034040*","","","","","","AT1G66980.1","SNC4","suppressor of npr1-1 constitutive 4",68
+"Bra014674","Bra014674*","PF05678","","","","","AT3G56710.1","SIB1","sigma factor binding protein 1",68
+"Bra014675","Bra014675*","PF05678","","","","","AT3G56710.1","SIB1","sigma factor binding protein 1",68
+"Bra002567","Bra002567*","PF01237","PTHR10972","","","","AT5G47590.1","","Heat shock protein HSP20/alpha crystallin family",68
+"Bra002568","Bra002568*","PF01237","PTHR10972","KOG2209","","","AT5G59420.1","ORP3C","OSBP(oxysterol binding protein)-related protein 3C",68
+"Bra001676","Bra001676*","PF00520","PTHR10217","KOG0498","","","AT3G17700.1","ATCNGC20,CNBT1,CNGC20","cyclic nucleotide-binding transporter 1",68
+"Bra001678","Bra001678*","","PTHR10217","KOG0500","","","AT3G17700.1","ATCNGC20,CNBT1,CNGC20","cyclic nucleotide-binding transporter 1",68
+"Bra013225.1","Bra013225","PF00254","PTHR10516","KOG0549","5.2.1.8","K09569","AT3G25220.1","FKBP15-1","FK506-binding protein 15 kD-1",69
+"Bra016974.1","Bra016974","PF03106","","","","","AT2G40750.1","ATWRKY54,WRKY54","WRKY DNA-binding protein 54",70
+"Bra020430.1","Bra020430","PF07887","","","","","AT5G57580.1","","Calmodulin-binding protein",70
+"Bra005168.1","Bra005168","PF00139,PF00069,PF07714","PTHR23258","KOG1187","","","AT2G37710.1","RLK","receptor lectin kinase",70
+"Bra027049.1","Bra027049","PF03171","PTHR10209","KOG0143","1.14.17.4","K05933","AT1G62380.1","ACO2,ATACO2","ACC oxidase 2",70
+"Bra014550.1","Bra014550","PF01095","","","","","AT3G59010.1","PME61","pectin methylesterase 61",70
+"Bra034404.1","Bra034404","PF00560,PF07714,PF00069","PTHR23258","KOG1187","","","AT4G08850.1","","Leucine-rich repeat receptor-like protein kinase family protein",70
+"Bra027035.1","Bra027035","PF00743,PF01946,PF01266,PF03486,PF07992,PF00890,PF01593","PTHR23023","KOG1399","","","AT1G62540.1","FMO GS-OX2","flavin-monooxygenase glucosinolate S-oxygenase 2",71
+"Bra037731.1","Bra037731","PF04554,PF01190","","","","","AT2G43150.1","","Proline-rich extensin-like family protein",72
+"Bra041123.1","Bra041123","PF00421","","","","K02705","ATCG00280.1","","photosystem II reaction center protein C",72
+"Bra019784.1","Bra019784","PF00097","PTHR14155","","","","AT1G12760.1","","Zinc finger, C3HC4 type (RING finger) family protein",72
+"Bra003434.1","Bra003434","PF00168","PTHR10774","","","","AT3G61050.1","NTMC2T4,NTMC2TYPE4","Calcium-dependent lipid-binding (CaLB domain) family protein",72
+"Bra022938.1","Bra022938","PF00076","PTHR10432","KOG4205","","K14411","AT2G33410.1","","RNA-binding (RRM/RBD/RNP motifs) family protein",72
+"Bra011703.1","Bra011703","","","","","","AT4G36750.1","","Quinone reductase family protein",72
+"Bra033422.1","Bra033422","PF00179","PTHR11621","KOG0896","","K10704","AT3G52560.1","MMZ4,UEV1D,UEV1D-4","ubiquitin E2 variant 1D-4",72
+"Bra018573.1","Bra018573","PF03059","","","2.5.1.43","K05953","AT1G09240.1","ATNAS3,NAS3","nicotianamine synthase 3",72
+"Bra000460.1","Bra000460","PF02798,PF00043","PTHR11260","KOG0867","2.5.1.18","K00799","AT2G47730.1","ATGSTF5,ATGSTF8,GST6,GSTF8","glutathione S-transferase phi 8",72
+"Bra024089.1","Bra024089","PF00722,PF06955","","","2.4.1.207","K08235","AT4G30270.1","MERI-5,MERI5B,SEN4,XTH24","xyloglucan endotransglucosylase/hydrolase 24",72
+"Bra005929.1","Bra005929","PF00612","","","","","AT5G07240.1","IQD24","IQ-domain 24",72
+"Bra024848.1","Bra024848","PF00722,PF06955","","","2.4.1.207","K08235","AT2G01850.1","ATXTH27,EXGT-A3,XTH27","endoxyloglucan transferase A3",72
+"Bra029642.1","Bra029642","PF04564,PF05804,PF00514","PTHR22849","","","","AT3G07360.1","ATPUB9,PUB9","plant U-box 9",72
+"Bra002354.1","Bra002354","PF08263,PF00560","PTHR23258","","","","AT5G21090.1","","Leucine-rich repeat (LRR) family protein",72
+"Bra032191.1","Bra032191","PF07716,PF00170","PTHR13301:SF7","","","","AT1G43700.1","SUE3,VIP1","VIRE2-interacting protein 1",72
+"Bra033802.1","Bra033802","PF05368","PTHR10366","KOG1203","","","AT3G46780.1","PTAC16","plastid transcriptionally active 16",72
+"Bra038011.1","Bra038011","PF01241","","","","","AT1G55670.1","PSAG","photosystem I subunit G",72
+"Bra008406.1","Bra008406","PF04146","PTHR12357","KOG1901","","","AT1G79270.1","ECT8","evolutionarily conserved C-terminal region 8",73
+"Bra036155.1","Bra036155","PF00544","","","4.2.2.2","K01728","AT5G48900.1","","Pectin lyase-like superfamily protein",74
+"Bra018955.1","Bra018955","PF03244","","","","K02695","AT1G52230.1","PSAH-2,PSAH2,PSI-H","photosystem I subunit H2",74
+"Bra015520.1","Bra015520","PF01789","","","","K02717","AT1G06680.1","OE23,OEE2,PSBP-1,PSII-P","photosystem II subunit P-1",74
+"Bra030843.1","Bra030843","PF01241","","","","K08905","AT1G55670.1","PSAG","photosystem I subunit G",74
+"Bra003355.1","Bra003355","PF00285","PTHR11739","KOG2617","","","AT3G58750.1","CSY2","citrate synthase 2",74
+"Bra010808.1","Bra010808","PF01544,PF01984","PTHR10840","KOG3431","","","AT1G29820.1","","Magnesium transporter CorA-like family protein",74
+"Bra032344.1","Bra032344","PF00289,PF02786,PF02787,PF02222,PF07478,PF02142","PTHR11405","KOG0370","6.3.5.5","K01955","AT1G29900.1","CARB","carbamoyl phosphate synthetase B",74
+"Bra005974.1","Bra005974","PF04371","","","3.5.3.12","K10536","AT5G08170.1","ATAIH,EMB1873","porphyromonas-type peptidyl-arginine deiminase family protein",74
+"Bra002975.1","Bra002975","","","","","","AT5G54585.1","","",74
+"Bra030808.1","Bra030808","PF03381","PTHR10926","KOG2952","","","AT1G54320.1","","LEM3 (ligand-effect modulator 3) family protein / CDC50 family protein",74
+"Bra009184.1","Bra009184","PF03168","PTHR19957:SF11","","","","AT5G06320.1","NHL3","NDR1/HIN1-like 3",74
+"Bra031623.1","Bra031623","PF00786,PF00620,PF06058","PTHR23177","KOG2868","","","AT1G08370.1","ATDCP1,DCP1","decapping 1",74
+"Bra018407.1","Bra018407","PF01480","PTHR23148","KOG2146","","K13171","AT2G29210.1","","splicing factor PWI domain-containing protein",74
+"Bra003086.1","Bra003086","PF00561","PTHR10992","KOG4178","","","AT5G53050.2","","alpha/beta-Hydrolases superfamily protein",74
+"Bra022736.1","Bra022736","PF00011","PTHR11527","KOG0710","","","AT5G54660.1","","HSP20-like chaperones superfamily protein",75
+"Bra023365.1","Bra023365","PF00031","PTHR11413","","","","AT5G12140.1","ATCYS1,CYS1","cystatin-1",76
+"Bra016557.1","Bra016557","PF10269","PTHR12183","KOG4172","","","AT1G68820.1","","Transmembrane Fragile-X-F-associated protein",76
+"Bra033973.1","Bra033973","","","","","","AT1G67870.1","","glycine-rich protein",76
+"Bra037411.1","Bra037411","PF00917","PTHR10420","KOG1987","","","AT4G00780.1","","TRAF-like family protein",76
+"Bra033255.1","Bra033255","PF07714,PF00069","PTHR23258","KOG1187","","","AT1G01540.2","","Protein kinase superfamily protein",77
+"Bra036730.1","Bra036730","PF07851","PTHR21433","KOG4758","","","AT1G33230.1","","TMPIT-like protein",78
+"Bra017672.1","Bra017672","PF02784,PF00278","PTHR11482","","4.1.1.19","K01583","AT4G34710.1","ADC2,ATADC2,SPE2","arginine decarboxylase 2",78
+"Bra008785.1","Bra008785","PF05753","PTHR12861","KOG3317","","K13250","AT5G14030.1","","translocon-associated protein beta (TRAPB) family protein",78
+"Bra014853.1","Bra014853","PF00234","","","","","AT3G53980.1","","Bifunctional inhibitor/lipid-transfer protein/seed storage 2S albumin superfamily protein",78
+"Bra012303.1","Bra012303","PF01399","PTHR15350","KOG3250","","K12180","AT1G02090.1","ATCSN7,COP15,CSN7,FUS5","Proteasome component (PCI) domain protein",78
+"Bra009600.1","Bra009600","PF04099,PF04628","PTHR23249","KOG3368","","","AT5G02280.1","","SNARE-like superfamily protein",78
+"Bra035864.1","Bra035864","PF00650","PTHR10174","KOG1470","","","AT5G63060.1","","Sec14p-like phosphatidylinositol transfer family protein",78
+"Bra025271.1","Bra025271","","","","","","AT5G40690.1","","",78
+"Bra006360.1","Bra006360","","","","","","AT5G16520.1","","",78
+"Bra003034.1","Bra003034","","","","","","AT5G53800.1","","",78
+"Bra035848.1","Bra035848","PF00439,PF00334","PTHR11349","KOG0888","","","AT5G63320.2","NPX1","nuclear protein X1",78
+"Bra000600.1","Bra000600","PF05833,PF05670,PF00098,PF11923","PTHR15239","KOG2030","","","AT5G49930.1","emb1441","zinc knuckle (CCHC-type) family protein",78
+"Bra018723.1","Bra018723","","","","","","AT1G48330.1","","",78
+"Bra038165.1","Bra038165","","","","","","AT1G56420.1","","",78
+"Bra000587.1","Bra000587","PF05278","PTHR21704","","","","AT2G20950.1","","Arabidopsis phospholipase-like protein (PEARLI 4) family",78
+"Bra007020.1","Bra007020","PF01412","PTHR23180","KOG0704","","","AT3G53710.1","AGD6","ARF-GAP domain 6",78
+"Bra010454.1","Bra010454","PF05903","PTHR12378","KOG0324","","","AT5G52530.1","","dentin sialophosphoprotein-related",78
+"Bra009410.1","Bra009410","PF00122,PF00702,PF08282","PTHR11939","KOG0206","","","AT5G04930.1","ALA1","aminophospholipid ATPase 1",80

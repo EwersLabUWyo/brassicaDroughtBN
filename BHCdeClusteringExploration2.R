@@ -44,7 +44,7 @@ nFeatures  <- ncol(discRNA)
 itemLabels <- rownames(discRNA)
 
 # Perform clustering with bhc function. 
-hct <- bhc(discRNA, itemLabels, numReps=2)
+hct <- bhc(discRNA, itemLabels, numReps=2, dataType = "time-course")
 
 # Write clusters to text file. 
 WriteOutClusterLabels(hct, "labels.txt", verbose=TRUE)
@@ -75,67 +75,42 @@ clList <- lapply(clstFrame, function(x) {unlist(str_split(x, " "))})
 # Convert the list to a matrix and fill empty values with NA.
 m <- stri_list2matrix(clList, fill = NA)
 
-# Write csv file of modules. 
-write.csv(m, "modules.csv")
-
-############# Perform clustering with bhc function with noise mode. 
-hct2 <- bhc(discRNA, itemLabels, numReps=2, noiseMode = 2)
-
-# Write clusters to text file. 
-WriteOutClusterLabels(hct2, "labelsNoise.txt", verbose=TRUE)
-
-# Read in the cluster output. 
-clst <- readLines("labelsNoise.txt")
-
-# Collapse into one string. 
-clst <- paste(clst, sep = "", collapse = " ")
-
-# Convert string to dataframe after splitting strings
-# at "---".
-clstFrame = as.data.frame(do.call(rbind, str_split(clst, "---")), 
-                          stringsAsFactors=FALSE)
-
-# Remove CLUSTER columns which are even numbered. 
-clstFrame <- clstFrame[, -c(seq(2, 116, 2))]
-
-# Remove first row, which is empty. 
-clstFrame <- clstFrame[, -1]
-
-# Trim whitespace from front and end of character string. 
-clstFrame <- lapply(clstFrame, function(x){str_trim(x, side = "both")})
-
-# Split each column string up into a list for each cluster. 
-clList <- lapply(clstFrame, function(x) {unlist(str_split(x, " "))})
-
-# Convert the list to a matrix and fill empty values with NA.
-m <- stri_list2matrix(clList, fill = NA)
-
-
-
 ######## Look at a cluster. 
-
 module <- function(x){discRNA[m[which(is.na(m[, x]) == F), x], ]}
-module(2)
+#module(2)
+##################
 
-sum(colSums(!is.na(m)) > 100)
+# Subset columns with more than 50 genes. 
+reClust <- m[, which(colSums(!is.na(m)) > 50)]
 
-reClust <- module(1)
+# Define columns to extract later. 
+rmClust <- which(colSums(!is.na(m)) > 50)
 
-# Define data dimensions. 
+# Remove columns from reClust from m dataframe. 
+#m <- m[, -which(colSums(!is.na(m)) > 50)]
+
+# Loop through reClust columns and re-cluster using BHC. 
+
+for (i in 1:dim(reClust)[2]){
+
+# Subset reClust genes from discRNA. 
+reClust <- module(i)
+
+# Re-define data dimensions. 
 nDataItems <- nrow(reClust)
 nFeatures  <- ncol(reClust)
 
-# Define genes as item labels. 
+# Re-define genes as item labels. 
 itemLabels <- rownames(reClust)
 
-# Perform clustering with bhc function. 
-hct <- bhc(reClust, itemLabels, numReps=2)
+# Perform clustering with bhc function with noise mode. 
+hct2 <- bhc(reClust, itemLabels, numReps=2)
 
 # Write clusters to text file. 
-WriteOutClusterLabels(hct, "labelsMod1.txt", verbose=TRUE)
+WriteOutClusterLabels(hct2, "labelsReClust1.txt", verbose=TRUE)
 
 # Read in the cluster output. 
-clst <- readLines("labelsMod1.txt")
+clst <- readLines("labelsReClust1.txt")
 
 # Collapse into one string. 
 clst <- paste(clst, sep = "", collapse = " ")
@@ -158,7 +133,22 @@ clstFrame <- lapply(clstFrame, function(x){str_trim(x, side = "both")})
 clList <- lapply(clstFrame, function(x) {unlist(str_split(x, " "))})
 
 # Convert the list to a matrix and fill empty values with NA.
-m <- stri_list2matrix(clList, fill = NA)
+m2 <- stri_list2matrix(clList, fill = NA)
 
-# Write csv file of modules. 
-write.csv(m, "mod1.csv")
+# Add rows to match rows in m. 
+m2 <- rbind(m2, matrix(NA, nrow = 220 - dim(m2)[1], ncol = dim(m2)[2]))
+
+# Add to m dataframe. 
+m <- cbind(m, m2)
+
+}
+
+# Remove columns from reClust from m dataframe. 
+m <- m[, -rmClust]
+
+# Write modules to csv file. 
+write.csv(m, "mod80.csv")
+
+
+
+
