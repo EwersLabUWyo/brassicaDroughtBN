@@ -317,8 +317,8 @@ rnaPheno$TP <- NULL
 
 # Create a whitelist using expert knowledge of 
 # physiological interactions.  
-wh <- data.frame(from = c("SM", "Photo", "Starch"), 
-                 to = c("gs", "fluor", "NSC"))
+wh <- data.frame(from = c("SM", "Photo", "Starch", "gs", "gs"), 
+                 to = c("gs", "fluor", "NSC", "Starch", "Photo"))
 
 # Create a blacklist to soil moisture. 
 bl <- tiers2blacklist(list(colnames(rnaPheno)[5], 
@@ -326,15 +326,15 @@ bl <- tiers2blacklist(list(colnames(rnaPheno)[5],
 
 # Learn network structure. 
 bn <- tabu(rnaPheno, score = "bde", 
-                            iss = 10, tabu = 50)
+                            iss = 5, tabu = 50)
 
-plot(bn)
+plot(bn) # Has a higher score than rsmax2
 
 
 bn <- rsmax2(rnaPheno, restrict = "aracne", 
              blacklist = bl, whitelist = wh, 
              maximize = "tabu", score = "bde", 
-       maximize.args = list(iss = 15))
+       maximize.args = list(iss = 5))
 plot(bn)
 
 #write.csv(bn$arcs, "M58bn.csv")
@@ -346,7 +346,7 @@ boot <- boot.strength(rnaPheno, R = 500, algorithm = "rsmax2",
                                             blacklist = bl, whitelist = wh,
                                             maximize = "tabu", 
                                             score = "bde", 
-                                    maximize.args = list(iss = 15)))
+                                    maximize.args = list(iss = 5)))
 
 boot[(boot$strength > 0.85) & (boot$direction >= 0.5), ]
 avg.boot <- averaged.network(boot, threshold = 0.85)
