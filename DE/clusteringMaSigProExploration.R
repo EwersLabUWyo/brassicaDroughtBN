@@ -38,7 +38,7 @@ library(stringr)
     BrassicaFPKM <- BrassicaFPKM[, -c(1, 2, 27)]
     
     # Reduce data set to only genes with some expression. 
-    BrassicaFPKM <- BrassicaFPKM[rowSums(BrassicaFPKM > 10) >= 24,]
+    BrassicaFPKM <- BrassicaFPKM[rowSums(BrassicaFPKM > 0) >= 24,]
     
     # Log2 transform wwBrassicaFPKM data set. 
     log2FPKM <- log2(BrassicaFPKM + .1)
@@ -72,15 +72,15 @@ library(stringr)
 #### Find differentially expressed genes using maSigPro    
     
     # Format the ExprDesign matrix. 
-    formatExprDesign <- make.design.matrix(ExprDesign, degree = 9)
+    formatExprDesign <- make.design.matrix(ExprDesign, degree = 11)
     
     # Find differentially expressed genes.   
     # Perform regression fit for time series. 
     fit <- p.vector(ExprMatrix, design = formatExprDesign, 
-                    Q = 0.01, counts = F)
+                    Q = 0.05, counts = F)
       
       # Select regression model by stepwise regression. 
-      model <- T.fit(fit, step.method = "two.ways.backward", alfa = .01)
+      model <- T.fit(fit, step.method = "two.ways.forward", alfa = .05)
       
       # Investigation of influential data was performed. 
       
@@ -88,117 +88,57 @@ library(stringr)
       sigs <- get.siggenes(model, vars="groups", rsq = 0)
       
       largeDE <- ExprMatrix[rownames(sigs$sig.genes$WvsD$sig.profiles), ]
-      write.csv(largeDE, "largeDE.csv")
       
-      clustgenes <- see.genes(ExprMatrix, ExprDesign, k = 100,
-                              cluster.method = "hclust", distance = "cor",
-                              agglo.method = "ward.D")  
+      write.csv(largeDE, "two.ways.forward.05.DE.csv")
       
-      # Note: distance = "cor" performs considerably worse than "euclidean"
+      DE05FPKM <- BrassicaFPKM[rownames(sigs$sig.genes$WvsD$sig.profiles), ]
+      write.csv(DE05FPKM, "DE05FPKM.csv")
       
+      ############## Plot
       
-      # Will try discretizing then clustering. 
-      RNA <- as.data.frame(t(ExprMatrix))
-      discRNA <- discretize(RNA, method = "quantile", breaks = 3)
-      
-      
-      for (i in 1:7791){
-        levels(discRNA[, i]) <- c(-1, 0, 1)
-        discRNA[, i] <- as.numeric(as.character(discRNA[, i]))
+      # Function to plot a gene of interest.
+      plotGene <- function(i, k){
+        PlotGroups(ExprMatrix[rownames(ExprMatrix) == i, ],
+                   edesign = ExprDesign, main = i)
       }
       
-      discRNA <- t(discRNA)
-      colnames(discRNA) <- colnames(ExprMatrix)
       
-      clustgenes <- see.genes(discRNA, ExprDesign, k = 100,
-                              cluster.method = "hclust", distance = "cor",
-                              agglo.method = "ward.D")  # This does a terrible job. 
+      DEgenes <- read.csv(file.choose(), row.names = 1)
       
-      clustgenes <- see.genes(discRNA, ExprDesign, k = 100,
-                              cluster.method = "hclust", distance = "euclidean",
+      
+      # Plot all DEgenes. 
+      tiff(filename = "drGenes%03d.png", width = 8, height = 11,
+           units = 'in', res = 300)
+      par(mfrow = c(5,3))
+      lapply(x, plotGene)
+      
+      
+      dev.off()
+      
+      DE01FPKM <- BrassicaFPKM[rownames(de01), ]
+      write.csv(DE01FPKM, "DE01FPKM.csv")
+      DE05FPKM <- BrassicaFPKM[rownames(de05), ]
+      write.csv(DE05FPKM, "DE05FPKM.csv")
+      ####################################################
+      
+      tiff(filename = "clusters%03d.png", width = 8, height = 11,
+           units = 'in', res = 300)
+      clustgenes <- see.genes(ExprMatrix, ExprDesign, k = 100, step.method = "forward",
+                              cluster.method = "kmeans", distance = "cor",
                               agglo.method = "ward.D")  
-      
-      
-      
-      # Sort D and W.
-      d <- sort(paste(discRNA[1, 1:24], sep = ", "))
-     
-      
-      
-      
-      cgroups <- as.data.frame(clustgenes$cut)
-      
-      clust1 <- rownames(cgroups)[which(cgroups == 1)]
-      
-      c1g <- ExprMatrix[clust1, ]
+      dev.off()
 
       
       
       
+      maSigPro(ExprMatrix, ExprDesign, degree = 11, 
+               Q = 0.05, alfa = Q, step.method = "two.ways.forward", rsq = 0,
+               vars = "groups", significant.intercept = "dummy", cluster.data = 1, 
+               k = 100,
+               cluster.method = "kmeans", distance = "cor", agglo.method = "ward.D", iter.max = 500, 
+               summary.mode = "median", color.mode = "rainbow", trat.repl.spots = "none",
+               
+               show.fit = TRUE, show.lines = TRUE, pdf = TRUE, cexlab = 0.8, 
+               legend = TRUE, main = NULL)
       
-      
-      
-      
-      
-      
-      
-            
-#### Clustering
-    
-    # Cluster by genes
-    hr <- hclust(dist(de))
-    plot(hr)
-    rect.hclust(hr, k = 15, border = "red")
-    
-    gap <- clusGap(dist(de), FUN = kmeans, iter.max = 30, K.max = 20, B = 50, verbose=interactive())
-    plot(gap)
-    
-    # Cluster by sample. 
-    hr <- hclust(dist(t(de)))
-    plot(hr, xlab = "allTPde")
-
-    gap <- clusGap(t(de), FUN = kmeans, iter.max = 30, K.max = 20, B = 50, verbose=interactive())
-    plot(gap)
-       
-    rect.hclust(hr, k = 6, border = "red")
-     
-    # Cluster by sample with subset of non-de genes. 
-        # Log2 transform wwBrassicaFPKM data set. 
-        log2FPKM <- log2(BrassicaFPKM)
-        
-        # Scale the dataset.
-        log2FPKM <- scale(log2FPKM)
-        
-        # Susbet first 100 genes. 
-        genes <- log2FPKM[1:1000, ]
-
-        # Cluster by sample. 
-        hr <- hclust(dist(t(genes)))
-        plot(hr, xlab = "nonde")
-        rect.hclust(hr, k = 6, border = "red")
-
-        # Cluster by genes. 
-        # Cluster by genes
-        hr <- hclust(dist(genes))
-        plot(hr)
-        
-        gap <- clusGap(genes, FUN = kmeans, iter.max = 30, K.max = 20, B = 50, verbose=interactive())
-        plot(gap)
-        
-        plot(hr)
-        rect.hclust(hr, k = 4, border = "red")
-
-degenes <- read.csv(file.choose(), row.names = 1)        
-# Cluster by sample. 
-hr <- hclust(dist(t(degenes)))
-plot(hr, xlab = "de")
-rect.hclust(hr, k = 6, border = "red")
-
-d <- scale(degenes)
-hr <- hclust(dist(t(d)))
-plot(hr, xlab = "scaledDE")
-rect.hclust(hr, k = 6, border = "red")
-
-
-de <- read.csv(file.choose(), row.names = 1)        
 

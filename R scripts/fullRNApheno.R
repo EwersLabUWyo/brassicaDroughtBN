@@ -18,7 +18,7 @@ library(stringr)
 #setwd("/Users/mblai/Documents/GitHub/PhenoRNAnetworkBrassica")
 
 # Read in phenotype file. 
-Pheno <- read.csv(file = "PhenoBrassicaImp.csv", row.names = 1)
+Pheno <- read.csv(file = "../CSVs/PhenoBrassicaImp.csv", row.names = 1)
 
 # Rename SM... to get rid of periods. 
 colnames(Pheno)[8] <- "SM"
@@ -49,7 +49,7 @@ phenoDisc <- phenoDisc[with(phenoDisc, order(TP, INT)), ]
 rm(Pheno)
 
 # Read in RNAseq data. 
-RNA <- read.csv(file = "largeDE.csv", row.names = 1)
+RNA <- read.csv(file = "DE05FPKM.csv", row.names = 1)
 
 ## Transpose data. 
 RNA <- t(RNA)
