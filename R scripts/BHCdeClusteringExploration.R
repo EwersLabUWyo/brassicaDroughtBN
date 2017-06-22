@@ -16,13 +16,13 @@ library(stringi)
 #require(BHC)
 
 # Read in RNA data. 
-RNA <- read.csv(file = "largeDE.csv", row.names = 1)
+RNA <- read.csv(file = "DE01FPKM.csv", row.names = 1)
 
 # Transpose to dataframe for discretize function. 
 RNA <- as.data.frame(t(RNA))
 
 # Discretize RNA into quantiles. 
-discRNA <- discretize(RNA, method = "quantile", breaks = 3)
+discRNA <- discretize(RNA, method = "interval", breaks = 3)
 
 # Convert RNA to -1, 0, or 1 for low, medium, or high expression.
 for (i in 1:dim(discRNA)[2]){
@@ -76,7 +76,7 @@ clList <- lapply(clstFrame, function(x) {unlist(str_split(x, " "))})
 m <- stri_list2matrix(clList, fill = NA)
 
 # Write csv file of modules. 
-write.csv(m, "modules.csv")
+write.csv(m, "DE01mod.csv")
 
 ############# Perform clustering with bhc function with noise mode. 
 hct2 <- bhc(discRNA, itemLabels, numReps=2, noiseMode = 2)
@@ -110,55 +110,6 @@ clList <- lapply(clstFrame, function(x) {unlist(str_split(x, " "))})
 # Convert the list to a matrix and fill empty values with NA.
 m <- stri_list2matrix(clList, fill = NA)
 
+# Write csv file. 
+write.csv(m, "DE01modNoise.csv")
 
-
-######## Look at a cluster. 
-
-module <- function(x){discRNA[m[which(is.na(m[, x]) == F), x], ]}
-module(2)
-
-sum(colSums(!is.na(m)) > 100)
-
-reClust <- module(1)
-
-# Define data dimensions. 
-nDataItems <- nrow(reClust)
-nFeatures  <- ncol(reClust)
-
-# Define genes as item labels. 
-itemLabels <- rownames(reClust)
-
-# Perform clustering with bhc function. 
-hct <- bhc(reClust, itemLabels, numReps=2)
-
-# Write clusters to text file. 
-WriteOutClusterLabels(hct, "labelsMod1.txt", verbose=TRUE)
-
-# Read in the cluster output. 
-clst <- readLines("labelsMod1.txt")
-
-# Collapse into one string. 
-clst <- paste(clst, sep = "", collapse = " ")
-
-# Convert string to dataframe after splitting strings
-# at "---".
-clstFrame = as.data.frame(do.call(rbind, str_split(clst, "---")), 
-                          stringsAsFactors=FALSE)
-
-# Remove CLUSTER columns which are even numbered. 
-clstFrame <- clstFrame[, -c(seq(2, 116, 2))]
-
-# Remove first row, which is empty. 
-clstFrame <- clstFrame[, -1]
-
-# Trim whitespace from front and end of character string. 
-clstFrame <- lapply(clstFrame, function(x){str_trim(x, side = "both")})
-
-# Split each column string up into a list for each cluster. 
-clList <- lapply(clstFrame, function(x) {unlist(str_split(x, " "))})
-
-# Convert the list to a matrix and fill empty values with NA.
-m <- stri_list2matrix(clList, fill = NA)
-
-# Write csv file of modules. 
-write.csv(m, "mod1.csv")
