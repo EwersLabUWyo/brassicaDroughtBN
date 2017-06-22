@@ -77,10 +77,10 @@ library(stringr)
     # Find differentially expressed genes.   
     # Perform regression fit for time series. 
     fit <- p.vector(ExprMatrix, design = formatExprDesign, 
-                    Q = 0.05, counts = F)
+                    Q = 0.01, counts = F)
       
       # Select regression model by stepwise regression. 
-      model <- T.fit(fit, step.method = "two.ways.forward", alfa = .05)
+      model <- T.fit(fit, step.method = "backward", alfa = .01)
       
       # Investigation of influential data was performed. 
       
@@ -102,12 +102,8 @@ library(stringr)
                    edesign = ExprDesign, main = i)
       }
       
-      
-      DEgenes <- read.csv(file.choose(), row.names = 1)
-      
-      
-      # Plot all DEgenes. 
-      tiff(filename = "drGenes%03d.png", width = 8, height = 11,
+    # Plot all DEgenes. 
+      tiff(filename = "IntGenesDE05%03d.png", width = 8, height = 11,
            units = 'in', res = 300)
       par(mfrow = c(5,3))
       lapply(x, plotGene)
@@ -119,26 +115,41 @@ library(stringr)
       write.csv(DE01FPKM, "DE01FPKM.csv")
       DE05FPKM <- BrassicaFPKM[rownames(de05), ]
       write.csv(DE05FPKM, "DE05FPKM.csv")
+      
+      
+      DE01FPKM <- BrassicaFPKM[rownames(de01), ]
+      write.csv(DE01FPKM, "DE01FPKM.csv")
+      DE05FPKM <- BrassicaFPKM[rownames(largeDE), ]
+      write.csv(DE05FPKM, "DE05BackwardFPKM.csv")
       ####################################################
+
+      # Function to plot a gene of interest.
+      plotGene <- function(i, k){
+        PlotGroups(ExprMatrix[rownames(ExprMatrix) == i, ],
+                   edesign = ExprDesign, main = expgenes[i, 2])
+      }
       
-      tiff(filename = "clusters%03d.png", width = 8, height = 11,
+      
+      # Subset genes of interest that are found to be differentially 
+      # expressed. 
+      intGenesDE05 <- expgenes[which(expgenes$V1 %in% rownames(de05)), ]
+    
+      # Plot all genes. 
+      tiff(filename = "IntGenesDE05%03d.png", width = 8, height = 11,
            units = 'in', res = 300)
-      clustgenes <- see.genes(ExprMatrix, ExprDesign, k = 100, step.method = "forward",
-                              cluster.method = "kmeans", distance = "cor",
-                              agglo.method = "ward.D")  
+      par(mfrow = c(5,3))
+      lapply(intGenesDE05$V1, plotGene)
+      
       dev.off()
-
       
+      # Subset genes of interest that are not found to be differentially 
+      # expressed. 
+      intGenesNonDE05 <- expgenes[-which(expgenes$V1 %in% rownames(de05)), ]
       
+      # Plot all genes. 
+      tiff(filename = "IntGenesNonDE05%03d.png", width = 8, height = 11,
+           units = 'in', res = 300)
+      par(mfrow = c(5,3))
+      lapply(intGenesNonDE05$V1, plotGene)
       
-      maSigPro(ExprMatrix, ExprDesign, degree = 11, 
-               Q = 0.05, alfa = Q, step.method = "two.ways.forward", rsq = 0,
-               vars = "groups", significant.intercept = "dummy", cluster.data = 1, 
-               k = 100,
-               cluster.method = "kmeans", distance = "cor", agglo.method = "ward.D", iter.max = 500, 
-               summary.mode = "median", color.mode = "rainbow", trat.repl.spots = "none",
-               
-               show.fit = TRUE, show.lines = TRUE, pdf = TRUE, cexlab = 0.8, 
-               legend = TRUE, main = NULL)
-      
-
+      dev.off()
