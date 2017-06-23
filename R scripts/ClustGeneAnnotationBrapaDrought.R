@@ -22,7 +22,7 @@ geneAnnot <- as.data.frame(geneAnnot)
 rownames(geneAnnot) <- geneAnnot$V1
 
 # Read in cluster genes. 
-clusters <- read.csv(file = "mod80.csv",
+clusters <- read.csv(file = "mod80moreMod.csv",
                     stringsAsFactors = F, row.names = 1)
 
 # Keep only gene names and cluster.
@@ -87,8 +87,11 @@ clustAnnot <- clustAnnot[order(clustAnnot$Cluster), ]
 # Remove rows with NA's. 
 clustAnnot <- clustAnnot[-c(which(is.na(clustAnnot$V1) == T)), ]
 
-# Write csv of 58 modules and their gene annotations. 
-write.csv(clustAnnot, file = "mod80GeneAnnot.csv")
+# Remove rows with NA*'s. 
+clustAnnot <- clustAnnot[-c(which(clustAnnot$V1 == "NA*")), ]
+
+# Write csv of modules and their gene annotations. 
+write.csv(clustAnnot, file = "DE05GeneAnnotSmallMod.csv")
 
 # Clear environment. 
 rm(commas)
@@ -98,3 +101,8 @@ rm(clust)
 rm(geneAnnot)
 rm(dup)
 rm(sepCommas)
+
+# It appears that Noise doesn't make a difference in terms of 
+# clustering. 
+
+
