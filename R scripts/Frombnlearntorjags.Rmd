@@ -1,0 +1,416 @@
+---
+title: "From bnlearn to rjags"
+output:
+  html_notebook: default
+  html_document: default
+  pdf_document: default
+---
+
+  This is a simulated network from *Bayesian Networks with Examples in R* by Marco Scutari and Jean-Baptiste Denis. The example is about crop loss caused by pests. For modeling crop loss, the network structure is constructed using expert knowledge. 
+
+```{r}
+library(bnlearn)
+library(rjags)
+library(igraph)
+
+# Create network structure through conditional probability 
+# character string. 
+pest.dag <- model2network("[PR][CL][G1|PR:CL][G2|G1][TR|G1][LO|G2:TR]")
+
+# Plot the pest network. 
+# Create graph from network arcs. 
+pest.g <- graph_from_data_frame(pest.dag$arcs)
+
+# Plot graph. 
+plot(pest.g, vertex.size = 50, 
+     vertex.label.cex = 1.3, 
+     vertex.color = "deepskyblue4", 
+     edge.arrow.size = 0.5,
+     vertex.frame.color = "white", 
+     vertex.label.color = "white")
+
+```
+
+  In this example, pests damage the crop in two ways: when the first generation (G1) awakes at the end of winter, and when the second generation (G2) is born at a later time. G2 is influenced by G1. G1 is influenced by the preceding crop in the plot (PR) and the climate conditions (CL) during winter. Crop loss (LO) is primarily influenced by G2, which is larger than G1 and tends to eat the reproductive organs of the plants. Whether or not the farmer treats the crop for pests (TR) also influences LO.
+  
+  All nodes have their own distribution:  
+  
+  PR ~ $Mu(1, p = (0.7, 0.2, 0.1))$    
+  CL ~ $Beta(3, 1)$  
+  G1 | PR = p, CL = c ~ $Pois(c \times g(p))$  
+  G2 | G1 = $g_1$ ~ $Pois(10 \times G1)$  
+  TR | G1 = $g_1$ ~ $Ber(logit^{-1} \big[{\frac {g_1 - 5}{2.5}} \big])$  
+  LO | G2 = $g_2$, TR = $t$ ~ $nc\chi^2 \big(1, \big[g_2 \times \big\{ 1 - \frac{2t}{3} \big\} \big] \big)$  
+
+  The following code shows parameter learning using rjags and the graph of $P(LO | G2, TR)$ with PR = 1, 2, and 3:
+  
+
+```{r}
+library(rjags)
+###################################################
+### code chunk number 12: chapter3.rnw:416-422
+###################################################
+dat0 <- list(p.PR = c(0.7, 0.2, 0.1),
+             a.CL = 3, b.CL = 1,
+             g.G1 = c(1, 3, 10),
+             k.G2 = 10,
+             m.TR = 5, s.TR = 2.5,
+             r.LO = 1/3, d.LO = 1)
+
+
+###################################################
+### code chunk number 13: chapter3.rnw:474-475
+###################################################
+set.seed(123)
+
+# SET WORKING DIRECTORY CONTAINING rjags FILE HERE: 
+setwd("~/Documents/GitHub/brassicaDroughtBN/jags")
+
+###################################################
+### code chunk number 14: pest.PR123
+###################################################
+exp.loss  <- rep(NA, 3)
+names(exp.loss) <- paste("PR=", 1:3, sep = "")
+qua.loss <- exp.loss
+for (PR in 1:3) {
+  dat1 <- dat0
+  dat1$PR <- PR
+  mopest <- jags.model(file = "inclu.pest.jam", data = dat1,
+                       quiet = TRUE)
+  update(mopest, 3000)
+  sipest <- 
+    coda.samples(model = mopest, variable.names = "LO",
+                 n.iter  =  50000)
+  summa <- summary(sipest)
+  exp.loss[PR] <- summa$statistics["Mean"]
+  qua.loss[PR] <- summa$quantiles["75%"]
+  plot(sipest[[1]][, "LO"], main = "LO")
+}#FOR
+round(c(exp.loss, MEAN = mean(exp.loss)), 1)
+
+```
+We can see that LO changes given different values of PR and we'll look at the bnlearn version of this later.   
+
+# Structure learning
+For my network, I don't have a structure and I don't have distributions for my nodes. But I can simulate data and learn the structure as I will for Lina's droughted data.  
+
+```{r}
+#### Simulate data from p.76
+rm(list=ls())
+set.seed(567)
+
+# Simulate 50,000 samples from each node's distribution.
+nbs <- 50000
+PR <- sample(1:3, nbs, prob = c(.7, .2, .1), replace = T)
+g <- function(pr)c(1, 3, 10)[pr]
+CL <- rbeta(nbs, 3, 1)
+G1 <- rpois(nbs, CL * g(PR))
+G2 <- rpois(nbs, G1 * 10)
+il <- function(x){
+  exp((x - 5) / 2.5)/(1 + exp((x-5) / 2.5))
+}
+TR <- rbinom(nbs, 1, il(G1))
+x.lo <- G2 * (1 - (1 - 1/3) * TR)
+LO <- rchisq(nbs, 1, ncp = x.lo)
+
+# Combine data into crop dataframe. 
+crop <- data.frame(CL = CL, G1 = G1, G2 = G2, TR = TR, LO = LO, PR = PR)
+
+```
+
+For structure learning, I'll show a couple learning algorithms to show you how they compare. 
+
+```{r}
+# Convert all variables to numeric. 
+crop <- as.data.frame(sapply(crop, as.numeric))
+
+# Discretize the data appropriately. 
+cropDisc <- discretize(crop, method = "interval", 
+                       breaks = c(5, 5, 5, 2, 5, 3))
+
+# Use tabu algorithm to find the highest network score. 
+cropBN <- tabu(cropDisc, score = "bde", iss = 5, tabu = 50)
+
+# Plot network with highest network score. 
+# Create graph from network arcs. 
+tabu.g <- graph_from_data_frame(cropBN$arcs)
+
+# Plot graph. 
+plot(tabu.g, vertex.size = 50, 
+     vertex.label.cex = 1.3, 
+     vertex.color = "deepskyblue4", 
+     edge.arrow.size = 0.5,
+     vertex.frame.color = "white", 
+     vertex.label.color = "white")
+
+```
+
+The tabu algorithm has many redundant relationships and doesn't find the true network. Hybrid learning algorithms can help off-set some of the weaknesses of score or structure based algorithms used on their own. Here, I use the tabu/si.hiton.pc hybrid algorithm to find the network structure. 
+
+```{r}
+# Use hybrid tabu/si.hiton.pc algorithm to find the highest network score. 
+cropBN <- rsmax2(cropDisc, restrict = "si.hiton.pc", test = "x2", 
+                 maximize = "tabu", score = "bde", 
+                 maximize.args = list(iss = 5))
+
+# Plot network with highest network score. 
+# Create graph from network arcs. 
+tabuHiton.g <- graph_from_data_frame(cropBN$arcs)
+
+# Plot graph. 
+plot(tabuHiton.g, vertex.size = 50, 
+     vertex.label.cex = 1.3, 
+     vertex.color = "deepskyblue4", 
+     edge.arrow.size = 0.5,
+     vertex.frame.color = "white", 
+     vertex.label.color = "white")
+```
+
+```{r}
+# Use hybrid tabu/aracne algorithm to find the highest network score. 
+cropBN <-   rsmax2(cropDisc, restrict = "aracne", maximize = "tabu",
+         score = "bde", maximize.args = list(iss = 5))
+
+# Plot network with highest network score. 
+# Create graph from network arcs. 
+tabuAracne.g <- graph_from_data_frame(cropBN$arcs)
+
+# Plot graph. 
+plot(tabuAracne.g, vertex.size = 50, 
+     vertex.label.cex = 1.3, 
+     vertex.color = "deepskyblue4", 
+     edge.arrow.size = 0.5,
+     vertex.frame.color = "white", 
+     vertex.label.color = "white")
+```
+The tabu-aracne hybrid algorithm comes the closest to learning the correct network structure. As you can see, it's still missing one relationship (TR -> LO).   
+
+Now we'll look at what happens when you separate the crop dataframe to create two networks: **Treatment** and **No Treatment**. We'll start by looking at **Treatment** values only. 
+
+```{r}
+# Subset treatment only.  
+cropTR1 <- cropDisc[crop$TR == 1, ]
+
+# Use hybrid tabu/aracne algorithm to find the highest network score. 
+cropBN <-   rsmax2(cropTR1, restrict = "aracne", maximize = "tabu",
+         score = "bde", maximize.args = list(iss = 5))
+
+# Plot network with highest network score. 
+# Create graph from network arcs. 
+tabuAracne.g <- graph_from_data_frame(cropBN$arcs)
+
+# Plot graph. 
+plot(tabuAracne.g, vertex.size = 50, 
+     vertex.label.cex = 1.3, 
+     vertex.color = "deepskyblue4", 
+     edge.arrow.size = 0.5,
+     vertex.frame.color = "white", 
+     vertex.label.color = "white")
+```
+
+Notice that subsetting **Treatment** takes out levels of LO. Although this structure is close to the correct structure (in fact, it does have TR -> LO), it also has redundant relationships. Let's look at **No Treatment** now. 
+
+```{r}
+# Subset no treatment only.  
+cropTR0 <- cropDisc[crop$TR == 0, ]
+
+# Use hybrid tabu/aracne algorithm to find the highest network score. 
+cropBN <-   rsmax2(cropTR0, restrict = "aracne", maximize = "tabu",
+         score = "bde", maximize.args = list(iss = 5))
+
+# Plot network with highest network score. 
+# Create graph from network arcs. 
+tabuAracne.g <- graph_from_data_frame(cropBN$arcs)
+
+# Plot graph. 
+plot(tabuAracne.g, vertex.size = 50, 
+     vertex.label.cex = 1.3, 
+     vertex.color = "deepskyblue4", 
+     edge.arrow.size = 0.5,
+     vertex.frame.color = "white", 
+     vertex.label.color = "white")
+```
+
+Notice that subsetting **No Treatment** takes out levels of G1 necessary to get close to the correct structure. Some of the relationships (like G1 -> G2 -> LO) are correct, but others are not. When subsetting based on treatment, we were able to see TR -> LO with the **Treatment** group, but we saw many incorrect relationships with the **No Treatment** group. It is apparent that the levels of G1 removed from the data when subsetting the **No Treatment** group was more important to learning the correct structure than the levels of LO lost in the **Treatment** group. 
+  
+Without knowing the correct structure beforehand, reconciling the differences between these two networks will not be straightforward. Additionally, the relationships between **Treatment** and **No Treatment** *shouldn't really* change, only their probability distributions should. Let's look at how the probability distributions change with TR = 0 and TR = 1.   
+
+```{r}
+# Subset no treatment only.  
+cropG2gone <- cropDisc[, -3]
+
+# Use hybrid tabu/aracne algorithm to find the highest network score. 
+cropBN <-   rsmax2(cropG2gone, restrict = "aracne", maximize = "tabu",
+         score = "bde", maximize.args = list(iss = 5))
+
+# Plot network with highest network score. 
+# Create graph from network arcs. 
+tabuAracne.g <- graph_from_data_frame(cropBN$arcs)
+
+# Plot graph. 
+plot(tabuAracne.g, vertex.size = 50, 
+     vertex.label.cex = 1.3, 
+     vertex.color = "deepskyblue4", 
+     edge.arrow.size = 0.5,
+     vertex.frame.color = "white", 
+     vertex.label.color = "white")
+```
+
+# Conditional Probability Distributions.   
+We'll use the correct structure for parameter learning and look at distributions from there. 
+
+```{r}
+# Create network structure through conditional probability 
+# character string. 
+pest.dag <- model2network("[PR][CL][G1|PR:CL][G2|G1][TR|G1][LO|G2:TR]")
+
+# Perform parameter learning using the structure from pest.dag and the discretized data in cropDisc.
+BN <- bn.fit(pest.dag, cropDisc, method = "bayes")
+
+# Plot probability distribution of P(CL) from BN.
+bn.fit.barchart(BN$CL, xlab = "P(CL)")
+```
+Notice that the distribution of CL from the network matches closely to the original distribution of CL.
+```{r}
+# Plot histogram of CL. 
+hist(CL, breaks = 5, freq = T)
+```
+Since CL has no parents in the network, it's pretty straightforward. Let's look at G1, which has two parents: CL and PR. 
+
+```{r}
+# Plot probability distribution of P(CL) from BN.
+bn.fit.barchart(BN$G1, xlab = "P(G1|CL, PR)")
+```
+It's much less clear how you would extract a helpful distribution from such a conditional probability distribution. In order to 
+
+```{r}
+# Marginalize G1 by performing conditional probability queries 
+# across all possible combinations of PR and CL.
+g1 <- cpdist(BN, nodes = ("G1"), 
+                evidence = (PR == "[0.998,1.67]") | 
+                (PR == "(1.67,2.33]") | 
+                (PR == "(2.33,3]") & 
+                ((CL == "[0.02,0.217]") |
+                (CL == "(0.217,0.413]") | 
+                (CL == "(0.413,0.608]") | 
+                (CL == "(0.608,0.804]") | 
+                (CL == "(0.804,1]")))
+
+# Create a frequency table from g1.
+g1dist <- as.data.frame(table(g1))
+g1dist
+
+# Show original G1 data and marginalized G1 from the BN. 
+par(mfrow = c(1, 2))
+hist(G1, breaks = seq(0, 22, l = 5))
+barplot(g1dist$Freq, main = "G1")
+
+```
+
+```{r}
+# Marginalize G1 by performing conditional probability queries 
+# across all possible combinations of PR and CL and TR = 0.
+g1TR0 <- cpdist(BN, nodes = ("G1"), 
+                evidence = (PR == "[0.998,1.67]") | 
+                (PR == "(1.67,2.33]") | 
+                (PR == "(2.33,3]") & 
+                ((CL == "[0.02,0.217]") |
+                (CL == "(0.217,0.413]") | 
+                (CL == "(0.413,0.608]") | 
+                (CL == "(0.608,0.804]") | 
+                (CL == "(0.804,1]")) & (TR = 0))
+
+# Marginalize G1 by performing conditional probability queries 
+# across all possible combinations of PR and CL and TR = 1.
+g1TR1 <- cpdist(BN, nodes = ("G1"), 
+                evidence = (PR == "[0.998,1.67]") | 
+                (PR == "(1.67,2.33]") | 
+                (PR == "(2.33,3]") & 
+                ((CL == "[0.02,0.217]") |
+                (CL == "(0.217,0.413]") | 
+                (CL == "(0.413,0.608]") | 
+                (CL == "(0.608,0.804]") | 
+                (CL == "(0.804,1]")) & (TR = 1))
+
+# Create a frequency table from g1.
+g1TR0dist <- as.data.frame(table(g1TR0))
+g1TR1dist <- as.data.frame(table(g1TR1))
+g1TR1dist
+g1TR0dist
+g1dist
+
+# Show original G1 data and marginalized G1 from the BN. 
+par(mfrow = c(1, 3))
+barplot(g1TR0dist$Freq, main = "G1 with TR0")
+barplot(g1TR1dist$Freq, main = "G1 with TR1")
+barplot(g1dist$Freq, main = "G1")
+```
+Because G1 doesn't depend on TR, it shouldn't effect the distribution of G1. We can see, however, that the distribution does change slightly. This is because the conditional probability query uses importance sampling. These changes are due to sampling and not due to differences in the probability distribution given TR. 
+
+Let's look back at the original example with rjags and see how LO changes with PR. 
+
+```{r}
+# Marginalize G1 by performing conditional probability queries 
+# across all possible combinations of PR and CL and PR = 1-3.
+loPR1 <- cpdist(BN, nodes = ("LO"), 
+                evidence = (PR == "[0.998,1.67]"))
+
+loPR2 <- cpdist(BN, nodes = ("LO"), 
+                evidence = (PR == "(1.67,2.33]"))
+
+loPR3 <- cpdist(BN, nodes = ("LO"), 
+                evidence = (PR == "(2.33,3]"))
+
+# Create a frequency table from g1.
+loPR1dist <- as.data.frame(table(loPR1))
+loPR2dist <- as.data.frame(table(loPR2))
+loPR3dist <- as.data.frame(table(loPR3))
+par(mfrow = c(1, 3))
+loPR1dist
+loPR2dist
+loPR3dist
+
+# Show original G1 data and marginalized G1 from the BN. 
+par(mfrow = c(1, 3))
+barplot(loPR1dist$Freq, main = "P(LO|PR = 1)")
+barplot(loPR2dist$Freq, main = "P(LO|PR = 2)")
+barplot(loPR3dist$Freq, main = "P(LO|PR = 3)")
+
+```
+
+These distributions line up well with the distributions found in the beginning of the document. 
+
+```{r}
+# Look at Treatment conditional probability distribution P(TR|G1). 
+bn.fit.barchart(BN$TR)
+
+# Marginalize across all values of G1. 
+trG1 <- cpdist(BN, nodes = ("TR"), 
+                evidence = (G1 == "[-0.022,4.4]") | 
+                (G1 == "(4.4,8.8]") | 
+                (G1 == "(8.8,13.2]") | 
+                (G1 == "(13.2,17.6]") |
+                (G1 == "(17.6,22]"))
+
+# Create a frequency table from trG1.
+TRdist <- as.data.frame(table(trG1))
+par(mfrow = c(1, 2))
+hist(TR, breaks = 2)
+barplot(TRdist$Freq, main = "P(TR)")
+```
+
+Notice the orginal distribution can be recovered by marginalizing across all variables. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
