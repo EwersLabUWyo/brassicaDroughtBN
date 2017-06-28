@@ -323,7 +323,7 @@ barplot(g1TR0dist$Freq, main = "G1 with TR0")
 barplot(g1TR1dist$Freq, main = "G1 with TR1")
 barplot(g1dist$Freq, main = "G1")
 ```
-Now let's look at an example where the distribution *does* change. Let's revisit the original example with rjags and see how LO changes with PR. 
+Now let's look at an example where the distribution *does* change. Let's revisit the original example with rjags and see how LO changes with PR (an ancestor of LO) using bnlearn. 
 
 ```{r}
 # Marginalize G1 by performing conditional probability queries 
@@ -349,27 +349,13 @@ barplot(loPR2dist$Freq, main = "P(LO|PR = 2)")
 barplot(loPR3dist$Freq, main = "P(LO|PR = 3)")
 
 ```
+The distributions found using bnlearn line up well with the distributions found through rjags.  
 
-These distributions line up well with the distributions found through rjags. 
+The network structure, defining the dependencies in the network didn't change, but distributions did based on our observation of, or conditioning on, PR. While the network structure might shift radically when subsetting the data, the conditional probability tables are geared specifically towards queries which subset the data. 
 
-```{r}
-# Look at Treatment conditional probability distribution P(TR|G1). 
-bn.fit.barchart(BN$TR)
 
-# Marginalize across all values of G1. 
-trG1 <- cpdist(BN, nodes = ("TR"), 
-                evidence = (G1 == "[-0.022,4.4]") | 
-                (G1 == "(4.4,8.8]") | 
-                (G1 == "(8.8,13.2]") | 
-                (G1 == "(13.2,17.6]") |
-                (G1 == "(17.6,22]"))
 
-# Create a frequency table from trG1.
-TRdist <- as.data.frame(table(trG1))
-par(mfrow = c(1, 2))
-hist(TR, breaks = 2)
-barplot(TRdist$Freq, main = "P(TR)")
-```
+We can see how we can extract different distributions depending on how much information you have about the variables in the network. 
 
 Notice the orginal distribution can be recovered by marginalizing across all variables. 
 
