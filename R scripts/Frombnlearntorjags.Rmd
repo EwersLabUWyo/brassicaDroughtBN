@@ -351,7 +351,7 @@ barplot(loPR3dist$Freq, main = "P(LO|PR = 3)")
 ```
 The distributions found using bnlearn line up well with the distributions found through rjags.  
 
-The network structure, defining the dependencies in the network didn't change, but distributions did based on our observation of, or conditioning on, PR. While the network structure might shift radically when subsetting the data, the conditional probability tables are geared specifically towards queries which subset the data. 
+The network structure (which defines the dependencies in the network) didn't change, but distributions based on our observation of, or conditioning on, PR did. While the network structure might shift radically when subsetting the data, the conditional probability tables are geared specifically towards queries which subset the data. 
 
 
 
